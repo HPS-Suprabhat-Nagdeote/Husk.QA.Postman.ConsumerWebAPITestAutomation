@@ -1,0 +1,969 @@
+{
+	"info": {
+		"_postman_id": "2e6713b0-f6fe-4843-a799-2371435de5ca",
+		"name": "CashFree API Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CreateOrder With Valid Input",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "677ac5b0-2fa4-4e06-8fc0-e5cc3d1f6f63",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response time is less than 250ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(250);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"ACTIVE\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "a3260278-90ce-45d7-9fde-256848304164",
+						"exec": [
+							"var moment = require('moment');\r",
+							"pm.globals.set('timeout', moment().add(20, 'minutes').format());\r",
+							"let orderId=\"ORD-14-Test_Suprabhat\";\r",
+							"let number = _.random(100,999)\r",
+							"pm.globals.set('Order_id_random',orderId+number);\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "57fd2942-76f3-4b28-821c-cc492ffd10c4",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "text/plain"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "x-client-id",
+						"value": "TEST101238603b59dbd848b49b68684c06832101'",
+						"type": "text"
+					},
+					{
+						"key": "x-client-secret",
+						"value": "cfsk_ma_test_8c58d58db1316608e1621a039abf8c53_09042825",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"customer_details\": {\r\n    \"customer_id\": \"HINUP-Huskify-18499\",\r\n    \"customer_email\": \"xyz@gmail.com\",\r\n    \"customer_phone\": \"9109059955\",\r\n    \"customer_name\": \"Nikhil\"\r\n  },\r\n  \"order_meta\": {\r\n    \"return_url\": \"\",\r\n    \"notify_url\": \"\",\r\n    \"payment_methods\": \"\",\r\n    \"order_note\":\"\"\r\n  },\r\n  \"order_id\": \"{{Order_id_random}}\",\r\n  \"order_amount\": {{Order_Amount}},\r\n  \"order_currency\": \"{{order_currency}}\",\r\n  \"order_expiry_time\": \"{{timeout}}\"\r\n}"
+				},
+				"url": "https://husk3pawrappers-dev.azurewebsites.net/api/CashfreePayment/CreateOrder"
+			},
+			"response": []
+		},
+		{
+			"name": "CreateOrder With Invalid Date",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "677ac5b0-2fa4-4e06-8fc0-e5cc3d1f6f63",
+						"exec": [
+							"pm.test(\"Status code is 400\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"One or more validation errors occurred\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response time is less than 500ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(250);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "a3260278-90ce-45d7-9fde-256848304164",
+						"exec": [
+							"var moment = require('moment');\r",
+							"pm.globals.set('invalidtimeout', moment().add(5, 'minutes').format());\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "0aac40f8-4b61-4bdf-8ea5-20c286d81f1e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "text/plain"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "x-client-id",
+						"value": "TEST101238603b59dbd848b49b68684c06832101'",
+						"type": "text"
+					},
+					{
+						"key": "x-client-secret",
+						"value": "cfsk_ma_test_8c58d58db1316608e1621a039abf8c53_09042825",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"customer_details\": {\r\n    \"customer_id\": \"12345678\",\r\n    \"customer_email\": \"xyz@gmail.com\",\r\n    \"customer_phone\": \"9876543210\",\r\n    \"customer_name\": \"Test03\"\r\n  },\r\n  \"order_meta\": {\r\n    \"return_url\": \"\",\r\n    \"notify_url\": \"\",\r\n    \"payment_methods\": \"\",\r\n    \"order_note\":\"\"\r\n  },\r\n  \"order_id\": \"{{Order_id_random}}\",\r\n  \"order_amount\": {{Order_Amount}},\r\n  \"order_currency\": \"{{order_currency}}\",\r\n  \"order_expiry_time\": \"{{invalidtimeout}}\"\r\n}"
+				},
+				"url": "https://husk3pawrappers-dev.azurewebsites.net/api/CashfreePayment/CreateOrder"
+			},
+			"response": []
+		},
+		{
+			"name": "CreateOrder Without Order Id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "677ac5b0-2fa4-4e06-8fc0-e5cc3d1f6f63",
+						"exec": [
+							"pm.test(\"Status code is 400\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});\r",
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"The createOrder field is required\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response time is less than 500ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(250);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "a3260278-90ce-45d7-9fde-256848304164",
+						"exec": [
+							"var moment = require('moment');\r",
+							"pm.globals.set('timeout', moment().add(20, 'minutes').format());\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "d072b046-1929-4b40-8be2-e83547c3d4eb",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "text/plain"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "x-client-id",
+						"value": "TEST101238603b59dbd848b49b68684c06832101'",
+						"type": "text"
+					},
+					{
+						"key": "x-client-secret",
+						"value": "cfsk_ma_test_8c58d58db1316608e1621a039abf8c53_09042825",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"customer_details\": {\r\n    \"customer_id\": \"12345678\",\r\n    \"customer_email\": \"xyz@gmail.com\",\r\n    \"customer_phone\": \"9876543210\",\r\n    \"customer_name\": \"Test03\"\r\n  },\r\n  \"order_meta\": {\r\n    \"return_url\": \"\",\r\n    \"notify_url\": \"\",\r\n    \"payment_methods\": \"\",\r\n    \"order_note\":\"\"\r\n  },\r\n  \"order_id\": \"\",\r\n  \"order_amount\": {{Order_Amount}},\r\n  \"order_currency\": \"{{order_currency}}\",\r\n  \"order_expiry_time\": \"{{timeout}}\"\r\n}"
+				},
+				"url": "https://husk3pawrappers-dev.azurewebsites.net/api/CashfreePayment/CreateOrder"
+			},
+			"response": []
+		},
+		{
+			"name": "GetOrder With Valid input",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "01ab3574-5eb2-403e-b474-0efc4f295af9",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response time is less than 500ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(250);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "7399f1d6-c92a-4334-9768-2855c4a0c3b2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "text/plain"
+					}
+				],
+				"url": {
+					"raw": "https://husk3pawrappers-dev.azurewebsites.net/api/CashfreePayment/GetOrder?Orderid={{Order_id_random}}",
+					"protocol": "https",
+					"host": [
+						"husk3pawrappers-dev",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"CashfreePayment",
+						"GetOrder"
+					],
+					"query": [
+						{
+							"key": "orderId",
+							"value": "ORD-14-Test_Suprabhat90",
+							"disabled": true
+						},
+						{
+							"key": "Orderid",
+							"value": "{{Order_id_random}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetOrder With Invalid input",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "01ab3574-5eb2-403e-b474-0efc4f295af9",
+						"exec": [
+							"pm.test(\"Status code is 500\", function () {\r",
+							"    pm.response.to.have.status(500);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response time is less than 500ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(250);\r",
+							"});\r",
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Order Reference Id does not exist\");\r",
+							"});\r",
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"400\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "593703ba-3281-4654-a2cc-7f113c7aa491",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "text/plain"
+					}
+				],
+				"url": {
+					"raw": "https://husk3pawrappers-dev.azurewebsites.net/api/CashfreePayment/GetOrder?Orderid=142",
+					"protocol": "https",
+					"host": [
+						"husk3pawrappers-dev",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"CashfreePayment",
+						"GetOrder"
+					],
+					"query": [
+						{
+							"key": "orderId",
+							"value": "ORD-14-Test_Suprabhat90",
+							"disabled": true
+						},
+						{
+							"key": "Orderid",
+							"value": "142"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetOrder With No parametre",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "01ab3574-5eb2-403e-b474-0efc4f295af9",
+						"exec": [
+							"pm.test(\"Status code is 400\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response time is less than 500ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(250);\r",
+							"});\r",
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"The orderId field is required.\");\r",
+							"});\r",
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"400\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "eb975a6a-4b82-489e-b056-abf3aa8ff4bd",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "text/plain"
+					}
+				],
+				"url": {
+					"raw": "https://husk3pawrappers-dev.azurewebsites.net/api/CashfreePayment/GetOrder?Orderid=",
+					"protocol": "https",
+					"host": [
+						"husk3pawrappers-dev",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"CashfreePayment",
+						"GetOrder"
+					],
+					"query": [
+						{
+							"key": "orderId",
+							"value": "ORD-14-Test_Suprabhat90",
+							"disabled": true
+						},
+						{
+							"key": "Orderid",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "VerifyCashFreePaymentStatus With valid Order ID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "63708288-0711-43ff-ac3e-a43ae0ddea9b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response time is less than 250ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(250);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"KsgOOXvqu+JkyC\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Verfying response data Value For Positive\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.Data).to.include(\"KsgOOXvqu+JkyC\");\r",
+							"    pm.globals.set(\"VerifyCashFreePaymentStatusData\", jsonData.Data);\r",
+							"\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Verifying Message Title\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.Status.MessageTitle).to.eql(\"Success\");\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "bd253490-e61d-4b51-bab7-28f17151c766",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/VerifyCashFreePaymentStatus?orderId={{Order_id_random}}",
+					"protocol": "https",
+					"host": [
+						"huskpowerdevconsumerwebapi",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"EED",
+						"Api",
+						"v1",
+						"VerifyCashFreePaymentStatus"
+					],
+					"query": [
+						{
+							"key": "orderId",
+							"value": "6b0dc374-a84f-4c61-afc7-000d3af2f997",
+							"disabled": true
+						},
+						{
+							"key": "orderId",
+							"value": "{{Order_id_random}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DecryptResponseVerifyCashFreePaymentStatus",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "57f10bd1-5573-41f7-ae2b-7a883162b962",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response time is less than 250ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(250);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"HINUP-Huskify-15100\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Verfying response data Value For Positive\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.Status.MessageTitle).to.include(\"Success\");\r",
+							"\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "c66a4a59-760f-4b95-aeee-21deb60ada89",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"EncryptedString\": \"{{VerifyCashFreePaymentStatusData}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
+			},
+			"response": []
+		},
+		{
+			"name": "VerifyCashFreePaymentStatus With invalid Order ID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "63708288-0711-43ff-ac3e-a43ae0ddea9b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response time is less than 250ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(250);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Verfying response data Value For Negative\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.Data).to.eql(null);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "4b5bce89-04c0-4655-9398-f777cf3604a1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/VerifyCashFreePaymentStatus?orderId=123",
+					"protocol": "https",
+					"host": [
+						"huskpowerdevconsumerwebapi",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"EED",
+						"Api",
+						"v1",
+						"VerifyCashFreePaymentStatus"
+					],
+					"query": [
+						{
+							"key": "orderId",
+							"value": "6b0dc374-a84f-4c61-afc7-000d3af2f997",
+							"disabled": true
+						},
+						{
+							"key": "orderId",
+							"value": "123"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "VerifyCashFreePaymentStatus With null Order ID Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "63708288-0711-43ff-ac3e-a43ae0ddea9b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response time is less than 250ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(250);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Verfying response data Value For Negative\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.Data).to.eql(null);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "ff43e05c-7a37-44fd-a7f3-77c2a9e09967",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/VerifyCashFreePaymentStatus?orderId=",
+					"protocol": "https",
+					"host": [
+						"huskpowerdevconsumerwebapi",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"EED",
+						"Api",
+						"v1",
+						"VerifyCashFreePaymentStatus"
+					],
+					"query": [
+						{
+							"key": "orderId",
+							"value": "6b0dc374-a84f-4c61-afc7-000d3af2f997",
+							"disabled": true
+						},
+						{
+							"key": "orderId",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CashFreePaymentRequest -Create Order in our System",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "afcb8774-b6c9-4a44-94c8-4900b1b44c2b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response time is less than 250ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(250);\r",
+							"});\r",
+							"//setting Values\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.globals.set(\"CashFreePaymentRequestData\", jsonData.Data);\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "6aeb9ae9-533e-4a7b-bc1b-0ab227da11ab",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \r\n      \"MobileNumber\": \"8796535081\", \r\n   \"CustomerId\": \"HINUP-Huskify-15100\",  \r\n   \"TotalAmount\": 100, \r\n   \"AddressId\": 10943, \r\n   \"OrderId\": \"{{Order_id_random}}\" \r\n }\r\n"
+				},
+				"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/CashFreePaymentRequest"
+			},
+			"response": []
+		},
+		{
+			"name": "DecryptCashFreePaymentRequest",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "57f10bd1-5573-41f7-ae2b-7a883162b962",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response time is less than 250ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(250);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Success\");\r",
+							"});\r",
+							"\r",
+							"\r",
+							"pm.test(\"Verfying response data Value For Positive\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.Status.MessageTitle).to.include(\"Success\");\r",
+							"\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Verfying order status\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.Data.OrderStatus).to.include(\"ACTIVE\");\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "04960db9-2deb-4021-b225-1e47b20fbc23",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"EncryptedString\": \"{{CashFreePaymentRequestData}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
+			},
+			"response": []
+		},
+		{
+			"name": "CreateRefund2",
+			"id": "92b1b35f-8514-4649-bfe9-e56d2fb23597",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"refund_amount\": 50,\r\n  \"refund_id\": \"\",\r\n  \"refund_note\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://husk3pawrappers-dev.azurewebsites.net/api/CashfreePayment/CreateRefund?orderId={{Order_id_random}}",
+					"protocol": "https",
+					"host": [
+						"husk3pawrappers-dev",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"CashfreePayment",
+						"CreateRefund"
+					],
+					"query": [
+						{
+							"key": "orderId",
+							"value": "{{Order_id_random}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateSubscriptionWithValidInput",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "0659b5bd-d5df-4303-8c26-f1f14edea319",
+						"exec": [
+							"var moment = require('moment');\r",
+							"pm.globals.set('firstChargeDate', moment().format((\"YYYY-MM-DD\")));"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "f0fd57fb-81b3-4fba-bf92-417c49a1f971",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response time is less than 250ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(250);\r",
+							"});\r",
+							"pm.test(\"Content-Type is present\", function () {\r",
+							"    pm.response.to.have.header(\"Content-Type\");\r",
+							"});\r",
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"DisplayMessage\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "f9597ab4-77dc-42e5-a54b-f95f2589e093",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"subscriptionId\": \"string\",\r\n  \"customerName\": \"{{CustomerFirstName}}\",\r\n  \"customerPhone\": \"9109059955\",\r\n  \"customerEmail\": \"xyz@gmail.com\",\r\n  \"returnUrl\": \"string\",\r\n  \"authAmount\": 100,\r\n  \"expiresOn\": \"string\",\r\n  \"firstChargeDate\": \"string\",\r\n  \"planInfo\": {\r\n    \"type\": \"string\",\r\n    \"intervalType\": \"string\",\r\n    \"planName\": \"string\",\r\n    \"maxAmount\": 0,\r\n    \"intervals\": 0,\r\n    \"recurringAmount\": 0,\r\n    \"maxCycles\": 0\r\n  },\r\n  \"linkExpiry\": 0,\r\n  \"returnAuthAmount\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://husk3pawrappers-dev.azurewebsites.net/api/CashfreePayment/CreateSubscription"
+			},
+			"response": []
+		},
+		{
+			"name": "GetSubscriptionWithValidData",
+			"id": "e987d8eb-adef-4cc0-a65f-fef52dec6173",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://husk3pawrappers-dev.azurewebsites.net/api/CashfreePayment/GetSubscription?subreferenceId=123",
+					"protocol": "https",
+					"host": [
+						"husk3pawrappers-dev",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"CashfreePayment",
+						"GetSubscription"
+					],
+					"query": [
+						{
+							"key": "subreferenceId",
+							"value": "123",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetSubscriptionDetailsWithValidData",
+			"id": "1d918fb9-da55-42e1-ba75-50534888e876",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://husk3pawrappers-dev.azurewebsites.net/api/CashfreePayment/GetSubscriptionDetails?subreferenceId",
+					"protocol": "https",
+					"host": [
+						"husk3pawrappers-dev",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"CashfreePayment",
+						"GetSubscriptionDetails"
+					],
+					"query": [
+						{
+							"key": "subreferenceId",
+							"value": null,
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "a5602f90-a46e-4064-a6b1-d5d027a18fb6",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "11d4fb3b-5e59-406a-b81a-d65b7413348f",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
