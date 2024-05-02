@@ -9351,7 +9351,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"CustomerId\": \"HINUP-Huskify\"\r\n // \"CustomerId\": 0\r\n}"
+							"raw": ""
 						},
 						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetMyWishListDetails"
 					},
