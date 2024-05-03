@@ -8289,7 +8289,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"CustomerId\": \"HINUP-Huskify-18499\",\r\n  \"LanguageId\": 3\r\n}"
+							"raw": "{\r\n  \"CustomerId\": \"HINUP-Huskify-43117\",\r\n  \"LanguageId\": 3\r\n}"
 						},
 						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetHomePageDetails"
 					},
