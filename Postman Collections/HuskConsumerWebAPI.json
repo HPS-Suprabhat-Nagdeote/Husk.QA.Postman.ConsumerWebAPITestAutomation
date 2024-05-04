@@ -18,8 +18,8 @@
 								"exec": [
 									"\r",
 									"//setting global Variable\r",
-									"var jsonData = pm.response.text();\r",
-									"pm.globals.set(\"OccupationBindingData\", jsonData.Data);\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.globals.set(\"OccupationBindingData\",jsonData.Data);\r",
 									"\r",
 									"// Fixed status code test\r",
 									"pm.test(\"Status code is 200\", function () {\r",
@@ -8313,7 +8313,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "57f10bd1-5573-41f7-ae2b-7a883162b962",
+								"id": "99c72217-bbbf-43ad-892f-04f998551b9c",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
@@ -8328,7 +8328,38 @@
 									"});\r",
 									"pm.test(\"Body matches string\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include(\"Smart Phone Combo\");\r",
-									"});"
+									"});\r",
+									"var template = `\r",
+									"<style type=\"text/css\">\r",
+									"    .tftable {font-size:14px;color:#333333;width:100%;border-width: 1px;border-color: #87ceeb;border-collapse: collapse;}\r",
+									"    .tftable th {font-size:18px;background-color:#87ceeb;border-width: 1px;padding: 8px;border-style: solid;border-color: #87ceeb;text-align:left;}\r",
+									"    .tftable tr {background-color:#ffffff;}\r",
+									"    .tftable td {font-size:14px;border-width: 1px;padding: 8px;border-style: solid;border-color: #87ceeb;}\r",
+									"    .tftable tr:hover {background-color:#e0ffff;}\r",
+									"</style>\r",
+									"\r",
+									"<table class=\"tftable\" border=\"1\">\r",
+									"    <tr>\r",
+									"        <th>Category ID</th>\r",
+									"        <th>Name</th>\r",
+									"        <th>Image URL</th>\r",
+									"    </tr>\r",
+									"    \r",
+									"    {{#each response.Data.Categories}}\r",
+									"        <tr>\r",
+									"            <td>{{CategoryId}}</td>\r",
+									"            <td>{{Name}}</td>\r",
+									"            <td>{{ImageUrl}}</td>\r",
+									"        </tr>\r",
+									"    {{/each}}\r",
+									"</table>\r",
+									"`;\r",
+									"\r",
+									"function constructVisualizerPayload() {\r",
+									"    return { response: pm.response.json() }\r",
+									"}\r",
+									"\r",
+									"pm.visualizer.set(template, constructVisualizerPayload());"
 								],
 								"type": "text/javascript",
 								"packages": {}
@@ -8337,7 +8368,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "c60d07b8-3710-47c3-b6c5-cb18f87d74d0",
+								"id": "5bc95909-7c58-4034-8321-af2a97bab9b4",
 								"exec": [
 									""
 								],
