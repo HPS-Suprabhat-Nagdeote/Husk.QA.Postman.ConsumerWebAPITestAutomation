@@ -16,9 +16,10 @@
 							"script": {
 								"id": "211287c0-171e-4cbc-acb8-2c20d0bcc348",
 								"exec": [
+									"\r",
 									"//setting global Variable\r",
 									"var jsonData = pm.response.text();\r",
-									"pm.globals.set(\"OccupationBindingData\", jsonData);\r",
+									"pm.globals.set(\"OccupationBindingData\", jsonData.Data);\r",
 									"\r",
 									"// Fixed status code test\r",
 									"pm.test(\"Status code is 200\", function () {\r",
@@ -32,6 +33,17 @@
 									"pm.test(\"Body matches string\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include(\"DisplayMessage\");\r",
 									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "254eab7d-cb58-448b-879c-c680e71eca71",
+								"exec": [
+									""
 								],
 								"type": "text/javascript",
 								"packages": {}
