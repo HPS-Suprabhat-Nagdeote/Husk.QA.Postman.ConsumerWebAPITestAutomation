@@ -9543,19 +9543,18 @@
 							"script": {
 								"id": "74e06fdf-9d51-4099-8541-918352c6003f",
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.globals.set(\"AddProductToCart\", jsonData.Data);\r",
+									"\r",
+									"\r",
+									"  pm.test(\"Verifying Status for DisplayMessage\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.Status.DisplayMessage).to.eql(\"Success\");\r",
 									"});\r",
-									"pm.test(\"Response time is less than 250ms\", function () {\r",
-									"    pm.expect(pm.response.responseTime).to.be.below(250);\r",
-									"});\r",
-									"pm.test(\"Body matches string\", function () {\r",
-									"    pm.expect(pm.response.text()).to.include(\"DisplayMessage\");\r",
-									"});\r",
-									"pm.test(\"Content-Type is present\", function () {\r",
-									"    pm.response.to.have.header(\"Content-Type\");\r",
-									"});\r",
-									""
+									" pm.test(\"Verifying Status for MessageTitle\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.Status.MessageTitle).to.eql(\"Success\");\r",
+									"});"
 								],
 								"type": "text/javascript",
 								"packages": {}
@@ -9607,6 +9606,65 @@
 							"raw": "{\r\n  \"CustomerId\": \"HINUP-Huskify-43117\",\r\n  \"ProductId\": 10,\r\n  \"ProductQuantity\": 1\r\n}"
 						},
 						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/AddProductToCart"
+					},
+					"response": []
+				},
+				{
+					"name": "DecryptAddProductToCart",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "57f10bd1-5573-41f7-ae2b-7a883162b962",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Verfying Message Status \", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.Status.MessageTitle).to.include(\"Success\");\r",
+									"});\r",
+									"  pm.test(\"Verifying Status for DisplayMessage\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.Status.DisplayMessage).to.eql(\"Success\");\r",
+									"});\r",
+									"pm.test(\"Body matches string\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"Crompton Ozone 55-Litre Air Cooler\");\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "c60d07b8-3710-47c3-b6c5-cb18f87d74d0",
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"id": "565ba991-ef5d-4e34-aed1-84a123050b5c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"EncryptedString\": \"{{AddProductToCart}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
 					},
 					"response": []
 				},
@@ -9682,6 +9740,81 @@
 							"raw": "{\r\n  \"CustomerId\": \"HINUP-Huskify-43117\"\r\n}"
 						},
 						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetMyCartDetails"
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteMyCartDetails",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "58882524-312b-4c05-815f-7291e4264f9d",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Response time is less than 250ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(250);\r",
+									"});\r",
+									"pm.test(\"Body matches string\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"DisplayMessage\");\r",
+									"});\r",
+									"pm.test(\"Content-Type is present\", function () {\r",
+									"    pm.response.to.have.header(\"Content-Type\");\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"id": "bcdadb55-2c21-4217-938a-1d4708d0c9ed",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Auth-Token",
+								"value": "{{AuthTocken}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{BasicAuthorization}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "customerId",
+								"value": "20810"
+							},
+							{
+								"key": "IsNewApi",
+								"value": "false"
+							},
+							{
+								"key": "husk-token",
+								"value": "{{huskTocken}}"
+							},
+							{
+								"key": "Cookie",
+								"value": "ARRAffinity=55799aecd2ac63889df0aa628663200df6776142854fd7701f4cb0888ecab1ef; ARRAffinitySameSite=55799aecd2ac63889df0aa628663200df6776142854fd7701f4cb0888ecab1ef; ARRAffinity=5b742486848f9418d73d42abc41c8172cad64c4c497f000d692b67d867b297e7; ARRAffinitySameSite=5b742486848f9418d73d42abc41c8172cad64c4c497f000d692b67d867b297e7"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "2"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"CustomerId\": \"HINUP-Huskify-43117\",\r\n  \"ProductId\": 10\r\n}"
+						},
+						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/DeleteMyCartDetails"
 					},
 					"response": []
 				},
@@ -9906,81 +10039,6 @@
 							"raw": "[\r\n  {\r\n    \"CustomerId\": \"HINUP-Huskify-43117\",\r\n  \"ProductId\": 10,\r\n  \"ProductQuantity\": 1\r\n  }\r\n]"
 						},
 						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/AddMultipleProductToCart"
-					},
-					"response": []
-				},
-				{
-					"name": "DeleteMyCartDetails",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "58882524-312b-4c05-815f-7291e4264f9d",
-								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"pm.test(\"Response time is less than 250ms\", function () {\r",
-									"    pm.expect(pm.response.responseTime).to.be.below(250);\r",
-									"});\r",
-									"pm.test(\"Body matches string\", function () {\r",
-									"    pm.expect(pm.response.text()).to.include(\"DisplayMessage\");\r",
-									"});\r",
-									"pm.test(\"Content-Type is present\", function () {\r",
-									"    pm.response.to.have.header(\"Content-Type\");\r",
-									"});\r",
-									""
-								],
-								"type": "text/javascript",
-								"packages": {}
-							}
-						}
-					],
-					"id": "bcdadb55-2c21-4217-938a-1d4708d0c9ed",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Auth-Token",
-								"value": "{{AuthTocken}}"
-							},
-							{
-								"key": "Authorization",
-								"value": "{{BasicAuthorization}}"
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							},
-							{
-								"key": "customerId",
-								"value": "20810"
-							},
-							{
-								"key": "IsNewApi",
-								"value": "false"
-							},
-							{
-								"key": "husk-token",
-								"value": "{{huskTocken}}"
-							},
-							{
-								"key": "Cookie",
-								"value": "ARRAffinity=55799aecd2ac63889df0aa628663200df6776142854fd7701f4cb0888ecab1ef; ARRAffinitySameSite=55799aecd2ac63889df0aa628663200df6776142854fd7701f4cb0888ecab1ef; ARRAffinity=5b742486848f9418d73d42abc41c8172cad64c4c497f000d692b67d867b297e7; ARRAffinitySameSite=5b742486848f9418d73d42abc41c8172cad64c4c497f000d692b67d867b297e7"
-							},
-							{
-								"key": "Accept-Language",
-								"value": "2"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"CustomerId\": \"HINUP-Huskify-43117\",\r\n  \"ProductId\": 10\r\n}"
-						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/DeleteMyCartDetails"
 					},
 					"response": []
 				},
