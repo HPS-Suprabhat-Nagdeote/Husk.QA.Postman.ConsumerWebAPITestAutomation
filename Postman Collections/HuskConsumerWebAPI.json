@@ -10239,7 +10239,7 @@
 									"\r",
 									"  pm.test(\"Verifying Status for DisplayMessage\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
-									"    pm.expect(jsonData.Status.DisplayMessage).to.eql(\"Product Not Available In Cart\");\r",
+									"    pm.expect(jsonData.Status.DisplayMessage).to.eql(\"Failed\");\r",
 									"});\r",
 									" pm.test(\"Verifying Status for MessageTitle\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
