@@ -5345,7 +5345,153 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  //\"CRN\": \"HINUP-Huskify-43117\"\r\n  \"CustomerId\": \"HINUP-Huskify-18499\"\r\n}"
+							"raw": "{\r\n  //\"CRN\": \"HINUP-Huskify-43117\"\r\n  \"CustomerId\": \"HINUP-Huskify-35\"\r\n}"
+						},
+						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/Getcustomercomplaintlist"
+					},
+					"response": []
+				},
+				{
+					"name": "DecryptGetcustomercomplaintlist Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "57f10bd1-5573-41f7-ae2b-7a883162b962",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"//iterating Array\r",
+									"pm.test(\"Verfying response data Value DisplayMessage\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.Status.DisplayMessage).to.include(\"Success\");\r",
+									"});\r",
+									"pm.test(\"Verfying response data Value MessageTitle\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.Status.DisplayMessage).to.include(\"Success\");\r",
+									"});\r",
+									"pm.test(\"Verfying Complaint Title \", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.Data[0].ComplaintTitle).to.include(\"सामान्य प्रतिक्रिया\");\r",
+									"});\r",
+									"pm.test(\"Verfying Customer Id \", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.Data[0].CustomerId).to.eql(76171);\r",
+									"});\r",
+									"pm.test(\"Verfying ComplaintDetails\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.Data[0].ComplaintDetails).to.include(\"Product Not Good\");\r",
+									"});\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "c60d07b8-3710-47c3-b6c5-cb18f87d74d0",
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"id": "ef3d0b55-9368-43ec-8faf-78e8e3f06c90",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"EncryptedString\": \"{{GetcustomercomplaintlistData}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
+					},
+					"response": []
+				},
+				{
+					"name": "GetcustomercomplaintlistWitnNoComplaints Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "9642853d-e662-4cca-a049-9c5a043ad8e4",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"  pm.test(\"Verifying Status for DisplayMessage\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.Status.DisplayMessage).to.eql(\"Failed\");\r",
+									"});\r",
+									" pm.test(\"Verifying Status for MessageTitle\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.Status.MessageTitle).to.eql(\"Error\");\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"id": "b3e4df04-1d2d-4a9d-bbf5-0ddb7bf0f57c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Auth-Token",
+								"value": "{{AuthTocken}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{BasicAuthorization}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "customerId",
+								"value": "20810"
+							},
+							{
+								"key": "IsNewApi",
+								"value": "false"
+							},
+							{
+								"key": "husk-token",
+								"value": "{{huskTocken}}"
+							},
+							{
+								"key": "Cookie",
+								"value": "ARRAffinity=55799aecd2ac63889df0aa628663200df6776142854fd7701f4cb0888ecab1ef; ARRAffinitySameSite=55799aecd2ac63889df0aa628663200df6776142854fd7701f4cb0888ecab1ef; ARRAffinity=5b742486848f9418d73d42abc41c8172cad64c4c497f000d692b67d867b297e7; ARRAffinitySameSite=5b742486848f9418d73d42abc41c8172cad64c4c497f000d692b67d867b297e7"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "2"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  //\"CRN\": \"HINUP-Huskify-43117\"\r\n  \"CustomerId\": \"HINUP-Huskify-35\"\r\n}"
 						},
 						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/Getcustomercomplaintlist"
 					},
