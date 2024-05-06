@@ -10093,7 +10093,7 @@
 								"id": "58882524-312b-4c05-815f-7291e4264f9d",
 								"exec": [
 									"var jsonData = pm.response.json();\r",
-									"pm.globals.set(\"GetMyCartDetails\", jsonData.Data);\r",
+									"pm.globals.set(\"DeleteMyCartDetails\", jsonData.Data);\r",
 									"\r",
 									"  pm.test(\"Verifying Status for DisplayMessage\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
@@ -10206,7 +10206,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"EncryptedString\": \"{{GetMyCartDetails}}\"\r\n}",
+							"raw": "{\r\n  \"EncryptedString\": \"{{DeleteMyCartDetails}}\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
