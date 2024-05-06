@@ -14956,7 +14956,7 @@
 					"response": []
 				},
 				{
-					"name": "DecryptGetProductBySubSubCategoriesId Copy 2",
+					"name": "DecryptGetProductSuggestionList",
 					"event": [
 						{
 							"listen": "test",
