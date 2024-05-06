@@ -14953,6 +14953,71 @@
 					"response": []
 				},
 				{
+					"name": "DecryptGetProductBySubSubCategoriesId Copy 2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "57f10bd1-5573-41f7-ae2b-7a883162b962",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// pm.test(\"Verfying Get user Address Data\", function () {\r",
+									"//     var jsonData = pm.response.json();\r",
+									"//     pm.expect(jsonData.Data[0].CustomerId).to.eql(47530);\r",
+									"// });\r",
+									"// pm.test(\"Verfying Get user Address Landmark\", function () {\r",
+									"//     var jsonData = pm.response.json();\r",
+									"//     pm.expect(jsonData.Data[1].Landmark).to.eql(\"Test address\");\r",
+									"// });\r",
+									"// pm.test(\"Verfying Get user Address State\", function () {\r",
+									"//     var jsonData = pm.response.json();\r",
+									"//     pm.expect(jsonData.Data[1].State).to.eql(\"Bihar\");\r",
+									"// });\r",
+									"// pm.test(\"Verfying Get user Address City\", function () {\r",
+									"//     var jsonData = pm.response.json();\r",
+									"//     pm.expect(jsonData.Data[1].City).to.eql(\"Patna\");\r",
+									"// });\r",
+									"\r",
+									"pm.test(\"Verfying Message Status\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.Status.MessageTitle).to.include(\"Success\");\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"id": "876eda95-063c-4ccc-ac62-73bbb675160f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept-Language",
+								"value": "2",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"EncryptedString\": \"{{GetProductBySubSubCategoriesId}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
+					},
+					"response": []
+				},
+				{
 					"name": "EEDProduct?specificationId=1",
 					"event": [
 						{
