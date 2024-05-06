@@ -9738,7 +9738,7 @@
 					"response": []
 				},
 				{
-					"name": "AddProductToCartEmptyProductID Copy",
+					"name": "AddProductToCartEmptyProductQuantity",
 					"event": [
 						{
 							"listen": "test",
@@ -9802,7 +9802,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"CustomerId\": \"HINUP-Huskify-43117\",\r\n  \"ProductId\": 0,\r\n  \"ProductQuantity\": 1\r\n}"
+							"raw": "{\r\n  \"CustomerId\": \"HINUP-Huskify-43117\",\r\n  \"ProductId\": 10,\r\n  \"ProductQuantity\": 0\r\n}"
 						},
 						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/AddProductToCart"
 					},
@@ -9880,6 +9880,65 @@
 							"raw": "{\r\n  \"CustomerId\": \"HINUP-Huskify-43117\"\r\n}"
 						},
 						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetMyCartDetails"
+					},
+					"response": []
+				},
+				{
+					"name": "DecryptAddProductToCart Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "57f10bd1-5573-41f7-ae2b-7a883162b962",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Verfying Message Status \", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.Status.MessageTitle).to.include(\"Success\");\r",
+									"});\r",
+									"  pm.test(\"Verifying Status for DisplayMessage\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.Status.DisplayMessage).to.eql(\"Success\");\r",
+									"});\r",
+									"pm.test(\"Body matches string\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"Crompton Ozone 55-Litre Air Cooler\");\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "c60d07b8-3710-47c3-b6c5-cb18f87d74d0",
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"id": "e57e0d82-eb7d-4d21-b662-02fea4ac0a1b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"EncryptedString\": \"{{AddProductToCart}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
 					},
 					"response": []
 				},
