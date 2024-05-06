@@ -15583,7 +15583,7 @@
 					"response": []
 				},
 				{
-					"name": "GetProductBySubSubCategoriesIdWithWrongCustomerId Copy",
+					"name": "GetProductBySubSubCategoriesIdWithEmptySubCatId",
 					"event": [
 						{
 							"listen": "test",
@@ -15632,7 +15632,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{ \r\n   \"SubCategoryId\": 258, \r\n   \"CustomerId\": \"HINUP-Huskify-43117\", \r\n   \"SortBy\": \"string\", \r\n   \"ViewAll\": true\r\n }"
+							"raw": "{ \r\n   \"SubCategoryId\": 0, \r\n   \"CustomerId\": \"HINUP-Huskify-43117\", \r\n   \"SortBy\": \"string\", \r\n   \"ViewAll\": true\r\n }"
 						},
 						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetProductBySubSubCategoriesId"
 					},
