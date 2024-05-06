@@ -14898,9 +14898,12 @@
 									"});\r",
 									"pm.test(\"Content-Type is present\", function () {\r",
 									"    pm.response.to.have.header(\"Content-Type\");\r",
-									"});"
+									"});\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.globals.set(\"GetProductSuggestionList\", jsonData.Data);"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {}
 							}
 						}
 					],
@@ -14946,7 +14949,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"ProductName\": \"string\"\r\n}"
+							"raw": "{\r\n  \"ProductName\": \"Zebronics\"\r\n}"
 						},
 						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetProductSuggestionList"
 					},
@@ -15000,13 +15003,12 @@
 						"header": [
 							{
 								"key": "Accept-Language",
-								"value": "2",
-								"type": "text"
+								"value": "2"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"EncryptedString\": \"{{GetProductBySubSubCategoriesId}}\"\r\n}",
+							"raw": "{\r\n  \"EncryptedString\": \"{{GetProductSuggestionList}}\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
