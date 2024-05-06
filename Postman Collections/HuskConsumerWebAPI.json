@@ -15112,7 +15112,7 @@
 					"response": []
 				},
 				{
-					"name": "GetSimilarProductWrongProductIdAndSubCatId Copy",
+					"name": "GetSimilarProductCorrectProductIdAndWrongSubCatId Copy",
 					"event": [
 						{
 							"listen": "test",
@@ -15175,9 +15175,137 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"SubCategoryId\": 0,\r\n  \"ProductId\": 0\r\n}"
+							"raw": "{\r\n  \"SubCategoryId\": 0,\r\n  \"ProductId\": 10\r\n}"
 						},
 						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetSimilarProduct"
+					},
+					"response": []
+				},
+				{
+					"name": "GetSimilarProductWrongProductIdAndCorrectSubCatId Copy 2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "edaba976-f281-4f0f-a470-c786f9ef8160",
+								"exec": [
+									"  pm.test(\"Verifying Status for DisplayMessage\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.Status.DisplayMessage).to.eql(\"Product Not Available\");\r",
+									"});\r",
+									" pm.test(\"Verifying Status for MessageTitle\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.Status.MessageTitle).to.eql(\"Error\");\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"id": "7d13953a-bc2f-401f-a61b-051a5ce3e493",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Auth-Token",
+								"value": "{{AuthTocken}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{BasicAuthorization}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "customerId",
+								"value": "20810"
+							},
+							{
+								"key": "IsNewApi",
+								"value": "false"
+							},
+							{
+								"key": "husk-token",
+								"value": "{{huskTocken}}"
+							},
+							{
+								"key": "Cookie",
+								"value": "ARRAffinity=55799aecd2ac63889df0aa628663200df6776142854fd7701f4cb0888ecab1ef; ARRAffinitySameSite=55799aecd2ac63889df0aa628663200df6776142854fd7701f4cb0888ecab1ef; ARRAffinity=5b742486848f9418d73d42abc41c8172cad64c4c497f000d692b67d867b297e7; ARRAffinitySameSite=5b742486848f9418d73d42abc41c8172cad64c4c497f000d692b67d867b297e7"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "2"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"SubCategoryId\": 258,\r\n  \"ProductId\": 0\r\n}"
+						},
+						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetSimilarProduct"
+					},
+					"response": []
+				},
+				{
+					"name": "DecryptResponseOccupationBinding Copy 2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "57f10bd1-5573-41f7-ae2b-7a883162b962",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Response time is less than 250ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(250);",
+									"});",
+									"",
+									"pm.test(\"Verfying Message Status \", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.Status.MessageTitle).to.include(\"Success\");",
+									"});",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "c60d07b8-3710-47c3-b6c5-cb18f87d74d0",
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"id": "42b0a3ae-5712-4776-950d-08f1965c5e9f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"EncryptedString\": \"{{SubSubCategoryIdData}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
 					},
 					"response": []
 				},
