@@ -15525,6 +15525,65 @@
 						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
 					},
 					"response": []
+				},
+				{
+					"name": "GetProductBySubSubCategoriesId Copy 2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "2d91b435-e9e3-48f0-8c93-3c51e55b70e8",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Content-Type is present\", function () {\r",
+									"    pm.response.to.have.header(\"Content-Type\");\r",
+									"});\r",
+									"pm.test(\"Body matches string\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"DisplayMessage\");\r",
+									"});\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.globals.set(\"GetProductBySubSubCategoriesId\", jsonData.Data);"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"id": "a5715e1a-e3c6-408a-a154-bac3e7e21838",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "2",
+								"type": "text"
+							},
+							{
+								"key": "CustomerId",
+								"value": "HINUP-Huskify-43117",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n   \"SubCategoryId\": 258, \r\n   \"CustomerId\": \"HINUP-Huskify-43117\", \r\n   \"SortBy\": \"string\", \r\n   \"ViewAll\": true\r\n }"
+						},
+						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetProductBySubSubCategoriesId"
+					},
+					"response": []
 				}
 			],
 			"id": "a838b806-4aa4-4d62-b04b-9b34f36b8cd6",
@@ -15532,7 +15591,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "2f25612b-d483-4b4f-ba67-506c020b001a",
+						"id": "2514d215-f4bf-4bf8-be8d-755d9803da5a",
 						"type": "text/javascript",
 						"packages": {},
 						"exec": [
@@ -15543,15 +15602,15 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "cd6502a7-c9ea-438f-8a2b-47e7da19c8b2",
+						"id": "5cbe9922-9711-4e24-bbb8-0a2339701b74",
 						"type": "text/javascript",
 						"packages": {},
 						"exec": [
 							"pm.test(\"Status code is 200\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
 							"});\r",
-							"pm.test(\"Response time is less than 500ms\", function () {\r",
-							"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+							"pm.test(\"Response time is less than 250ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(250);\r",
 							"});\r",
 							"pm.test(\"Content-Type is present\", function () {\r",
 							"    pm.response.to.have.header(\"Content-Type\");\r",
