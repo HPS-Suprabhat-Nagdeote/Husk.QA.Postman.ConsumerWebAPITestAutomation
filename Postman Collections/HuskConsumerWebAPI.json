@@ -15108,7 +15108,7 @@
 									"});\r",
 									"\r",
 									"pm.test(\"Body matches string\", function () {\r",
-									"    pm.expect(pm.response.text()).to.include(\"Zebronics Zeb\");\r",
+									"    pm.expect(pm.response.text()).to.include(\"Air Conditione\");\r",
 									"});"
 								],
 								"type": "text/javascript",
