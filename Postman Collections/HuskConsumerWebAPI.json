@@ -14976,20 +14976,21 @@
 							"script": {
 								"id": "edaba976-f281-4f0f-a470-c786f9ef8160",
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
+									"\r",
+									"  pm.test(\"Verifying Status for DisplayMessage\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.Status.DisplayMessage).to.eql(\"Success\");\r",
 									"});\r",
-									"pm.test(\"Response time is less than 250ms\", function () {\r",
-									"    pm.expect(pm.response.responseTime).to.be.below(250);\r",
+									" pm.test(\"Verifying Status for MessageTitle\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.Status.MessageTitle).to.eql(\"Success\");\r",
 									"});\r",
-									"pm.test(\"Body matches string\", function () {\r",
-									"    pm.expect(pm.response.text()).to.include(\"Message\");\r",
-									"});\r",
-									"pm.test(\"Content-Type is present\", function () {\r",
-									"    pm.response.to.have.header(\"Content-Type\");\r",
-									"});"
+									"\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.globals.set(\"GetSimilarProduct\", jsonData.Data);"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {}
 							}
 						}
 					],
@@ -15035,9 +15036,63 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"SubCategoryId\": 0,\r\n  \"ProductId\": 0\r\n}"
+							"raw": "{\r\n  \"SubCategoryId\": 258,\r\n  \"ProductId\": 10\r\n}"
 						},
 						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetSimilarProduct"
+					},
+					"response": []
+				},
+				{
+					"name": "DecryptGetSimilarProductWrongProductIdAndCorrectSubCatId Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "57f10bd1-5573-41f7-ae2b-7a883162b962",
+								"exec": [
+									"",
+									"  pm.test(\"Verifying Status for DisplayMessage\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.Status.DisplayMessage).to.eql(\"Success\");",
+									"});",
+									" pm.test(\"Verifying Status for MessageTitle\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.Status.MessageTitle).to.eql(\"Success\");",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "c60d07b8-3710-47c3-b6c5-cb18f87d74d0",
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"id": "f77202d0-7f06-4e86-9beb-096be7a91d39",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"EncryptedString\": \"{{GetSimilarProduct}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
 					},
 					"response": []
 				},
@@ -15191,12 +15246,17 @@
 								"exec": [
 									"  pm.test(\"Verifying Status for DisplayMessage\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
-									"    pm.expect(jsonData.Status.DisplayMessage).to.eql(\"Product Not Available\");\r",
+									"    pm.expect(jsonData.Status.DisplayMessage).to.eql(\"Success\");\r",
 									"});\r",
 									" pm.test(\"Verifying Status for MessageTitle\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
-									"    pm.expect(jsonData.Status.MessageTitle).to.eql(\"Error\");\r",
-									"});"
+									"    pm.expect(jsonData.Status.MessageTitle).to.eql(\"Success\");\r",
+									"});\r",
+									"\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.globals.set(\"GetSimilarProductWrongProductIdAndCorrectSubCatId\", jsonData.Data);\r",
+									"\r",
+									""
 								],
 								"type": "text/javascript",
 								"packages": {}
@@ -15252,26 +15312,22 @@
 					"response": []
 				},
 				{
-					"name": "DecryptResponseOccupationBinding Copy 2",
+					"name": "DecryptGetSimilarProductWrongProductIdAndCorrectSubCatId",
 					"event": [
 						{
 							"listen": "test",
 							"script": {
 								"id": "57f10bd1-5573-41f7-ae2b-7a883162b962",
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {",
-									"    pm.response.to.have.status(200);",
-									"});",
 									"",
-									"pm.test(\"Response time is less than 250ms\", function () {",
-									"    pm.expect(pm.response.responseTime).to.be.below(250);",
-									"});",
-									"",
-									"pm.test(\"Verfying Message Status \", function () {",
+									"  pm.test(\"Verifying Status for DisplayMessage\", function () {",
 									"    var jsonData = pm.response.json();",
-									"    pm.expect(jsonData.Status.MessageTitle).to.include(\"Success\");",
+									"    pm.expect(jsonData.Status.DisplayMessage).to.eql(\"Success\");",
 									"});",
-									""
+									" pm.test(\"Verifying Status for MessageTitle\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.Status.MessageTitle).to.eql(\"Success\");",
+									"});"
 								],
 								"type": "text/javascript",
 								"packages": {}
@@ -15298,7 +15354,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"EncryptedString\": \"{{SubSubCategoryIdData}}\"\r\n}",
+							"raw": "{\r\n  \"EncryptedString\": \"{{GetSimilarProductWrongProductIdAndCorrectSubCatId}}\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
