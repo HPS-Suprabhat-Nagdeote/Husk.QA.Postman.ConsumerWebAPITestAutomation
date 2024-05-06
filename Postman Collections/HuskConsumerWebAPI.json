@@ -15401,6 +15401,130 @@
 						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
 					},
 					"response": []
+				},
+				{
+					"name": "GetProductBySubSubCategoriesId Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "2d91b435-e9e3-48f0-8c93-3c51e55b70e8",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Content-Type is present\", function () {\r",
+									"    pm.response.to.have.header(\"Content-Type\");\r",
+									"});\r",
+									"pm.test(\"Body matches string\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"DisplayMessage\");\r",
+									"});\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.globals.set(\"GetProductBySubSubCategoriesId\", jsonData.Data);"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"id": "5664e249-4791-4e9e-960c-642b49ca28e5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "2",
+								"type": "text"
+							},
+							{
+								"key": "CustomerId",
+								"value": "HINUP-Huskify-43117",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n   \"SubCategoryId\": 258, \r\n   \"CustomerId\": \"HINUP-Huskify-43117\", \r\n   \"SortBy\": \"string\", \r\n   \"ViewAll\": true\r\n }"
+						},
+						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetProductBySubSubCategoriesId"
+					},
+					"response": []
+				},
+				{
+					"name": "DecryptGetProductBySubSubCategoriesId Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "57f10bd1-5573-41f7-ae2b-7a883162b962",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// pm.test(\"Verfying Get user Address Data\", function () {\r",
+									"//     var jsonData = pm.response.json();\r",
+									"//     pm.expect(jsonData.Data[0].CustomerId).to.eql(47530);\r",
+									"// });\r",
+									"// pm.test(\"Verfying Get user Address Landmark\", function () {\r",
+									"//     var jsonData = pm.response.json();\r",
+									"//     pm.expect(jsonData.Data[1].Landmark).to.eql(\"Test address\");\r",
+									"// });\r",
+									"// pm.test(\"Verfying Get user Address State\", function () {\r",
+									"//     var jsonData = pm.response.json();\r",
+									"//     pm.expect(jsonData.Data[1].State).to.eql(\"Bihar\");\r",
+									"// });\r",
+									"// pm.test(\"Verfying Get user Address City\", function () {\r",
+									"//     var jsonData = pm.response.json();\r",
+									"//     pm.expect(jsonData.Data[1].City).to.eql(\"Patna\");\r",
+									"// });\r",
+									"\r",
+									"pm.test(\"Verfying Message Status\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.Status.MessageTitle).to.include(\"Success\");\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"id": "15202ea5-b679-49b7-9605-488cbdec8d91",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept-Language",
+								"value": "2",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"EncryptedString\": \"{{GetProductBySubSubCategoriesId}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
+					},
+					"response": []
 				}
 			],
 			"id": "a838b806-4aa4-4d62-b04b-9b34f36b8cd6",
