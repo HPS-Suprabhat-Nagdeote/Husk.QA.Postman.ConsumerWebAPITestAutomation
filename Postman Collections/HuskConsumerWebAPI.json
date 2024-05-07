@@ -13807,7 +13807,8 @@
 									"    pm.response.to.have.header(\"Content-Type\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {}
 							}
 						}
 					],
@@ -13853,7 +13854,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"ProductId\": 0\r\n}"
+							"raw": "{\r\n  //\"ProductId\": \r\n}"
 						},
 						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetProductAttribute"
 					},
