@@ -17606,6 +17606,64 @@
 					}
 				}
 			]
+		},
+		{
+			"name": "EED Dashboard",
+			"item": [
+				{
+					"name": "GetOffers",
+					"id": "47c0f8aa-23ac-440d-a817-d3df3c51026c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \\ \r\n   \"MobileNumber\": \"string\", \\ \r\n   \"CalledFrom\": \"string\" \\ \r\n }"
+						},
+						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/GetOffers"
+					},
+					"response": []
+				},
+				{
+					"name": "GetCustomerDashboardInfo",
+					"id": "77fc1188-db1e-43bf-8185-9816a6018dc4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \\ \r\n   \"MobileNumber\": \"string\", \\ \r\n   \"CalledFrom\": \"string\" \\ \r\n }"
+						},
+						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/GetCustomerDashboardInfo"
+					},
+					"response": []
+				}
+			],
+			"id": "1cb5e72b-3c14-4344-8084-9714c7bcacb3"
 		}
 	]
 }
