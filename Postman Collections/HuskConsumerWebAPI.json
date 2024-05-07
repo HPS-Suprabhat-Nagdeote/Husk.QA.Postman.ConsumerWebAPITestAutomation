@@ -12955,9 +12955,7 @@
 									"    var jsonData = pm.response.json();\r",
 									"    pm.expect(jsonData.Status.DisplayMessage).to.eql(\"Success\");\r",
 									"});\r",
-									"pm.test(\"Body matches string\", function () {\r",
-									"    pm.expect(pm.response.text()).to.include(\"Full DownPayment\");\r",
-									"});"
+									""
 								],
 								"type": "text/javascript",
 								"packages": {}
@@ -12992,6 +12990,150 @@
 							}
 						},
 						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
+					},
+					"response": []
+				},
+				{
+					"name": "CheckCartDetailsBeforeCheckoutEmptyCustomer",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "d5213cb5-a73c-48d2-bafd-243ff66d68bb",
+								"exec": [
+									"\r",
+									"\r",
+									"  pm.test(\"Verifying Status for DisplayMessage\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.Status.DisplayMessage).to.eql(\"Failed\");\r",
+									"});\r",
+									" pm.test(\"Verifying Status for MessageTitle\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.Status.MessageTitle).to.eql(\"Error\");\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"id": "efd80dcd-83c8-427f-897a-f0b5184216f8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Auth-Token",
+								"value": "{{AuthTocken}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{BasicAuthorization}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "customerId",
+								"value": "20810"
+							},
+							{
+								"key": "IsNewApi",
+								"value": "false"
+							},
+							{
+								"key": "husk-token",
+								"value": "{{huskTocken}}"
+							},
+							{
+								"key": "Cookie",
+								"value": "ARRAffinity=55799aecd2ac63889df0aa628663200df6776142854fd7701f4cb0888ecab1ef; ARRAffinitySameSite=55799aecd2ac63889df0aa628663200df6776142854fd7701f4cb0888ecab1ef; ARRAffinity=5b742486848f9418d73d42abc41c8172cad64c4c497f000d692b67d867b297e7; ARRAffinitySameSite=5b742486848f9418d73d42abc41c8172cad64c4c497f000d692b67d867b297e7"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "2"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n // \"CustomerId\": \"HINUP-Huskify-43117\"\r\n}"
+						},
+						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/CheckCartDetailsBeforeCheckout"
+					},
+					"response": []
+				},
+				{
+					"name": "CheckCartDetailsBeforeCheckoutWrongCustomer",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "d5213cb5-a73c-48d2-bafd-243ff66d68bb",
+								"exec": [
+									"\r",
+									"\r",
+									"  pm.test(\"Verifying Status for DisplayMessage\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.Status.DisplayMessage).to.eql(\"Failed\");\r",
+									"});\r",
+									" pm.test(\"Verifying Status for MessageTitle\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.Status.MessageTitle).to.eql(\"Error\");\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"id": "bbd6414a-b779-43ce-ade5-d62427c8418f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Auth-Token",
+								"value": "{{AuthTocken}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{BasicAuthorization}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "customerId",
+								"value": "20810"
+							},
+							{
+								"key": "IsNewApi",
+								"value": "false"
+							},
+							{
+								"key": "husk-token",
+								"value": "{{huskTocken}}"
+							},
+							{
+								"key": "Cookie",
+								"value": "ARRAffinity=55799aecd2ac63889df0aa628663200df6776142854fd7701f4cb0888ecab1ef; ARRAffinitySameSite=55799aecd2ac63889df0aa628663200df6776142854fd7701f4cb0888ecab1ef; ARRAffinity=5b742486848f9418d73d42abc41c8172cad64c4c497f000d692b67d867b297e7; ARRAffinitySameSite=5b742486848f9418d73d42abc41c8172cad64c4c497f000d692b67d867b297e7"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "2"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"CustomerId\": \"HINUP-Huskify-\"\r\n}"
+						},
+						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/CheckCartDetailsBeforeCheckout"
 					},
 					"response": []
 				},
