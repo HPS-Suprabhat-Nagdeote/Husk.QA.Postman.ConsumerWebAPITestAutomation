@@ -11548,7 +11548,7 @@
 									"    pm.expect(jsonData.Status.DisplayMessage).to.eql(\"Success\");\r",
 									"});\r",
 									"pm.test(\"Body matches string\", function () {\r",
-									"    pm.expect(pm.response.text()).to.include(\"Crompton Ozone 55-Litre Air Cooler\");\r",
+									"    pm.expect(pm.response.text()).to.include(\"Full DownPayment\");\r",
 									"});"
 								],
 								"type": "text/javascript",
@@ -11576,7 +11576,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"EncryptedString\": \"{{AddProductToCart}}\"\r\n}",
+							"raw": "{\r\n  \"EncryptedString\": \"{{GetCAFDetails}}\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -11584,6 +11584,80 @@
 							}
 						},
 						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
+					},
+					"response": []
+				},
+				{
+					"name": "GetCAFDetailsWithWrongOrderNumber",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "b8726f0a-f7d6-4716-9eb7-1f2c2f80fc16",
+								"exec": [
+									"var jsonData = pm.response.json();\r",
+									"pm.globals.set(\"GetCAFDetails\", jsonData.Data);\r",
+									"\r",
+									"\r",
+									"  pm.test(\"Verifying Status for DisplayMessage\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.Status.DisplayMessage).to.eql(\"Success\");\r",
+									"});\r",
+									" pm.test(\"Verifying Status for MessageTitle\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.Status.MessageTitle).to.eql(\"Success\");\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"id": "0bdcbe0e-1890-4075-9d57-23aac419c156",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Auth-Token",
+								"value": "{{AuthTocken}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{BasicAuthorization}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "customerId",
+								"value": "20810"
+							},
+							{
+								"key": "IsNewApi",
+								"value": "false"
+							},
+							{
+								"key": "husk-token",
+								"value": "{{huskTocken}}"
+							},
+							{
+								"key": "Cookie",
+								"value": "ARRAffinity=55799aecd2ac63889df0aa628663200df6776142854fd7701f4cb0888ecab1ef; ARRAffinitySameSite=55799aecd2ac63889df0aa628663200df6776142854fd7701f4cb0888ecab1ef; ARRAffinity=5b742486848f9418d73d42abc41c8172cad64c4c497f000d692b67d867b297e7; ARRAffinitySameSite=5b742486848f9418d73d42abc41c8172cad64c4c497f000d692b67d867b297e7"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "2"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"OrderNumber\": \"PS-2890-PD-HIN-01-137-2\"\r\n}"
+						},
+						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetCAFDetails"
 					},
 					"response": []
 				},
