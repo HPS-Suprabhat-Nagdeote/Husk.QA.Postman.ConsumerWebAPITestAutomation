@@ -14050,17 +14050,14 @@
 							"script": {
 								"id": "1fe07353-a2b0-4a65-9469-723ccba44601",
 								"exec": [
-									"var jsonData = pm.response.json();\r",
-									"pm.globals.set(\"GetProductAttributeEmptyBody\", jsonData.Data);\r",
-									"\r",
 									"\r",
 									"  pm.test(\"Verifying Status for DisplayMessage\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
-									"    pm.expect(jsonData.Status.DisplayMessage).to.eql(\"Success\");\r",
+									"    pm.expect(jsonData.Status.DisplayMessage).to.eql(\"Product Not Available\");\r",
 									"});\r",
 									" pm.test(\"Verifying Status for MessageTitle\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
-									"    pm.expect(jsonData.Status.MessageTitle).to.eql(\"Success\");\r",
+									"    pm.expect(jsonData.Status.MessageTitle).to.eql(\"Error\");\r",
 									"});"
 								],
 								"type": "text/javascript",
