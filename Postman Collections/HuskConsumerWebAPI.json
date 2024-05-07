@@ -11595,17 +11595,13 @@
 							"script": {
 								"id": "b8726f0a-f7d6-4716-9eb7-1f2c2f80fc16",
 								"exec": [
-									"var jsonData = pm.response.json();\r",
-									"pm.globals.set(\"GetCAFDetails\", jsonData.Data);\r",
-									"\r",
-									"\r",
 									"  pm.test(\"Verifying Status for DisplayMessage\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
-									"    pm.expect(jsonData.Status.DisplayMessage).to.eql(\"Success\");\r",
+									"    pm.expect(jsonData.Status.DisplayMessage).to.eql(\"Failed\");\r",
 									"});\r",
 									" pm.test(\"Verifying Status for MessageTitle\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
-									"    pm.expect(jsonData.Status.MessageTitle).to.eql(\"Success\");\r",
+									"    pm.expect(jsonData.Status.MessageTitle).to.eql(\"Error\");\r",
 									"});"
 								],
 								"type": "text/javascript",
@@ -11655,7 +11651,77 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"OrderNumber\": \"PS-2890-PD-HIN-01-137-2\"\r\n}"
+							"raw": "{\r\n  \"OrderNumber\": \"34324\"\r\n}"
+						},
+						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetCAFDetails"
+					},
+					"response": []
+				},
+				{
+					"name": "GetCAFDetailsWithEmptyOrderNumber",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "b8726f0a-f7d6-4716-9eb7-1f2c2f80fc16",
+								"exec": [
+									"  pm.test(\"Verifying Status for DisplayMessage\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.Status.DisplayMessage).to.eql(\"Failed\");\r",
+									"});\r",
+									" pm.test(\"Verifying Status for MessageTitle\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.Status.MessageTitle).to.eql(\"Error\");\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"id": "fdc2afd8-f652-49a8-8cab-8a4c363cc202",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Auth-Token",
+								"value": "{{AuthTocken}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{BasicAuthorization}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "customerId",
+								"value": "20810"
+							},
+							{
+								"key": "IsNewApi",
+								"value": "false"
+							},
+							{
+								"key": "husk-token",
+								"value": "{{huskTocken}}"
+							},
+							{
+								"key": "Cookie",
+								"value": "ARRAffinity=55799aecd2ac63889df0aa628663200df6776142854fd7701f4cb0888ecab1ef; ARRAffinitySameSite=55799aecd2ac63889df0aa628663200df6776142854fd7701f4cb0888ecab1ef; ARRAffinity=5b742486848f9418d73d42abc41c8172cad64c4c497f000d692b67d867b297e7; ARRAffinitySameSite=5b742486848f9418d73d42abc41c8172cad64c4c497f000d692b67d867b297e7"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "2"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n // \"OrderNumber\": \"34324\"\r\n}"
 						},
 						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetCAFDetails"
 					},
