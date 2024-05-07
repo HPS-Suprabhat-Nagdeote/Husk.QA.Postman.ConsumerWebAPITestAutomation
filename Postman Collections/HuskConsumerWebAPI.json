@@ -8544,7 +8544,7 @@
 					"response": []
 				},
 				{
-					"name": "GetSubCategoryPageDetails Copy",
+					"name": "GetSubCategoryPageDetails",
 					"event": [
 						{
 							"listen": "test",
