@@ -13861,6 +13861,60 @@
 					"response": []
 				},
 				{
+					"name": "DecryptGetProductAttribute",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "57f10bd1-5573-41f7-ae2b-7a883162b962",
+								"exec": [
+									"",
+									"  pm.test(\"Verifying Status for DisplayMessage\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.Status.DisplayMessage).to.eql(\"Success\");",
+									"});",
+									" pm.test(\"Verifying Status for MessageTitle\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.Status.MessageTitle).to.eql(\"Success\");",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "c60d07b8-3710-47c3-b6c5-cb18f87d74d0",
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"id": "c1d325d8-cae8-476e-bfda-34bdfa0502ad",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"EncryptedString\": \"{{GetProductAttribute}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
+					},
+					"response": []
+				},
+				{
 					"name": "GetBestSellingProduct",
 					"event": [
 						{
