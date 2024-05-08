@@ -15163,7 +15163,7 @@
 					"response": []
 				},
 				{
-					"name": "GetProductReviewByProductIdWrongProductReview",
+					"name": "GetProductReviewByProductIdWrongProductid",
 					"event": [
 						{
 							"listen": "test",
@@ -15230,7 +15230,81 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"ProductId\": 10\r\n}"
+							"raw": "{\r\n \"ProductId\": 0.0\r\n}"
+						},
+						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetProductReviewByProductId"
+					},
+					"response": []
+				},
+				{
+					"name": "GetProductReviewByProductIdEmptyBody",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "4f591b2b-2392-450a-9f4b-6844160e4e74",
+								"exec": [
+									"var jsonData = pm.response.json();\r",
+									"pm.globals.set(\"GetProductReviewByProductIdWhenProductDonthaveReview\", jsonData.Data);\r",
+									"\r",
+									"\r",
+									"  pm.test(\"Verifying Status for DisplayMessage\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.Status.DisplayMessage).to.eql(\"Product Review Not Available.\");\r",
+									"});\r",
+									" pm.test(\"Verifying Status for MessageTitle\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.Status.MessageTitle).to.eql(\"Error\");\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"id": "daa491c6-05a3-4048-a675-4676f11d48d3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Auth-Token",
+								"value": "{{AuthTocken}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{BasicAuthorization}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "customerId",
+								"value": "20810"
+							},
+							{
+								"key": "IsNewApi",
+								"value": "false"
+							},
+							{
+								"key": "husk-token",
+								"value": "{{huskTocken}}"
+							},
+							{
+								"key": "Cookie",
+								"value": "ARRAffinity=55799aecd2ac63889df0aa628663200df6776142854fd7701f4cb0888ecab1ef; ARRAffinitySameSite=55799aecd2ac63889df0aa628663200df6776142854fd7701f4cb0888ecab1ef; ARRAffinity=5b742486848f9418d73d42abc41c8172cad64c4c497f000d692b67d867b297e7; ARRAffinitySameSite=5b742486848f9418d73d42abc41c8172cad64c4c497f000d692b67d867b297e7"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "2"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n// \"ProductId\": 0.0\r\n}"
 						},
 						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetProductReviewByProductId"
 					},
