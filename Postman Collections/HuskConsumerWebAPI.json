@@ -17032,7 +17032,8 @@
 									"    pm.response.to.have.header(\"Content-Type\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {}
 							}
 						}
 					],
@@ -17078,7 +17079,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{}"
+							"raw": "{\r\n    \"text\":\"tv\"\r\n}"
 						},
 						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetProductSearchList"
 					},
@@ -18315,6 +18316,44 @@
 							"raw": "{\r\n  \"ProductId\": 10\r\n}"
 						},
 						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetProductDetailsInfo"
+					},
+					"response": []
+				},
+				{
+					"name": "GetProductSearchList",
+					"id": "ecb821e8-f766-4933-8115-353555afe575",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetProductSearchList?search=mobile",
+							"protocol": "https",
+							"host": [
+								"huskpowerdevconsumerwebapi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"EED",
+								"Api",
+								"v1",
+								"GetProductSearchList"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "mobile"
+								}
+							]
+						}
 					},
 					"response": []
 				}
