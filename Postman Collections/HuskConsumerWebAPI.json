@@ -17079,7 +17079,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"ProductName\":\"tv\"\r\n}"
+							"raw": "{\r\n    \"text\":\"tv\"\r\n}"
 						},
 						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetProductSearchList"
 					},
@@ -18334,7 +18334,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetProductSearchList?search=mobile",
+							"raw": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetProductSearchList?=mobile",
 							"protocol": "https",
 							"host": [
 								"huskpowerdevconsumerwebapi",
@@ -18349,7 +18349,7 @@
 							],
 							"query": [
 								{
-									"key": "search",
+									"key": null,
 									"value": "mobile"
 								}
 							]
