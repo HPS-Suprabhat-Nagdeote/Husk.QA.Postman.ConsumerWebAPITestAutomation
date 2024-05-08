@@ -17079,7 +17079,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"text\":\"tv\"\r\n}"
+							"raw": "{\r\n    \"ProductName\":\"tv\"\r\n}"
 						},
 						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetProductSearchList"
 					},
