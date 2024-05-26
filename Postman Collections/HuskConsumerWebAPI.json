@@ -4526,7 +4526,7 @@
 					"response": []
 				},
 				{
-					"name": "DeactivateD2RCustomer Copy",
+					"name": "DeactivateD2RCustomer",
 					"event": [
 						{
 							"listen": "test",
@@ -4675,6 +4675,100 @@
 							{
 								"key": "CustomerId",
 								"value": "HINUP-Huskify-0281"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/DeactivateD2RCustomer",
+							"protocol": "https",
+							"host": [
+								"huskpowerdevconsumerwebapi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"EED",
+								"Api",
+								"v1",
+								"DeactivateD2RCustomer"
+							],
+							"query": [
+								{
+									"key": "customerCRN",
+									"value": "HINUP-Huskify-2768",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeactivateD2RCustomer-without passing customer CRN no",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "d4bdf693-827e-4cf3-b86e-fdd036d6d1e5",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Content-Type is present\", function () {\r",
+									"    pm.response.to.have.header(\"Content-Type\");\r",
+									"});\r",
+									"pm.test(\"Success Response message validation\", function () {\r",
+									"    var jsonData = pm.response.json().Status.DisplayMessage;\r",
+									"    pm.expect(jsonData).to.eql(\"Success\");\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"id": "bc8a0777-9da0-4517-9497-30f622ee7173",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "Basic SHVza05ldXJvbjpyYVJxN3FKRk8/fGE3T2pU"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Auth-Token",
+								"value": "{{AuthTocken}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{BasicAuthorization}}",
+								"disabled": true
+							},
+							{
+								"key": "husk-token",
+								"value": "{{huskTocken}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "HINUP-Huskify-0281",
+								"disabled": true
 							}
 						],
 						"body": {
