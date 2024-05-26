@@ -4527,13 +4527,34 @@
 				},
 				{
 					"name": "DeactivateD2RCustomer",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "d4bdf693-827e-4cf3-b86e-fdd036d6d1e5",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Content-Type is present\", function () {\r",
+									"    pm.response.to.have.header(\"Content-Type\");\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
 					"id": "24b7072b-60df-4f44-8a6d-acf033444d22",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "bearer",
+							"bearer": {
+								"token": "Basic SHVza05ldXJvbjpyYVJxN3FKRk8/fGE3T2pU"
+							}
 						},
 						"method": "POST",
 						"header": [
@@ -4547,7 +4568,8 @@
 							},
 							{
 								"key": "Authorization",
-								"value": "{{BasicAuthorization}}"
+								"value": "{{BasicAuthorization}}",
+								"disabled": true
 							},
 							{
 								"key": "husk-token",
