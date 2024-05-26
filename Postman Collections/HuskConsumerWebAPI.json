@@ -4532,14 +4532,60 @@
 						"disableBodyPruning": true
 					},
 					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": {}
+						},
 						"method": "POST",
 						"header": [
 							{
 								"key": "Accept",
 								"value": "application/json"
+							},
+							{
+								"key": "Auth-Token",
+								"value": "{{AuthTocken}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{BasicAuthorization}}",
+								"disabled": true
+							},
+							{
+								"key": "husk-token",
+								"value": "{{huskTocken}}"
 							}
 						],
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/DeactivateD2RCustomer"
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/DeactivateD2RCustomer?customerId=33255",
+							"protocol": "https",
+							"host": [
+								"huskpowerdevconsumerwebapi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"EED",
+								"Api",
+								"v1",
+								"DeactivateD2RCustomer"
+							],
+							"query": [
+								{
+									"key": "customerId",
+									"value": "33255"
+								}
+							]
+						}
 					},
 					"response": []
 				}
