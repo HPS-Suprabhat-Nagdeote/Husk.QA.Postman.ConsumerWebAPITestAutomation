@@ -4660,7 +4660,7 @@
 								"value": "{{huskTocken}}"
 							},
 							{
-								"key": "customerCRN",
+								"key": "customerId",
 								"value": "HINUP-Huskify-2768"
 							}
 						],
