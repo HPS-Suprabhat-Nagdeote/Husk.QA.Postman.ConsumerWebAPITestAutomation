@@ -4526,7 +4526,7 @@
 					"response": []
 				},
 				{
-					"name": "DeactivateD2RCustomer",
+					"name": "DeactivateD2RCustomer Copy",
 					"event": [
 						{
 							"listen": "test",
@@ -4538,6 +4538,10 @@
 									"});\r",
 									"pm.test(\"Content-Type is present\", function () {\r",
 									"    pm.response.to.have.header(\"Content-Type\");\r",
+									"});\r",
+									"pm.test(\"Success Response message validation\", function () {\r",
+									"    var jsonData = pm.response.json().DisplayMessage;\r",
+									"    pm.expect(jsonData).to.eql(\"Success\");\r",
 									"});"
 								],
 								"type": "text/javascript",
@@ -4545,7 +4549,7 @@
 							}
 						}
 					],
-					"id": "24b7072b-60df-4f44-8a6d-acf033444d22",
+					"id": "acdacdfd-8e80-4f3c-8632-1ad2ff7e2d70",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -4574,6 +4578,10 @@
 							{
 								"key": "husk-token",
 								"value": "{{huskTocken}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "HINUP-Huskify-0281"
 							}
 						],
 						"body": {
@@ -4586,7 +4594,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/DeactivateD2RCustomer?customerId=33255",
+							"raw": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/DeactivateD2RCustomer",
 							"protocol": "https",
 							"host": [
 								"huskpowerdevconsumerwebapi",
@@ -4601,8 +4609,9 @@
 							],
 							"query": [
 								{
-									"key": "customerId",
-									"value": "33255"
+									"key": "customerCRN",
+									"value": "HINUP-Huskify-2768",
+									"disabled": true
 								}
 							]
 						}
@@ -4610,7 +4619,7 @@
 					"response": []
 				},
 				{
-					"name": "DeactivateD2RCustomer Copy",
+					"name": "DeactivateD2RCustomer Copy 2",
 					"event": [
 						{
 							"listen": "test",
@@ -4633,7 +4642,7 @@
 							}
 						}
 					],
-					"id": "acdacdfd-8e80-4f3c-8632-1ad2ff7e2d70",
+					"id": "a464a1d2-5a82-4cdc-ac21-d403246f2b42",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
