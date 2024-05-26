@@ -4622,6 +4622,10 @@
 									"});\r",
 									"pm.test(\"Content-Type is present\", function () {\r",
 									"    pm.response.to.have.header(\"Content-Type\");\r",
+									"});\r",
+									"pm.test(\"Success Response message validation\", function () {\r",
+									"    var jsonData = pm.response.json().DisplayMessage;\r",
+									"    pm.expect(jsonData).to.eql(\"Success\");\r",
 									"});"
 								],
 								"type": "text/javascript",
@@ -4661,7 +4665,7 @@
 							},
 							{
 								"key": "CustomerId",
-								"value": "HINUP-Huskify-2768"
+								"value": "HINUP-Huskify-0281"
 							}
 						],
 						"body": {
