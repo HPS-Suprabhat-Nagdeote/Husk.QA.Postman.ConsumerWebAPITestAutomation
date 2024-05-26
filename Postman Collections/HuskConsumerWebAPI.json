@@ -4670,7 +4670,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/DeactivateD2RCustomer?customerId=33255",
+							"raw": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/DeactivateD2RCustomer?customerCRN=HINUP-Huskify-2768",
 							"protocol": "https",
 							"host": [
 								"huskpowerdevconsumerwebapi",
@@ -4685,8 +4685,8 @@
 							],
 							"query": [
 								{
-									"key": "customerId",
-									"value": "33255"
+									"key": "customerCRN",
+									"value": "HINUP-Huskify-2768"
 								}
 							]
 						}
