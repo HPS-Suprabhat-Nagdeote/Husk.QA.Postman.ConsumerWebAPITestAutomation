@@ -4533,8 +4533,7 @@
 					},
 					"request": {
 						"auth": {
-							"type": "basic",
-							"basic": {}
+							"type": "noauth"
 						},
 						"method": "POST",
 						"header": [
@@ -4548,8 +4547,7 @@
 							},
 							{
 								"key": "Authorization",
-								"value": "{{BasicAuthorization}}",
-								"disabled": true
+								"value": "{{BasicAuthorization}}"
 							},
 							{
 								"key": "husk-token",
