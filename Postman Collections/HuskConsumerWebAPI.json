@@ -4524,6 +4524,24 @@
 						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/ResendOTP"
 					},
 					"response": []
+				},
+				{
+					"name": "DeactivateD2RCustomer",
+					"id": "24b7072b-60df-4f44-8a6d-acf033444d22",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/DeactivateD2RCustomer"
+					},
+					"response": []
 				}
 			],
 			"id": "df05fbdf-db52-4ca5-86ac-bb72f94fe946",
