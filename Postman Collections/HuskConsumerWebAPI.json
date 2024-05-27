@@ -4626,7 +4626,7 @@
 					"response": []
 				},
 				{
-					"name": "DeactivateD2RCustomer Copy 2",
+					"name": "DeactivateD2RCustomer duplicate customerId",
 					"event": [
 						{
 							"listen": "test",
@@ -4665,7 +4665,7 @@
 							},
 							{
 								"key": "Auth-Token",
-								"value": "{{AuthTocken}}"
+								"value": "1a1b5266-f9ea-4b4a-9434-57ee725d988d"
 							},
 							{
 								"key": "Authorization",
@@ -4677,7 +4677,7 @@
 							},
 							{
 								"key": "CustomerId",
-								"value": "HINUP-Huskify-0281"
+								"value": "HINUP-Huskify-76189"
 							}
 						],
 						"body": {
@@ -4754,7 +4754,7 @@
 							},
 							{
 								"key": "Auth-Token",
-								"value": "{{AuthTocken}}"
+								"value": "1a1b5266-f9ea-4b4a-9434-57ee725d988d"
 							},
 							{
 								"key": "Authorization",
@@ -4766,7 +4766,7 @@
 							},
 							{
 								"key": "CustomerId",
-								"value": "HINUP-Huskify-0281",
+								"value": "HINUP-Huskify-76189",
 								"disabled": true
 							}
 						],
