@@ -4533,16 +4533,26 @@
 							"script": {
 								"id": "d4bdf693-827e-4cf3-b86e-fdd036d6d1e5",
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"pm.test(\"Content-Type is present\", function () {\r",
-									"    pm.response.to.have.header(\"Content-Type\");\r",
-									"});\r",
-									"pm.test(\"Success Response message validation\", function () {\r",
-									"    var jsonData = pm.response.json().DisplayMessage;\r",
-									"    pm.expect(jsonData).to.eql(\"Success\");\r",
-									"});"
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Content-Type is present\", function () {",
+									"    pm.response.to.have.header(\"Content-Type\");",
+									"});",
+									"pm.test(\"Success Response message validation\", function () {",
+									"    var jsonData = pm.response.json().Status.DisplayMessage;",
+									"    pm.expect(jsonData).to.eql(\"Success\");",
+									"});",
+									"// Add the customer's API token to the request headers as 'Auth-Token'",
+									"pm.test(\"Auth-Token is present in the request headers\", function () {",
+									"    pm.expect(pm.request.headers.get(\"Auth-Token\")).to.exist;",
+									"});",
+									"",
+									"// Provide the customer's CRN number as 'CustomerId'",
+									"pm.test(\"CustomerId is present in the request headers\", function () {",
+									"    pm.expect(pm.request.headers.get(\"CustomerId\")).to.exist;",
+									"});",
+									""
 								],
 								"type": "text/javascript",
 								"packages": {}
@@ -4565,7 +4575,7 @@
 							},
 							{
 								"key": "Auth-Token",
-								"value": "{{AuthTocken}}"
+								"value": "1a1b5266-f9ea-4b4a-9434-57ee725d988d"
 							},
 							{
 								"key": "Authorization",
