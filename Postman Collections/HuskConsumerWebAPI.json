@@ -4577,7 +4577,7 @@
 							},
 							{
 								"key": "CustomerId",
-								"value": "HINUP-Huskify-0281"
+								"value": "HINUP-Huskify-76188"
 							}
 						],
 						"body": {
@@ -4658,8 +4658,7 @@
 							},
 							{
 								"key": "Authorization",
-								"value": "{{BasicAuthorization}}",
-								"disabled": true
+								"value": "{{BasicAuthorization}}"
 							},
 							{
 								"key": "husk-token",
@@ -4734,10 +4733,7 @@
 					},
 					"request": {
 						"auth": {
-							"type": "bearer",
-							"bearer": {
-								"token": "Basic SHVza05ldXJvbjpyYVJxN3FKRk8/fGE3T2pU"
-							}
+							"type": "noauth"
 						},
 						"method": "POST",
 						"header": [
@@ -4751,8 +4747,7 @@
 							},
 							{
 								"key": "Authorization",
-								"value": "{{BasicAuthorization}}",
-								"disabled": true
+								"value": "{{BasicAuthorization}}"
 							},
 							{
 								"key": "husk-token",
