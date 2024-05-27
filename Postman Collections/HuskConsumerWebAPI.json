@@ -4644,10 +4644,7 @@
 					},
 					"request": {
 						"auth": {
-							"type": "bearer",
-							"bearer": {
-								"token": "Basic SHVza05ldXJvbjpyYVJxN3FKRk8/fGE3T2pU"
-							}
+							"type": "noauth"
 						},
 						"method": "POST",
 						"header": [
