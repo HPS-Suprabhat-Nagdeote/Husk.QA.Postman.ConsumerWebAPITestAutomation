@@ -4610,7 +4610,8 @@
 									"disabled": true
 								}
 							]
-						}
+						},
+						"description": "\n## DeactivateD2RCustomer\n\nThis endpoint is used to deactivate a D2R (Demand to Revenue) customer.\n\n### Request Body\n- No request body parameters are required for this endpoint.\n\n### Response\nThe response for this request is in JSON format and has the following schema:\n```json\n{\n  \"Data\": \"\",\n  \"Status\": {\n    \"Status\": true,\n    \"StatusCode\": 0,\n    \"RefNumber\": null,\n    \"InternalErrorMessage\": null,\n    \"DisplayMessage\": \"\",\n    \"MessageTitle\": \"\"\n  }\n}\n```\n- `Data`: (string) Empty data field.\n- `Status`: (object) The status of the response.\n  - `Status`: (boolean) Indicates the status of the response.\n  - `StatusCode`: (number) The status code of the response.\n  - `RefNumber`: (null) Reference number, if available.\n  - `InternalErrorMessage`: (null) Internal error message, if available.\n  - `DisplayMessage`: (string) Display message for the response.\n  - `MessageTitle`: (string) Title of the message.\n\n"
 					},
 					"response": []
 				},
