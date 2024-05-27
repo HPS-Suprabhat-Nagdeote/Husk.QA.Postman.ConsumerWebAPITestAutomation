@@ -4792,6 +4792,24 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/DeactivateD2RCustomer",
+					"id": "08fab147-7491-410d-a202-20995423f9d6",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/DeactivateD2RCustomer"
+					},
+					"response": []
 				}
 			],
 			"id": "df05fbdf-db52-4ca5-86ac-bb72f94fe946",
