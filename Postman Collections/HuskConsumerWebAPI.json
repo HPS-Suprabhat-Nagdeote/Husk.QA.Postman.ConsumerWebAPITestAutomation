@@ -6191,7 +6191,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"MobileNumber\": \"7719919637\",\r\n  \"CalledFrom\": \"APP\"\r\n}"
+							"raw": "{\r\n  \"MobileNumber\": \"9823643386\",\r\n  \"CalledFrom\": \"APP\"\r\n}"
 						},
 						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/EEDSendOTP"
 					},
