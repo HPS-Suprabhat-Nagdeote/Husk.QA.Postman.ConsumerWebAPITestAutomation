@@ -8710,7 +8710,7 @@
 						"header": [
 							{
 								"key": "Auth-Token",
-								"value": "{{AuthTocken}}"
+								"value": "7c956775-0efd-4907-9810-3eece2fe1f12"
 							},
 							{
 								"key": "Authorization",
