@@ -18821,5 +18821,41 @@
 			],
 			"id": "1cb5e72b-3c14-4344-8084-9714c7bcacb3"
 		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "70bbc478-7085-46ce-a3c6-483845b43e0e",
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "af7e7c94-c3cb-47bf-bb9c-9de38a32b49d",
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "CustomerId",
+			"value": "CLICKPOST-01-01-0001",
+			"type": "string"
+		},
+		{
+			"key": "Auth-Token",
+			"value": "B07F9E5E-7B35-4A9F-8BCD-2EACBAA2B6F1",
+			"type": "string"
+		}
 	]
 }
