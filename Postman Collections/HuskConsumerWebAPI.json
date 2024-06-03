@@ -16154,7 +16154,8 @@
 									"    pm.response.to.have.header(\"Content-Type\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {}
 							}
 						}
 					],
@@ -16167,7 +16168,7 @@
 						"header": [
 							{
 								"key": "Auth-Token",
-								"value": "{{AuthTocken}}"
+								"value": "403604f9-ef4e-4835-a638-c7efdfeb408f"
 							},
 							{
 								"key": "Authorization",
@@ -16179,7 +16180,7 @@
 							},
 							{
 								"key": "customerId",
-								"value": "20810"
+								"value": "HINUP-Huskify-2768"
 							},
 							{
 								"key": "IsNewApi",
@@ -16200,7 +16201,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"SubCategoryId\": 0,\r\n  \"CustomerId\": 0,\r\n  \"SortBy\": \"string\",\r\n  \"ViewAll\": true\r\n}"
+							"raw": "{\r\n  \"SubCategoryId\": 19,\r\n  \"CustomerId\": \"HINUP-Huskify-2768\",\r\n  \"SortBy\": \"string\",\r\n  \"ViewAll\": true\r\n}"
 						},
 						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetProductBySubCategoriesId"
 					},
