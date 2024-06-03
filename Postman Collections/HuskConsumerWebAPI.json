@@ -4892,7 +4892,8 @@
 						"header": [
 							{
 								"key": "Auth-Token",
-								"value": "{{AuthTocken}}"
+								"value": "{{AuthTocken}}",
+								"disabled": true
 							},
 							{
 								"key": "Authorization",
@@ -4904,7 +4905,8 @@
 							},
 							{
 								"key": "customerId",
-								"value": "20810"
+								"value": "20810",
+								"disabled": true
 							},
 							{
 								"key": "IsNewApi",
@@ -4921,6 +4923,14 @@
 							{
 								"key": "Accept-Language",
 								"value": "2"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Auth-Token",
+								"value": "{{Auth-Token}}"
 							}
 						],
 						"body": {
@@ -4977,7 +4987,16 @@
 					},
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Auth-Token",
+								"value": "{{Auth-Token}}"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\r\n  \"EncryptedString\": \"{{GetCustomerInfoData}}\"\r\n}",
