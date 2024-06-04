@@ -4890,7 +4890,7 @@
 							},
 							{
 								"key": "Auth-Token",
-								"value": "{{Auth-Token}}"
+								"value": "1a1b5266-f9ea-4b4a-9434-57ee725d988d"
 							},
 							{
 								"key": "Authorization",
@@ -4902,7 +4902,7 @@
 							},
 							{
 								"key": "CustomerId",
-								"value": "{{CustomerId}}"
+								"value": "HINUP-Huskify-76189"
 							}
 						],
 						"body": {
