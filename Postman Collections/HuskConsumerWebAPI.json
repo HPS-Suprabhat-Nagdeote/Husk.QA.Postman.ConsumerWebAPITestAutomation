@@ -150,7 +150,16 @@
 					},
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Auth-Token",
+								"value": "{{Auth-Token}}"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\r\n  \"EncryptedString\": \"{{OccupationBindingData}}\"\r\n}",
