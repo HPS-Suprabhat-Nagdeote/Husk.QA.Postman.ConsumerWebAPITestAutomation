@@ -4433,7 +4433,24 @@
 					},
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{BasicAuthorization}}"
+							},
+							{
+								"key": "husk-token",
+								"value": "{{huskTocken}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Auth-Token",
+								"value": "{{Auth-Token}}"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\r\n  \"EncryptedString\": \"{{CheckCustomerExistWithSampleData}}\"\r\n}",
@@ -4495,8 +4512,8 @@
 								"value": "application/json"
 							},
 							{
-								"key": "customerId",
-								"value": "20810"
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
 							},
 							{
 								"key": "IsNewApi",
@@ -4573,8 +4590,8 @@
 								"value": "application/json"
 							},
 							{
-								"key": "customerId",
-								"value": "20810"
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
 							},
 							{
 								"key": "IsNewApi",
@@ -4640,7 +4657,24 @@
 					},
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{BasicAuthorization}}"
+							},
+							{
+								"key": "husk-token",
+								"value": "{{huskTocken}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Auth-Token",
+								"value": "{{Auth-Token}}"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\r\n  \"EncryptedString\": \"{{CheckCustomerExist}}\"\r\n}",
@@ -4703,8 +4737,8 @@
 								"value": "application/json"
 							},
 							{
-								"key": "customerId",
-								"value": "20810"
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
 							},
 							{
 								"key": "IsNewApi",
@@ -4778,8 +4812,8 @@
 								"value": "application/json"
 							},
 							{
-								"key": "customerId",
-								"value": "20810"
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
 							},
 							{
 								"key": "IsNewApi",
@@ -4856,7 +4890,7 @@
 							},
 							{
 								"key": "Auth-Token",
-								"value": "1a1b5266-f9ea-4b4a-9434-57ee725d988d"
+								"value": "{{Auth-Token}}"
 							},
 							{
 								"key": "Authorization",
@@ -4868,7 +4902,7 @@
 							},
 							{
 								"key": "CustomerId",
-								"value": "HINUP-Huskify-76189"
+								"value": "{{CustomerId}}"
 							}
 						],
 						"body": {
