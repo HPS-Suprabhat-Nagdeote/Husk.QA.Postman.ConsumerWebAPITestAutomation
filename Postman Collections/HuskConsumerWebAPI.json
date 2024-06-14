@@ -12092,6 +12092,53 @@
 					"response": []
 				},
 				{
+					"name": "DecryptResponse-GetMyOrders",
+					"id": "8c49f282-6853-498b-94b6-4fc83757906c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Cookie",
+								"value": "ARRAffinity=c2dc5cdfd83d18a581d6889c06f1e64b4cf50672e89dc41e380fd2aab9a84769; ARRAffinitySameSite=c2dc5cdfd83d18a581d6889c06f1e64b4cf50672e89dc41e380fd2aab9a84769"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic SHVza05ldXJvbjpyYVJxN3FKRk8/fGE3T2pU"
+							},
+							{
+								"key": "husk-token",
+								"value": "26CB9ECF-6343-43B9-B700-004BA9484D3E"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Auth-Token",
+								"value": "{{Auth-Token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"EncryptedString\": \"ygfVTczFUxCXUOcsqNi7MdAAWNA2uc1QciU1CbbDtgik2A01unchpZK6naZrdzrCZlYWAootPsFgCmHO4zTgAblwrHsP4+tfjfG7ufw633lBPdMgKei4z0R1BeP35H+vWJjJxYx0LI0QT7B3HbPtWAdzBV0XtSzLzpzfFzB2wuqNJ5LxqUWSK31iMN9KNghT5rlhJjnWX/K7syByPvQlg4bZa5XS5gbYSSd8YDXuJLs1L+Roxpw/jDzGYYeqg9SGbrzAnHzwRVmZAGWnYrC4P5VXyO7U7OiARUowO9UJnvVLkmU2exMoqqL9RHqTu/m9YSI0zEVY3FKt7BmZpSLQO4HtVLFRw/4yX6Yu2BE3u7vIuPXBUqjSiZqxnTZPs7Iemw6Gt3M3wqkZc8hIv/XT+g=\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://huskpowerprodconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
+					},
+					"response": []
+				},
+				{
 					"name": "GetMyCafDetailProduct",
 					"event": [
 						{
