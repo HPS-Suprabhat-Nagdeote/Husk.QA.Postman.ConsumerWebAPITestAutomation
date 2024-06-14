@@ -12038,7 +12038,8 @@
 									"});\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {}
 							}
 						}
 					],
@@ -12063,7 +12064,7 @@
 							},
 							{
 								"key": "customerId",
-								"value": "20810"
+								"value": "{{CustomerId}}"
 							},
 							{
 								"key": "IsNewApi",
@@ -12084,7 +12085,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"CustomerId\": 0\r\n}"
+							"raw": "{\r\n  \"CustomerId\": \"HINBR-01-01-0001\"\r\n}"
 						},
 						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetMyOrders"
 					},
