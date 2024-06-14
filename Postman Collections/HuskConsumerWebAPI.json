@@ -19320,7 +19320,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "70bbc478-7085-46ce-a3c6-483845b43e0e",
+				"id": "0073bb92-9d2e-4ec6-926e-a29f940c74b7",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
@@ -19331,11 +19331,13 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "af7e7c94-c3cb-47bf-bb9c-9de38a32b49d",
+				"id": "f104b8ed-fee0-45b3-82cb-f4ce9e7a7191",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
-					""
+					"pm.test(\"Response time is less than 250ms\", function () {\r",
+					"    pm.expect(pm.response.responseTime).to.be.below(250);\r",
+					"});"
 				]
 			}
 		}
