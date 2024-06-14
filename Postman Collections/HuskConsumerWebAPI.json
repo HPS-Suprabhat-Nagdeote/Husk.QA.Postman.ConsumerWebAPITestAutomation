@@ -12035,7 +12035,7 @@
 									"});\r",
 									"pm.test(\"Get the Encrepted Data \", function () {\r",
 									"    var jsonData = pm.response.json().Data;\r",
-									"    pm.collectionVariables.get(\"GetMyordersEncripted\", jsonData)\r",
+									"    pm.collectionVariables.set(\"GetMyordersEncripted\", jsonData)\r",
 									"});\r",
 									"pm.test(\"Success response validation\", function () {\r",
 									"    var jsonData = pm.response.json().Status.DisplayMessage;\r",
@@ -12140,6 +12140,86 @@
 							}
 						},
 						"url": "https://huskpowerprodconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
+					},
+					"response": []
+				},
+				{
+					"name": "GetMyOrders - with null customer Id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "41eb2085-1f5c-4913-93c3-b153f28371c1",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Body matches string\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"DisplayMessage\");\r",
+									"});\r",
+									"pm.test(\"Content-Type is present\", function () {\r",
+									"    pm.response.to.have.header(\"Content-Type\");\r",
+									"});\r",
+									"pm.test(\"Get the Encrepted Data \", function () {\r",
+									"    var jsonData = pm.response.json().Data;\r",
+									"    pm.collectionVariables.set(\"GetMyordersEncripted\", jsonData)\r",
+									"});\r",
+									"pm.test(\"Success response validation\", function () {\r",
+									"    var jsonData = pm.response.json().Status.DisplayMessage;\r",
+									"    pm.expect(jsonData).to.eql(\"Success\");\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"id": "8bd278af-8d54-4d13-9e45-9cfef1c6e0f3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Auth-Token",
+								"value": "{{AuthTocken}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{BasicAuthorization}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "customerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "IsNewApi",
+								"value": "false"
+							},
+							{
+								"key": "husk-token",
+								"value": "{{huskTocken}}"
+							},
+							{
+								"key": "Cookie",
+								"value": "ARRAffinity=55799aecd2ac63889df0aa628663200df6776142854fd7701f4cb0888ecab1ef; ARRAffinitySameSite=55799aecd2ac63889df0aa628663200df6776142854fd7701f4cb0888ecab1ef; ARRAffinity=5b742486848f9418d73d42abc41c8172cad64c4c497f000d692b67d867b297e7; ARRAffinitySameSite=5b742486848f9418d73d42abc41c8172cad64c4c497f000d692b67d867b297e7"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "2"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"CustomerId\": \"\"\r\n}"
+						},
+						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetMyOrders"
 					},
 					"response": []
 				},
@@ -19253,6 +19333,10 @@
 			"key": "Auth-Token",
 			"value": "B07F9E5E-7B35-4A9F-8BCD-2EACBAA2B6F1",
 			"type": "string"
+		},
+		{
+			"key": "GetMyordersEncripted",
+			"value": ""
 		}
 	]
 }
