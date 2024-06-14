@@ -9085,7 +9085,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"CustomerId\": \"HINUP-Huskify-76190\",\r\n  \"LanguageId\": 2\r\n}"
+							"raw": "{\r\n  \"CustomerId\": \"HINUP-Huskify-76213\",\r\n  \"LanguageId\": 2\r\n}"
 						},
 						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetHomePageDetails"
 					},
