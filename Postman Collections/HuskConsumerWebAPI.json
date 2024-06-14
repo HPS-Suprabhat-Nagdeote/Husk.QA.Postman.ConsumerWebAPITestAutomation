@@ -17426,7 +17426,8 @@
 									"    pm.response.to.have.header(\"Content-Type\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {}
 							}
 						}
 					],
@@ -17451,7 +17452,7 @@
 							},
 							{
 								"key": "customerId",
-								"value": "20810"
+								"value": "{{CustomerId}}"
 							},
 							{
 								"key": "IsNewApi",
