@@ -12090,56 +12090,9 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"CustomerId\": \"HINBR-01-01-0001\"\r\n}"
+							"raw": "{\r\n  \"CustomerId\": \"HINUP-Huskify-2768\"\r\n}"
 						},
 						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetMyOrders"
-					},
-					"response": []
-				},
-				{
-					"name": "DecryptResponse-GetMyOrders",
-					"id": "8c49f282-6853-498b-94b6-4fc83757906c",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							},
-							{
-								"key": "Cookie",
-								"value": "ARRAffinity=c2dc5cdfd83d18a581d6889c06f1e64b4cf50672e89dc41e380fd2aab9a84769; ARRAffinitySameSite=c2dc5cdfd83d18a581d6889c06f1e64b4cf50672e89dc41e380fd2aab9a84769"
-							},
-							{
-								"key": "Authorization",
-								"value": "Basic SHVza05ldXJvbjpyYVJxN3FKRk8/fGE3T2pU"
-							},
-							{
-								"key": "husk-token",
-								"value": "26CB9ECF-6343-43B9-B700-004BA9484D3E"
-							},
-							{
-								"key": "CustomerId",
-								"value": "{{CustomerId}}"
-							},
-							{
-								"key": "Auth-Token",
-								"value": "{{Auth-Token}}"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n  \"EncryptedString\": \"{{GetMyordersEncripted}}\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "https://huskpowerprodconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
 					},
 					"response": []
 				},
@@ -12220,6 +12173,53 @@
 							"raw": "{\r\n  \"CustomerId\": \"\"\r\n}"
 						},
 						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetMyOrders"
+					},
+					"response": []
+				},
+				{
+					"name": "DecryptResponse-GetMyOrders",
+					"id": "8c49f282-6853-498b-94b6-4fc83757906c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Cookie",
+								"value": "ARRAffinity=c2dc5cdfd83d18a581d6889c06f1e64b4cf50672e89dc41e380fd2aab9a84769; ARRAffinitySameSite=c2dc5cdfd83d18a581d6889c06f1e64b4cf50672e89dc41e380fd2aab9a84769"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic SHVza05ldXJvbjpyYVJxN3FKRk8/fGE3T2pU"
+							},
+							{
+								"key": "husk-token",
+								"value": "26CB9ECF-6343-43B9-B700-004BA9484D3E"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Auth-Token",
+								"value": "{{Auth-Token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"EncryptedString\": \"{{GetMyordersEncripted}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://huskpowerprodconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
 					},
 					"response": []
 				},
