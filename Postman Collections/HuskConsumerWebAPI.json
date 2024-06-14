@@ -12036,6 +12036,14 @@
 									"pm.test(\"Content-Type is present\", function () {\r",
 									"    pm.response.to.have.header(\"Content-Type\");\r",
 									"});\r",
+									"pm.test(\"Get the Encrepted Data \", function () {\r",
+									"    var jsonData = pm.response.json().Data;\r",
+									"    pm.collectionVariables.get(\"GetMyordersEncripted\", jsonData)\r",
+									"});\r",
+									"pm.test(\"Success response validation\", function () {\r",
+									"    var jsonData = pm.response.json().Status.DisplayMessage;\r",
+									"    pm.expect(jsonData).to.eql(\"Success\");\r",
+									"});\r",
 									""
 								],
 								"type": "text/javascript",
@@ -12127,7 +12135,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"EncryptedString\": \"ygfVTczFUxCXUOcsqNi7MdAAWNA2uc1QciU1CbbDtgik2A01unchpZK6naZrdzrCZlYWAootPsFgCmHO4zTgAblwrHsP4+tfjfG7ufw633lBPdMgKei4z0R1BeP35H+vWJjJxYx0LI0QT7B3HbPtWAdzBV0XtSzLzpzfFzB2wuqNJ5LxqUWSK31iMN9KNghT5rlhJjnWX/K7syByPvQlg4bZa5XS5gbYSSd8YDXuJLs1L+Roxpw/jDzGYYeqg9SGbrzAnHzwRVmZAGWnYrC4P5VXyO7U7OiARUowO9UJnvVLkmU2exMoqqL9RHqTu/m9YSI0zEVY3FKt7BmZpSLQO4HtVLFRw/4yX6Yu2BE3u7vIuPXBUqjSiZqxnTZPs7Iemw6Gt3M3wqkZc8hIv/XT+g=\"\r\n}",
+							"raw": "{\r\n  \"EncryptedString\": \"{{GetMyordersEncripted}}\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
