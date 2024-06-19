@@ -62,7 +62,7 @@
 						"header": [
 							{
 								"key": "Auth-Token",
-								"value": "{{AuthTocken}}"
+								"value": "{{Auth-Token}}"
 							},
 							{
 								"key": "Authorization",
@@ -73,8 +73,8 @@
 								"value": "application/json"
 							},
 							{
-								"key": "customerId",
-								"value": "20810"
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
 							},
 							{
 								"key": "IsNewApi",
@@ -158,6 +158,16 @@
 							{
 								"key": "Auth-Token",
 								"value": "{{Auth-Token}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{BasicAuthorization}}",
+								"type": "text"
+							},
+							{
+								"key": "husk-token",
+								"value": "{{huskTocken}}",
+								"type": "text"
 							}
 						],
 						"body": {
