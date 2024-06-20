@@ -5521,7 +5521,28 @@
 					},
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{BasicAuthorization}}",
+								"type": "text"
+							},
+							{
+								"key": "husk-token",
+								"value": "{{huskTocken}}",
+								"type": "text"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}",
+								"type": "text"
+							},
+							{
+								"key": "Auth-Token",
+								"value": "{{Auth-Token}}",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\r\n  \"EncryptedString\": \"{{GetCustomerInfoWithWrongData}}\"\r\n}",
@@ -5572,7 +5593,7 @@
 						"header": [
 							{
 								"key": "Auth-Token",
-								"value": "{{AuthTocken}}"
+								"value": "{{Auth-Token}}"
 							},
 							{
 								"key": "Authorization",
@@ -5583,8 +5604,8 @@
 								"value": "application/json"
 							},
 							{
-								"key": "customerId",
-								"value": "20810"
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
 							},
 							{
 								"key": "IsNewApi",
@@ -5650,7 +5671,7 @@
 						"header": [
 							{
 								"key": "Auth-Token",
-								"value": "{{AuthTocken}}"
+								"value": "{{Auth-Token}}"
 							},
 							{
 								"key": "Authorization",
@@ -5661,8 +5682,8 @@
 								"value": "application/json"
 							},
 							{
-								"key": "customerId",
-								"value": "20810"
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
 							},
 							{
 								"key": "IsNewApi",
