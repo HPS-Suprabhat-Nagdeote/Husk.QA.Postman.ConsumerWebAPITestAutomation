@@ -9505,12 +9505,27 @@
 							},
 							{
 								"key": "CustomerId",
-								"value": "HINUP-Huskify-43117",
+								"value": "{{CustomerId}}",
 								"type": "text"
 							},
 							{
 								"key": "Accept-Language",
 								"value": "2",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{BasicAuthorization}}",
+								"type": "text"
+							},
+							{
+								"key": "husk-token",
+								"value": "{{huskTocken}}",
+								"type": "text"
+							},
+							{
+								"key": "Auth-Token",
+								"value": "{{Auth-Token}}",
 								"type": "text"
 							}
 						],
@@ -9564,6 +9579,26 @@
 							{
 								"key": "Accept-Language",
 								"value": "2",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{BasicAuthorization}}",
+								"type": "text"
+							},
+							{
+								"key": "husk-token",
+								"value": "{{huskTocken}}",
+								"type": "text"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}",
+								"type": "text"
+							},
+							{
+								"key": "Auth-Token",
+								"value": "{{Auth-Token}}",
 								"type": "text"
 							}
 						],
