@@ -25,7 +25,8 @@
 							"    pm.expect(pm.response.text()).to.include(\"ACTIVE\");\r",
 							"});"
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"packages": {}
 					}
 				},
 				{
@@ -40,7 +41,8 @@
 							"pm.globals.set('Order_id_random',orderId+number);\r",
 							""
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"packages": {}
 					}
 				}
 			],
@@ -74,7 +76,7 @@
 					"mode": "raw",
 					"raw": "{\r\n  \"customer_details\": {\r\n    \"customer_id\": \"HINUP-Huskify-18499\",\r\n    \"customer_email\": \"xyz@gmail.com\",\r\n    \"customer_phone\": \"9109059955\",\r\n    \"customer_name\": \"Nikhil\"\r\n  },\r\n  \"order_meta\": {\r\n    \"return_url\": \"\",\r\n    \"notify_url\": \"\",\r\n    \"payment_methods\": \"\",\r\n    \"order_note\":\"\"\r\n  },\r\n  \"order_id\": \"{{Order_id_random}}\",\r\n  \"order_amount\": {{Order_Amount}},\r\n  \"order_currency\": \"{{order_currency}}\",\r\n  \"order_expiry_time\": \"{{timeout}}\"\r\n}"
 				},
-				"url": "https://husk3pawrappers-dev.azurewebsites.net/api/CashfreePayment/CreateOrder"
+				"url": "{{BaseURL3PA}}/api/CashfreePayment/CreateOrder"
 			},
 			"response": []
 		},
