@@ -16933,9 +16933,9 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"ProductName\": \"string\"\r\n}"
+							"raw": "{\r\n  \"ProductName\": \"Samsung\"\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/ProductSearch"
+						"url": "https://huskpowerprodconsumerwebapi.azurewebsites.net/EED/Api/v1/ProductSearch"
 					},
 					"response": []
 				},
