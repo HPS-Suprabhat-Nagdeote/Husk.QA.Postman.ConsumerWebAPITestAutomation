@@ -19956,8 +19956,22 @@
 						"header": [
 							{
 								"key": "CustomerId",
-								"value": "120",
-								"disabled": true
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{BasicAuthorization}}",
+								"type": "text"
+							},
+							{
+								"key": "husk-token",
+								"value": "{{huskTocken}}",
+								"type": "text"
+							},
+							{
+								"key": "Auth-Token",
+								"value": "{{Auth-Token}}",
+								"type": "text"
 							}
 						],
 						"body": {
@@ -20009,7 +20023,7 @@
 						"header": [
 							{
 								"key": "Auth-Token",
-								"value": "{{AuthTocken}}"
+								"value": "{{Auth-Token}}"
 							},
 							{
 								"key": "Authorization",
@@ -20021,7 +20035,7 @@
 							},
 							{
 								"key": "customerId",
-								"value": "20810"
+								"value": "{{CustomerId}}"
 							},
 							{
 								"key": "IsNewApi",
