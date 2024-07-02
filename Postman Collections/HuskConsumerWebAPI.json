@@ -16872,7 +16872,28 @@
 					},
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Auth-Token}}",
+								"type": "text"
+							},
+							{
+								"key": "husk-token",
+								"value": "{{huskTocken}}",
+								"type": "text"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}",
+								"type": "text"
+							},
+							{
+								"key": "Auth-Token",
+								"value": "{{Auth-Token}}",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\r\n  \"EncryptedString\": \"{{GetProductReviewByProductIdWhenProductDonthaveReview}}\"\r\n}",
@@ -16907,7 +16928,8 @@
 									"    pm.response.to.have.header(\"Content-Type\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {}
 							}
 						}
 					],
@@ -16920,7 +16942,7 @@
 						"header": [
 							{
 								"key": "Auth-Token",
-								"value": "{{AuthTocken}}"
+								"value": "{{Auth-Token}}"
 							},
 							{
 								"key": "Authorization",
@@ -16931,8 +16953,8 @@
 								"value": "application/json"
 							},
 							{
-								"key": "customerId",
-								"value": "20810"
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
 							},
 							{
 								"key": "IsNewApi",
@@ -16980,7 +17002,8 @@
 									"    pm.response.to.have.header(\"Content-Type\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {}
 							}
 						}
 					],
@@ -16993,7 +17016,7 @@
 						"header": [
 							{
 								"key": "Auth-Token",
-								"value": "{{AuthTocken}}"
+								"value": "{{Auth-Token}}"
 							},
 							{
 								"key": "Authorization",
@@ -17004,8 +17027,8 @@
 								"value": "application/json"
 							},
 							{
-								"key": "customerId",
-								"value": "20810"
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
 							},
 							{
 								"key": "IsNewApi",
@@ -17053,7 +17076,8 @@
 									"    pm.response.to.have.header(\"Content-Type\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {}
 							}
 						}
 					],
@@ -17066,7 +17090,7 @@
 						"header": [
 							{
 								"key": "Auth-Token",
-								"value": "{{AuthTocken}}"
+								"value": "{{Auth-Token}}"
 							},
 							{
 								"key": "Authorization",
@@ -17077,8 +17101,8 @@
 								"value": "application/json"
 							},
 							{
-								"key": "customerId",
-								"value": "20810"
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
 							},
 							{
 								"key": "IsNewApi",
@@ -17126,7 +17150,8 @@
 									"    pm.response.to.have.header(\"Content-Type\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {}
 							}
 						}
 					],
@@ -17139,7 +17164,7 @@
 						"header": [
 							{
 								"key": "Auth-Token",
-								"value": "{{AuthTocken}}"
+								"value": "{{Auth-Token}}"
 							},
 							{
 								"key": "Authorization",
@@ -17150,8 +17175,8 @@
 								"value": "application/json"
 							},
 							{
-								"key": "customerId",
-								"value": "20810"
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
 							},
 							{
 								"key": "IsNewApi",
@@ -17287,7 +17312,7 @@
 						"header": [
 							{
 								"key": "Auth-Token",
-								"value": "403604f9-ef4e-4835-a638-c7efdfeb408f"
+								"value": "{{Auth-Token}}"
 							},
 							{
 								"key": "Authorization",
@@ -17298,8 +17323,8 @@
 								"value": "application/json"
 							},
 							{
-								"key": "customerId",
-								"value": "HINUP-Huskify-2768"
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
 							},
 							{
 								"key": "IsNewApi",
