@@ -18866,7 +18866,7 @@
 						"header": [
 							{
 								"key": "Auth-Token",
-								"value": "{{AuthTocken}}"
+								"value": "{{Auth-Token}}"
 							},
 							{
 								"key": "Authorization",
@@ -18877,8 +18877,8 @@
 								"value": "application/json"
 							},
 							{
-								"key": "customerId",
-								"value": "20810"
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
 							},
 							{
 								"key": "IsNewApi",
@@ -18945,6 +18945,26 @@
 							{
 								"key": "Accept-Language",
 								"value": "2"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{BasicAuthorization}}",
+								"type": "text"
+							},
+							{
+								"key": "husk-token",
+								"value": "{{huskTocken}}",
+								"type": "text"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}",
+								"type": "text"
+							},
+							{
+								"key": "Auth-Token",
+								"value": "{{Auth-Token}}",
+								"type": "text"
 							}
 						],
 						"body": {
@@ -18993,7 +19013,7 @@
 						"header": [
 							{
 								"key": "Auth-Token",
-								"value": "{{AuthTocken}}"
+								"value": "{{Auth-Token}}"
 							},
 							{
 								"key": "Authorization",
@@ -19004,8 +19024,8 @@
 								"value": "application/json"
 							},
 							{
-								"key": "customerId",
-								"value": "20810"
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
 							},
 							{
 								"key": "IsNewApi",
@@ -19069,7 +19089,8 @@
 									"    pm.response.to.have.header(\"Content-Type\");\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {}
 							}
 						}
 					],
@@ -19082,7 +19103,7 @@
 						"header": [
 							{
 								"key": "Auth-Token",
-								"value": "{{AuthTocken}}"
+								"value": "{{Auth-Token}}"
 							},
 							{
 								"key": "Authorization",
@@ -19093,8 +19114,8 @@
 								"value": "application/json"
 							},
 							{
-								"key": "customerId",
-								"value": "20810"
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
 							},
 							{
 								"key": "IsNewApi",
@@ -19136,18 +19157,6 @@
 								}
 							]
 						}
-					},
-					"response": []
-				},
-				{
-					"name": "New Request",
-					"id": "59542e1e-f9ff-447d-945a-d4da248c4bc1",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": []
 					},
 					"response": []
 				},
@@ -19196,6 +19205,26 @@
 							{
 								"key": "Accept",
 								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{BasicAuthorization}}",
+								"type": "text"
+							},
+							{
+								"key": "husk-token",
+								"value": "{{huskTocken}}",
+								"type": "text"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}",
+								"type": "text"
+							},
+							{
+								"key": "Auth-Token",
+								"value": "{{Auth-Token}}",
+								"type": "text"
 							}
 						],
 						"body": {
