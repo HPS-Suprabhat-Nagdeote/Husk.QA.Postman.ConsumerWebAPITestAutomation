@@ -20298,11 +20298,31 @@
 							{
 								"key": "Accept",
 								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{BasicAuthorization}}",
+								"type": "text"
+							},
+							{
+								"key": "husk-token",
+								"value": "{{huskTocken}}",
+								"type": "text"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}",
+								"type": "text"
+							},
+							{
+								"key": "Auth-Token",
+								"value": "{{Auth-Token}}",
+								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{ \\ \r\n   \"MobileNumber\": \"string\", \\ \r\n   \"CalledFrom\": \"string\" \\ \r\n }"
+							"raw": "{ \r\n   \"MobileNumber\": \"string\", \r\n   \"CalledFrom\": \"string\"  \r\n }"
 						},
 						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/GetCustomerDashboardInfo"
 					},
