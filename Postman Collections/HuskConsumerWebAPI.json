@@ -20238,6 +20238,24 @@
 			"item": [
 				{
 					"name": "GetOffers",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "9d5d7a39-698d-43b1-8c52-ee545f314c67",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Response time is less than 250ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(250);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
 					"id": "47c0f8aa-23ac-440d-a817-d3df3c51026c",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -20276,7 +20294,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{ \r\n   \"MobileNumber\": \"9109059955\"\r\n  // \"CalledFrom\": \"string\" \r\n }"
+							"raw": "{ \r\n   \"MobileNumber\": \"+919823643386\",\r\n  \"CalledFrom\": \"string\" \r\n }"
 						},
 						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/GetOffers"
 					},
@@ -20284,6 +20302,24 @@
 				},
 				{
 					"name": "GetCustomerDashboardInfo",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "13ef403e-a42b-4ace-b03e-1691ffb3c879",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Response time is less than 250ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(250);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
 					"id": "77fc1188-db1e-43bf-8185-9816a6018dc4",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -20322,7 +20358,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{ \r\n   \"MobileNumber\": \"+919823643386\", \r\n   \"CalledFrom\": \"app\"  \r\n }"
+							"raw": "{ \r\n   \"MobileNumber\": \"+919284487810\", \r\n   \"CalledFrom\": \"String\"  \r\n }"
 						},
 						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/GetCustomerDashboardInfo"
 					},
