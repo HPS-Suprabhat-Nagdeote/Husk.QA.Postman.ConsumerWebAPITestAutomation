@@ -14021,7 +14021,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"OrderNumber\": \"string\",\r\n  \"ProductId\": 0,\r\n  \"Product_Rating\": 0,\r\n  \"Product_Review_Title\": \"string\",\r\n  \"Product_Review\": \"string\",\r\n  \"Base64ReviewImageUrl\": [\r\n    {\r\n      \"Base64ReviewImagestring\": \"string\"\r\n    }\r\n  ]\r\n}"
+							"raw": "{\r\n  \"OrderNumber\": \"PS-3083-PD-HIN-01-152-1\",\r\n  \"ProductId\": 639,\r\n  \"Product_Rating\": 3,\r\n  \"Product_Review_Title\": \"Good and must buy product\",\r\n  \"Product_Review\": \"Nice product to buy\",\r\n  \"Base64ReviewImageUrl\": [\r\n    {\r\n      \"Base64ReviewImagestring\": \"iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFUlEQVR42mP8z8BQz0AEYBxVSF+FABJADveWkH6oAAAAAElFTkSuQmCC\"\r\n    },\r\n     {\r\n      \"Base64ReviewImagestring\": \"iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFUlEQVR42mNk+M9Qz0AEYBxVSF+FAAhKDveksOjmAAAAAElFTkSuQmCC\"\r\n    }\r\n  ]\r\n}"
 						},
 						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/AddProductRatingandReview"
 					},
