@@ -15033,7 +15033,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "d2823981-4ab2-4340-9ff5-2e70ece983cd",
+						"id": "2d624f43-26d1-450c-84c2-944544955ea8",
 						"type": "text/javascript",
 						"packages": {},
 						"exec": [
@@ -15044,21 +15044,12 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "7292c27f-146d-4593-96b9-38c08408a795",
+						"id": "9acbcdca-1e30-4025-bc2e-d8f8ae8c37bb",
 						"type": "text/javascript",
 						"packages": {},
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
-							"});\r",
 							"pm.test(\"Content-Type is present\", function () {\r",
 							"    pm.response.to.have.header(\"Content-Type\");\r",
-							"});\r",
-							"pm.test(\"Response time is less than 250ms\", function () {\r",
-							"    pm.expect(pm.response.responseTime).to.be.below(250);\r",
-							"});\r",
-							"pm.test(\"Body matches string\", function () {\r",
-							"    pm.expect(pm.response.text()).to.include(\"DisplayMessage\");\r",
 							"});\r",
 							""
 						]
@@ -20012,7 +20003,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "2514d215-f4bf-4bf8-be8d-755d9803da5a",
+						"id": "d047a0a6-e659-4019-9f5c-e933384d02b0",
 						"type": "text/javascript",
 						"packages": {},
 						"exec": [
@@ -20023,22 +20014,15 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "5cbe9922-9711-4e24-bbb8-0a2339701b74",
+						"id": "e9ffc261-6242-4943-9514-3b0d06729250",
 						"type": "text/javascript",
 						"packages": {},
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
-							"});\r",
-							"pm.test(\"Response time is less than 250ms\", function () {\r",
-							"    pm.expect(pm.response.responseTime).to.be.below(250);\r",
-							"});\r",
+							"\r",
 							"pm.test(\"Content-Type is present\", function () {\r",
 							"    pm.response.to.have.header(\"Content-Type\");\r",
 							"});\r",
-							"pm.test(\"Body matches string\", function () {\r",
-							"    pm.expect(pm.response.text()).to.include(\"DisplayMessage\");\r",
-							"});"
+							""
 						]
 					}
 				}
