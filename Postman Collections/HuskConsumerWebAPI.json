@@ -20184,19 +20184,19 @@
 							},
 							{
 								"key": "Authorization",
-								"value": "Basic SHVza05ldXJvbjpyYVJxN3FKRk8/fGE3T2pU"
+								"value": "{{BasicAuthorization}}"
 							},
 							{
 								"key": "husk-token",
-								"value": "26CB9ECF-6343-43B9-B700-004BA9484D3E"
+								"value": "{{huskTocken}}"
 							},
 							{
 								"key": "Auth-Token",
-								"value": "B07F9E5E-7B35-4A9F-8BCD-2EACBAA2B6F1"
+								"value": "{{Auth-Token}}"
 							},
 							{
 								"key": "CustomerId",
-								"value": "CLICKPOST-01-01-0001"
+								"value": "{{CustomerId}}"
 							},
 							{
 								"key": "Cookie",
@@ -20239,19 +20239,19 @@
 							},
 							{
 								"key": "Authorization",
-								"value": "Basic SHVza05ldXJvbjpyYVJxN3FKRk8/fGE3T2pU"
+								"value": "{{BasicAuthorization}}"
 							},
 							{
 								"key": "husk-token",
-								"value": "26CB9ECF-6343-43B9-B700-004BA9484D3E"
+								"value": "{{huskTocken}}"
 							},
 							{
 								"key": "Auth-Token",
-								"value": "B07F9E5E-7B35-4A9F-8BCD-2EACBAA2B6F1"
+								"value": "{{Auth-Token}}"
 							},
 							{
 								"key": "CustomerId",
-								"value": "CLICKPOST-01-01-0001"
+								"value": "{{CustomerId}}"
 							},
 							{
 								"key": "Cookie",
