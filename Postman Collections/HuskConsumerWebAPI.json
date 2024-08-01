@@ -20534,6 +20534,28 @@
 				},
 				{
 					"name": "GetCAFDetails",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3d89477e-194e-40c2-8528-9ace2cd06181",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Your test name\", function () {\r",
+									"    var jsonData = pm.response.json().Status.DisplayMessage;\r",
+									"    pm.expect(jsonData).to.eql(\"Success\");\r",
+									"});\r",
+									"pm.test(\"Content-Type is present\", function () {\r",
+									"    pm.response.to.have.header(\"Content-Type\");\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
 					"id": "6e46c541-bd9f-42df-8c76-a98e31dafeaf",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
