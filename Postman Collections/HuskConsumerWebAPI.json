@@ -20221,6 +20221,61 @@
 					"response": []
 				},
 				{
+					"name": "GetDeliveryDetailByPinCode -Null body",
+					"id": "20a28b56-13c3-43b2-b54c-5dccaab42036",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic SHVza05ldXJvbjpyYVJxN3FKRk8/fGE3T2pU"
+							},
+							{
+								"key": "husk-token",
+								"value": "26CB9ECF-6343-43B9-B700-004BA9484D3E"
+							},
+							{
+								"key": "Auth-Token",
+								"value": "B07F9E5E-7B35-4A9F-8BCD-2EACBAA2B6F1"
+							},
+							{
+								"key": "CustomerId",
+								"value": "CLICKPOST-01-01-0001"
+							},
+							{
+								"key": "Cookie",
+								"value": "ARRAffinity=b7a71ce5c01bf0c3b4402ccbef1cbd40869a82cedd14f271fcd005220fcd0cc9; ARRAffinitySameSite=b7a71ce5c01bf0c3b4402ccbef1cbd40869a82cedd14f271fcd005220fcd0cc9; ARRAffinity=67ec4a4bd90d886dd69e5c69a05773998c16a5ac6ce1de9ed8d9d98b889d233d; ARRAffinitySameSite=67ec4a4bd90d886dd69e5c69a05773998c16a5ac6ce1de9ed8d9d98b889d233d"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "1"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"PinCode\": 800001\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{h1BaseURL}}/EED/Api/v1/GetDeliveryDetailByPinCode"
+					},
+					"response": []
+				},
+				{
 					"name": "GetCAFDetails",
 					"id": "6e46c541-bd9f-42df-8c76-a98e31dafeaf",
 					"protocolProfileBehavior": {
@@ -20327,6 +20382,80 @@
 							}
 						},
 						"url": "{{h1BaseURL}}/EED/Api/v1/GetMyOrders"
+					},
+					"response": []
+				},
+				{
+					"name": "Decrypt API",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "99c72217-bbbf-43ad-892f-04f998551b9c",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Verfying Message Status \", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.Status.MessageTitle).to.include(\"Success\");\r",
+									"});\r",
+									"  pm.test(\"Verifying Status for DisplayMessage\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.Status.DisplayMessage).to.eql(\"Success\");\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "5bc95909-7c58-4034-8321-af2a97bab9b4",
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"id": "1286d006-90c5-448c-9319-1534259d2865",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{BasicAuthorization}}"
+							},
+							{
+								"key": "husk-token",
+								"value": "{{huskTocken}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Auth-Token",
+								"value": "{{Auth-Token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"EncryptedString\": \"3D4/5MYW31YbtlM8qVDNP/ihYAldJqR5/qoP3vgo+QkLOgr/0f3ZRGmmfudPL4tK1klerhfVawBIag9n13PubttBx6MnxXAKJVDaLSszdpoGgA5wqs5mL+2mN3srzJQDXVkpKUEkc1ipmoVod5SCo4yjPag9b1u9mqpigbQvPk8D9jaYYpzffg2ljNpZG6h2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
 					},
 					"response": []
 				}
