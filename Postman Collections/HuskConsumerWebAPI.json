@@ -20167,6 +20167,28 @@
 			"item": [
 				{
 					"name": "GetDeliveryDetailByPinCode",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "fa50cacf-c5f8-400c-b636-bb2728af4658",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Response success validation\", function () {\r",
+									"    var jsonData = pm.response.json().Status.DisplayMessage;\r",
+									"    pm.expect(jsonData).to.eql(\"Success\");\r",
+									"});\r",
+									"pm.test(\"Content-Type is present\", function () {\r",
+									"    pm.response.to.have.header(\"Content-Type\");\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
 					"id": "4cae835e-008b-4179-9078-15f043bdd731",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
