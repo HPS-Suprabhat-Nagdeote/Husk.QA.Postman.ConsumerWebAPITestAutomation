@@ -20250,8 +20250,8 @@
 							"script": {
 								"id": "af56dc19-3b43-486b-a751-5a6d0e2edf22",
 								"exec": [
-									"pm.test(\"Status code is 401\", function () {\r",
-									"    pm.response.to.have.status(401);\r",
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
 									"});\r",
 									"// pm.test(\"Response body validation\", function () {\r",
 									"//     var jsonData = pm.response.json().Status.DisplayMessage;\r",
