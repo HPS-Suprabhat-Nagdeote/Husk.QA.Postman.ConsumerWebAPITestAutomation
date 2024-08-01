@@ -20300,6 +20300,83 @@
 					"response": []
 				},
 				{
+					"name": "GetDeliveryDetailByPinCode -Invalid Pincode",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "af56dc19-3b43-486b-a751-5a6d0e2edf22",
+								"exec": [
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"});\r",
+									"pm.test(\"Response body validation\", function () {\r",
+									"    var jsonData = pm.response.json().Status.DisplayMessage;\r",
+									"    pm.expect(jsonData).to.eql(\"Failed\");\r",
+									"});\r",
+									"// pm.test(\"Content-Type is present\", function () {\r",
+									"//     pm.response.to.have.header(\"Content-Type\");\r",
+									"// });"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"id": "0cde78de-31d7-4d1c-9d6b-2aada18bcc2c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{BasicAuthorization}}"
+							},
+							{
+								"key": "husk-token",
+								"value": "{{huskTocken}}"
+							},
+							{
+								"key": "Auth-Token",
+								"value": "{{Auth-Token}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Cookie",
+								"value": "ARRAffinity=b7a71ce5c01bf0c3b4402ccbef1cbd40869a82cedd14f271fcd005220fcd0cc9; ARRAffinitySameSite=b7a71ce5c01bf0c3b4402ccbef1cbd40869a82cedd14f271fcd005220fcd0cc9; ARRAffinity=67ec4a4bd90d886dd69e5c69a05773998c16a5ac6ce1de9ed8d9d98b889d233d; ARRAffinitySameSite=67ec4a4bd90d886dd69e5c69a05773998c16a5ac6ce1de9ed8d9d98b889d233d"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "1"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"PinCode\": 8000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{h1BaseURL}}/EED/Api/v1/GetDeliveryDetailByPinCode"
+					},
+					"response": []
+				},
+				{
 					"name": "GetDeliveryDetailByPinCode -Null body",
 					"event": [
 						{
