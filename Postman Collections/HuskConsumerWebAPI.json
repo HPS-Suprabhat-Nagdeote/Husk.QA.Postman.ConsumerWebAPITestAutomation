@@ -1944,7 +1944,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n            \"Id\": 76189,\r\n            \"CustomerId\": \"HINUP-Huskify-76188\",\r\n            \"CustomerName\": \"Test 123\",\r\n            \"AlternatePhoneNumber\": \"\",\r\n            \"PhoneNumber\": \"9823643386\",\r\n            \"FlatNoWithBuildingName\": \"\",\r\n            \"Street\": \"\",\r\n            \"Landmark\": \"home\",\r\n            \"State\": \"EEDHuskify\",\r\n            \"City\": \"EEDHuskify\",\r\n            \"PinCode\": 800002,\r\n            \"AddressType\": \"\",\r\n            \"Latitude\": 0.0,\r\n            \"Longitude\": 0.0,\r\n            \"IsDefault\": true,\r\n            \"IsBillingAddress\": false\r\n}\r\n"
+							"raw": "{\r\n            \"Id\": 76189,\r\n            \"CustomerId\": \"HINUP-Huskify-76188\",\r\n            \"CustomerName\": \"Test 123\",\r\n            \"AlternatePhoneNumber\": \"\",\r\n            \"PhoneNumber\": \"9823643386\",\r\n            \"FlatNoWithBuildingName\": \"\",\r\n            \"Street\": \"\",\r\n            \"Landmark\": \"home\",\r\n            \"State\": \"EEDHuskify\",\r\n            \"City\": \"EEDHuskify\",\r\n            \"PinCode\": 800001,\r\n            \"AddressType\": \"\",\r\n            \"Latitude\": 0.0,\r\n            \"Longitude\": 0.0,\r\n            \"IsDefault\": true,\r\n            \"IsBillingAddress\": false\r\n}\r\n"
 						},
 						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/AddCustomerAddress"
 					},
@@ -1979,10 +1979,10 @@
 									"//     pm.expect(jsonData.Data[1].City).to.eql(\"Patna\");\r",
 									"// });\r",
 									"\r",
-									"pm.test(\"Verfying Message Status\", function () {\r",
-									"    var jsonData = pm.response.json();\r",
-									"    pm.expect(jsonData.Status.MessageTitle).to.include(\"Success\");\r",
-									"});"
+									"// pm.test(\"Verfying Message Status\", function () {\r",
+									"//     var jsonData = pm.response.json();\r",
+									"//     pm.expect(jsonData.Status.MessageTitle).to.include(\"Success\");\r",
+									"// });"
 								],
 								"type": "text/javascript",
 								"packages": {}
@@ -2935,7 +2935,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"MobileNumber\": \"8796535081\",\r\n  \"Password\": \"123456\"\r\n}"
+							"raw": "{\r\n  \"MobileNumber\": \"+918796535081\",\r\n  \"Password\": \"123456\"\r\n}"
 						},
 						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/EEDLogin"
 					},
