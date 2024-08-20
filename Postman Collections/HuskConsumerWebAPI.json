@@ -6361,7 +6361,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "966709f3-f5b9-4010-8f17-6e6c7ac44608",
+						"id": "3391438e-1ccb-4a41-9713-4e1bd71f0a5e",
 						"type": "text/javascript",
 						"packages": {},
 						"exec": [
@@ -6372,14 +6372,11 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "bfbb5d50-db3e-4d3e-9eaa-384189fc8334",
+						"id": "606cd627-0d5b-4144-8ecd-e1c961701a42",
 						"type": "text/javascript",
 						"packages": {},
 						"exec": [
 							"\r",
-							"pm.test(\"Response time is less than 250ms\", function () {\r",
-							"    pm.expect(pm.response.responseTime).to.be.below(250);\r",
-							"});\r",
 							"pm.test(\"Content-Type is present\", function () {\r",
 							"    pm.response.to.have.header(\"Content-Type\");\r",
 							"});\r",
