@@ -365,6 +365,11 @@
 									"pm.test(\"Verfying response data Value \", function () {\r",
 									"    var jsonData = pm.response.json();\r",
 									"    pm.expect(jsonData.Status.MessageTitle).to.include(\"Success\");\r",
+									"});\r",
+									"pm.test(\"Customer Last Name\", function () {\r",
+									"    var jsonData = pm.response.json().Data.LastName;\r",
+									"    console.log(jsonData);\r",
+									"   pm.expect(jsonData).to.eql(pm.globals.get(\"CustomerLastName\"));\r",
 									"});"
 								],
 								"type": "text/javascript",
