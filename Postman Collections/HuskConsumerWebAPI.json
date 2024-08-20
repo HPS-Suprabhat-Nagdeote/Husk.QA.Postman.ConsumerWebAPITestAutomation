@@ -10376,18 +10376,18 @@
 								"exec": [
 									"\r",
 									"  \r",
-									"//   pm.test(\"Verifying Status for DisplayMessage\", function () {\r",
-									"//     var jsonData = pm.response.json();\r",
-									"//     pm.expect(jsonData.Status.DisplayMessage).to.eql(\"Success\");\r",
-									"// });\r",
-									"//  pm.test(\"Verifying Status for MessageTitle\", function () {\r",
-									"//     var jsonData = pm.response.json();\r",
-									"//     pm.expect(jsonData.Status.MessageTitle).to.eql(\"Success\");\r",
-									"// });\r",
+									"  pm.test(\"Verifying Status for DisplayMessage\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.Status.DisplayMessage).to.eql(\"Success\");\r",
+									"});\r",
+									" pm.test(\"Verifying Status for MessageTitle\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.Status.MessageTitle).to.eql(\"Success\");\r",
+									"});\r",
 									"\r",
 									"//setting global Variable\r",
-									"// var jsonData = pm.response.json();\r",
-									"// pm.globals.set(\"AddToCartWishListProduct\",jsonData.Data);"
+									"var jsonData = pm.response.json();\r",
+									"pm.globals.set(\"AddToCartWishListProduct\",jsonData.Data);"
 								],
 								"type": "text/javascript",
 								"packages": {}
@@ -10436,9 +10436,84 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"CustomerId\": \"HINUP-Huskify-0281\",\r\n  \"ProductId\": 14,\r\n  \"ProductQuantity\": 1,\r\n  \"ISWishList\": true\r\n}"
+							"raw": "{\r\n  \"CustomerId\": \"HINUP-Huskify-207337\",\r\n  \"ProductId\": 10,\r\n  \"ProductQuantity\": 1,\r\n  \"ISWishList\": true\r\n}"
 						},
 						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/AddToCartWishListProduct"
+					},
+					"response": []
+				},
+				{
+					"name": "DecryptAddProductToWishList Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "57f10bd1-5573-41f7-ae2b-7a883162b962",
+								"exec": [
+									"pm.test(\"Verfying Message Status \", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.Status.MessageTitle).to.include(\"Success\");\r",
+									"});\r",
+									"  pm.test(\"Verifying Status for DisplayMessage\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.Status.DisplayMessage).to.eql(\"Success\");\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "c60d07b8-3710-47c3-b6c5-cb18f87d74d0",
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"id": "894d02c9-9f8c-41fa-9bcf-d9082a21cf9e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{Auth-Token}}",
+								"type": "text"
+							},
+							{
+								"key": "husk-token",
+								"value": "{{huskTocken}}",
+								"type": "text"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}",
+								"type": "text"
+							},
+							{
+								"key": "Auth-Token",
+								"value": "{{Auth-Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"EncryptedString\": \"{{AddToCartWishListProduct}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
 					},
 					"response": []
 				},
@@ -10508,7 +10583,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"CustomerId\": \"HINUP-Huskify-43117\",\r\n  \"ProductId\": 12,\r\n  \"ProductQuantity\": 1\r\n}"
+							"raw": "{\r\n  \"CustomerId\": \"HINUP-Huskify-43117\",\r\n  \"ProductId\": 10,\r\n  \"ProductQuantity\": 1\r\n}"
 						},
 						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/AddProductToCart"
 					},
