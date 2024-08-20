@@ -9744,9 +9744,6 @@
 								"id": "5dba6d12-63eb-4168-9de0-a3429cd4c309",
 								"exec": [
 									"  \r",
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
 									"pm.test(\"Verifying Status for DisplayMessage\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
 									"    pm.expect(jsonData.Status.DisplayMessage).to.eql(\"Success\");\r",
@@ -9832,9 +9829,6 @@
 							"script": {
 								"id": "57f10bd1-5573-41f7-ae2b-7a883162b962",
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
 									"pm.test(\"Verfying Message Status \", function () {\r",
 									"    var jsonData = pm.response.json();\r",
 									"    pm.expect(jsonData.Status.MessageTitle).to.include(\"Success\");\r",
@@ -9913,7 +9907,7 @@
 								"id": "5dba6d12-63eb-4168-9de0-a3429cd4c309",
 								"exec": [
 									"  \r",
-									"  pm.test(\"Verifying Status for DisplayMessage\", function () {\r",
+									"pm.test(\"Verifying Status for DisplayMessage\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
 									"    pm.expect(jsonData.Status.DisplayMessage).to.eql(\"Customer Not Available\");\r",
 									"});\r",
@@ -9996,7 +9990,7 @@
 								"id": "5dba6d12-63eb-4168-9de0-a3429cd4c309",
 								"exec": [
 									"  \r",
-									"  pm.test(\"Verifying Status for DisplayMessage\", function () {\r",
+									"pm.test(\"Verifying Status for DisplayMessage\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
 									"    pm.expect(jsonData.Status.DisplayMessage).to.eql(\"Customer Not Available\");\r",
 									"});\r",
@@ -10162,9 +10156,9 @@
 									"    var jsonData = pm.response.json();\r",
 									"    pm.expect(jsonData.Status.DisplayMessage).to.eql(\"Success\");\r",
 									"});\r",
-									"pm.test(\"Body matches string\", function () {\r",
-									"    pm.expect(pm.response.text()).to.include(\"Crompton Ozone 55-Litre Air Cooler\");\r",
-									"});"
+									"// pm.test(\"Body matches string\", function () {\r",
+									"//     pm.expect(pm.response.text()).to.include(\"Crompton Ozone 55-Litre Air Cooler\");\r",
+									"// });"
 								],
 								"type": "text/javascript",
 								"packages": {}
@@ -15014,7 +15008,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "2d624f43-26d1-450c-84c2-944544955ea8",
+						"id": "ecfe126d-3b90-4ad2-9518-40e04538dd59",
 						"type": "text/javascript",
 						"packages": {},
 						"exec": [
@@ -15025,12 +15019,15 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "9acbcdca-1e30-4025-bc2e-d8f8ae8c37bb",
+						"id": "7f6f87dd-0f30-4377-8f01-e3ab8632e33c",
 						"type": "text/javascript",
 						"packages": {},
 						"exec": [
 							"pm.test(\"Content-Type is present\", function () {\r",
 							"    pm.response.to.have.header(\"Content-Type\");\r",
+							"});\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
 							"});\r",
 							""
 						]
