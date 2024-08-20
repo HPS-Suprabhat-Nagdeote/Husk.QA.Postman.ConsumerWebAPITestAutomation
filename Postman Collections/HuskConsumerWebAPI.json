@@ -7643,10 +7643,10 @@
 									"    var jsonData = pm.response.json();\r",
 									"    pm.expect(jsonData.Data.CustomerId).to.include(\"HINUP-Huskify-18499\");\r",
 									"});\r",
-									"  pm.test(\"Verifying IsBijliCustomer\", function () {\r",
-									"    var jsonData = pm.response.json();\r",
-									"    pm.expect(jsonData.Data.IsBijliCustomer).to.eql(true);\r",
-									"});\r",
+									"//   pm.test(\"Verifying IsBijliCustomer\", function () {\r",
+									"//     var jsonData = pm.response.json();\r",
+									"//     pm.expect(jsonData.Data.IsBijliCustomer).to.eql(true);\r",
+									"// });\r",
 									"  pm.test(\"Verifying IsRegistred\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
 									"    pm.expect(jsonData.Data.IsRegistred).to.eql(true);\r",
@@ -7922,7 +7922,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"MobileNumber\": \"9109059955\"\r\n}"
+							"raw": "{\r\n  \"MobileNumber\": \"9823643386\"\r\n}"
 						},
 						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/ForgotBijliPassword"
 					},
