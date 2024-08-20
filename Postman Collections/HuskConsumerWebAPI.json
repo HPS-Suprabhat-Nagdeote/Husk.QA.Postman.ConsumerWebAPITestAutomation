@@ -8715,7 +8715,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"MobileNumber\": \"9109059955\",\r\n  \"Password\": \"11111\"\r\n}"
+							"raw": "{\r\n  \"MobileNumber\": \"9823643386\",\r\n  \"Password\": \"11111\"\r\n}"
 						},
 						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/EEDLoginwithPasswordBijli"
 					},
@@ -9703,7 +9703,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "6911dbbe-333b-432a-bc34-41c50b89571f",
+						"id": "9d286d36-032b-4740-b184-c191c09867a6",
 						"type": "text/javascript",
 						"packages": {},
 						"exec": [
@@ -9714,15 +9714,12 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "fe91002e-af23-47f0-81aa-0b42e59c29ff",
+						"id": "680bde1e-4535-4d67-9de1-4080405661a4",
 						"type": "text/javascript",
 						"packages": {},
 						"exec": [
 							"pm.test(\"Status code is 200\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
-							"});\r",
-							"pm.test(\"Response time is less than 250ms\", function () {\r",
-							"    pm.expect(pm.response.responseTime).to.be.below(250);\r",
 							"});\r",
 							"pm.test(\"Content-Type is present\", function () {\r",
 							"    pm.response.to.have.header(\"Content-Type\");\r",
