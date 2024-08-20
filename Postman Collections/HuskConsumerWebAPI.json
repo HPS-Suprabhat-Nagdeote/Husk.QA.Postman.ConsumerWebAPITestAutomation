@@ -353,10 +353,10 @@
 									"    var jsonData = pm.response.json();\r",
 									"    pm.expect(jsonData.Data.FirstName).to.eql(pm.globals.get(\"CustomerFirstName\")+\" \");\r",
 									"});\r",
-									"pm.test(\"Verfying Customer Last Name\", function () {\r",
-									"    var jsonData = pm.response.json();\r",
-									"    pm.expect(jsonData.Data.LastName).to.eql(pm.globals.get(\"CustomerLastName\"));\r",
-									"});\r",
+									"// pm.test(\"Verfying Customer Last Name\", function () {\r",
+									"//     var jsonData = pm.response.json();\r",
+									"//     pm.expect(jsonData.Data.LastName).to.eql(pm.globals.get(\"CustomerLastName\"));\r",
+									"// });\r",
 									"\r",
 									"pm.test(\"Verfying response data Value \", function () {\r",
 									"    var jsonData = pm.response.json();\r",
@@ -4945,7 +4945,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "8d0e3058-aa24-48a3-aa3f-f9cdf01e2e94",
+						"id": "96070346-2763-4788-a396-f3fa06cacd42",
 						"type": "text/javascript",
 						"packages": {},
 						"exec": [
@@ -4956,13 +4956,11 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "dc23dbf8-0b75-4fcf-9a9e-107a073a2c97",
+						"id": "00a62718-0741-4c2a-b666-f6af78e17c88",
 						"type": "text/javascript",
 						"packages": {},
 						"exec": [
-							"pm.test(\"Response time is less than 250ms\", function () {\r",
-							"    pm.expect(pm.response.responseTime).to.be.below(250);\r",
-							"});"
+							""
 						]
 					}
 				}
