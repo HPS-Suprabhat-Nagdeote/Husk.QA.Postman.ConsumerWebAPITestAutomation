@@ -2935,7 +2935,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"MobileNumber\": \"+918796535081\",\r\n  \"Password\": \"123456\"\r\n}"
+							"raw": "{\r\n  \"MobileNumber\": \"+919823643386\",\r\n  \"Password\": \"123456\"\r\n}"
 						},
 						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/EEDLogin"
 					},
@@ -2960,17 +2960,17 @@
 									"\r",
 									"pm.test(\"Verfying First Name\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
-									"    pm.expect(jsonData.Data.FirstName).to.include(\"Rizul\");\r",
+									"    pm.expect(jsonData.Data.FirstName).to.include(\"Suprabhat\");\r",
 									"});\r",
 									"\r",
 									"pm.test(\"Verfying Last Name\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
-									"    pm.expect(jsonData.Data.LastName).to.include(\"Choudhury Marketing\");\r",
+									"    pm.expect(jsonData.Data.LastName).to.include(\"Test\");\r",
 									"});\r",
 									"\r",
 									"pm.test(\"Verfying CustomerId\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
-									"    pm.expect(jsonData.Data.CustomerId).to.eql(57606);\r",
+									"    pm.expect(jsonData.Data.CustomerId).to.eql(56201);\r",
 									"});\r",
 									"\r",
 									"\r",
@@ -3260,7 +3260,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n \"CustomerId\": \"HINUP-Huskify-15100\"\r\n // \"CustomerId\": \"HINUP-Huskify-0010\"\r\n}"
+							"raw": "{\r\n \"CustomerId\": \"HINUP-Huskify-233623\"\r\n // \"CustomerId\": \"HINUP-Huskify-0010\"\r\n}"
 						},
 						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/GetCustomerEMIDetails"
 					},
