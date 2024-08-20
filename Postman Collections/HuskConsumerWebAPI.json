@@ -6910,7 +6910,7 @@
 								"exec": [
 									"  pm.test(\"Verifying Status for DisplayMessage\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
-									"    pm.expect(jsonData.Status.DisplayMessage).to.eql(\"OTP Expired\");\r",
+									"    pm.expect(jsonData.Status.DisplayMessage).to.eql(\"WOTP\");\r",
 									"});\r",
 									" pm.test(\"Verifying Status for MessageTitle\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
