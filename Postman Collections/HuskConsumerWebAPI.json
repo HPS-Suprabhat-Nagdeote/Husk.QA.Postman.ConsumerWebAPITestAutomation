@@ -9343,7 +9343,7 @@
 									"    pm.expect(jsonData.Status.MessageTitle).to.include(\"Success\");\r",
 									"});\r",
 									"pm.test(\"Body should Contain CustomerID\", function () {\r",
-									"    pm.expect(pm.response.text()).to.include(\"HINUP-Huskify-43117\");\r",
+									"    pm.expect(pm.response.text()).to.include(\"CLICKPOST-01-01-0001\");\r",
 									"});\r",
 									"pm.test(\"Body should Contain CategoryName\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include(\"Bluetooth speakers\");\r",
@@ -9744,7 +9744,10 @@
 								"id": "5dba6d12-63eb-4168-9de0-a3429cd4c309",
 								"exec": [
 									"  \r",
-									"  pm.test(\"Verifying Status for DisplayMessage\", function () {\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Verifying Status for DisplayMessage\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
 									"    pm.expect(jsonData.Status.DisplayMessage).to.eql(\"Success\");\r",
 									"});\r",
@@ -9815,7 +9818,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"CustomerId\": \"HINUP-Huskify-43117\",\r\n  \"ProductId\": 10,\r\n  \"ProductQuantity\": 1,\r\n  \"ISWishList\": true\r\n}"
+							"raw": "{\r\n  \"CustomerId\": \"HINUP-Huskify-0281\",\r\n  \"ProductId\": 10,\r\n  \"ProductQuantity\": 1,\r\n  \"ISWishList\": true\r\n}"
 						},
 						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/AddProductToWishList"
 					},
