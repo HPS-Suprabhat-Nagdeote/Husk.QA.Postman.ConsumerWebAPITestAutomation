@@ -8193,7 +8193,7 @@
 									"});\r",
 									" pm.test(\"Verifying StatusCode\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
-									"    pm.expect(jsonData.Status.Status).to.eql(0);\r",
+									"    pm.expect(jsonData.Status.Status).to.eql(true);\r",
 									"});\r",
 									"\r",
 									""
@@ -8245,7 +8245,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"MobileNumber\": \"9109059955\",\r\n  \"NewPassword\": \"1234567\",\r\n  \"ConfirmPassword\": \"1234567\"\r\n}"
+							"raw": "{\r\n  \"MobileNumber\": \"9823643386\",\r\n  \"NewPassword\": \"123456\",\r\n  \"ConfirmPassword\": \"123456\"\r\n}"
 						},
 						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/UpdateBijliPassword"
 					},
@@ -8273,7 +8273,7 @@
 									"});\r",
 									" pm.test(\"Verifying StatusCode\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
-									"    pm.expect(jsonData.Status.Status).to.eql(1);\r",
+									"    pm.expect(jsonData.Status.Status).to.eql(false);\r",
 									"});\r",
 									"\r",
 									""
@@ -8353,7 +8353,7 @@
 									"});\r",
 									" pm.test(\"Verifying StatusCode\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
-									"    pm.expect(jsonData.Status.Status).to.eql(1);\r",
+									"    pm.expect(jsonData.Status.Status).to.eql(false);\r",
 									"});\r",
 									"//ignoring verify bijli request as degault otp is not set for bijli\r",
 									"postman.setNextRequest(\"EEDLoginwithPasswordBijli\");"
@@ -8543,7 +8543,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"MobileNumber\": \"9109059955\",\r\n  \"Password\": \"1234567\"\r\n}"
+							"raw": "{\r\n  \"MobileNumber\": \"9823643386\",\r\n  \"Password\": \"123456\"\r\n}"
 						},
 						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/EEDLoginwithPasswordBijli"
 					},
@@ -8575,7 +8575,7 @@
 									"});\r",
 									"  pm.test(\"Verifying IsBijliCustomer\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
-									"    pm.expect(jsonData.Data.IsBijliCustomer).to.eql(true);\r",
+									"    pm.expect(jsonData.Data.IsBijliCustomer).to.eql(false);\r",
 									"});\r",
 									"  pm.test(\"Verifying IsRegistred\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
