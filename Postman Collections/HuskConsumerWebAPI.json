@@ -355,7 +355,7 @@
 									"});\r",
 									"// pm.test(\"Verfying Customer Last Name\", function () {\r",
 									"//     var jsonData1 = pm.response.json().Data.LastName;\r",
-									"//     pm.expect(jsonData1).to.equal(pm.globals.get(\"CustomerLastName\"));\r",
+									"//     pm.expect(jsonData1).to.eql(pm.globals.get(\"CustomerLastName\"));\r",
 									"// });\r",
 									"// pm.test(\"Verfying Customer Mobile Number\", function () {\r",
 									"//     var jsonData = pm.response.json();\r",
