@@ -20487,6 +20487,237 @@
 					"response": []
 				},
 				{
+					"name": "GetCAFDetails Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3d89477e-194e-40c2-8528-9ace2cd06181",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Your test name\", function () {\r",
+									"    var jsonData = pm.response.json().Status.DisplayMessage;\r",
+									"    pm.expect(jsonData).to.eql(\"Success\");\r",
+									"});\r",
+									"pm.test(\"Content-Type is present\", function () {\r",
+									"    pm.response.to.have.header(\"Content-Type\");\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"id": "480bba2a-f237-460a-b106-2ca7c6b7ff3d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{BasicAuthorization}}"
+							},
+							{
+								"key": "husk-token",
+								"value": "{{huskTocken}}"
+							},
+							{
+								"key": "Auth-Token",
+								"value": "{{Auth-Token}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Cookie",
+								"value": "ARRAffinity=b7a71ce5c01bf0c3b4402ccbef1cbd40869a82cedd14f271fcd005220fcd0cc9; ARRAffinitySameSite=b7a71ce5c01bf0c3b4402ccbef1cbd40869a82cedd14f271fcd005220fcd0cc9; ARRAffinity=67ec4a4bd90d886dd69e5c69a05773998c16a5ac6ce1de9ed8d9d98b889d233d; ARRAffinitySameSite=67ec4a4bd90d886dd69e5c69a05773998c16a5ac6ce1de9ed8d9d98b889d233d"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "1"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"OrderNumber\": \"PS-2908-PC-HIN-09-001-1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{h1BaseURL}}//EED/Api/v1/GetCAFDetails"
+					},
+					"response": []
+				},
+				{
+					"name": "GetCAFDetails null ordernumber",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3d89477e-194e-40c2-8528-9ace2cd06181",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Your test name\", function () {\r",
+									"    var jsonData = pm.response.json().Status.DisplayMessage;\r",
+									"    pm.expect(jsonData).to.eql(\"Success\");\r",
+									"});\r",
+									"pm.test(\"Content-Type is present\", function () {\r",
+									"    pm.response.to.have.header(\"Content-Type\");\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"id": "34204163-e971-418d-a638-43167a3125bc",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{BasicAuthorization}}"
+							},
+							{
+								"key": "husk-token",
+								"value": "{{huskTocken}}"
+							},
+							{
+								"key": "Auth-Token",
+								"value": "{{Auth-Token}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Cookie",
+								"value": "ARRAffinity=b7a71ce5c01bf0c3b4402ccbef1cbd40869a82cedd14f271fcd005220fcd0cc9; ARRAffinitySameSite=b7a71ce5c01bf0c3b4402ccbef1cbd40869a82cedd14f271fcd005220fcd0cc9; ARRAffinity=67ec4a4bd90d886dd69e5c69a05773998c16a5ac6ce1de9ed8d9d98b889d233d; ARRAffinitySameSite=67ec4a4bd90d886dd69e5c69a05773998c16a5ac6ce1de9ed8d9d98b889d233d"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "1"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"OrderNumber\": \"PS-2908-PC-HIN-09-001-1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{h1BaseURL}}//EED/Api/v1/GetCAFDetails"
+					},
+					"response": []
+				},
+				{
+					"name": "GetCAFDetails Inavlid",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3d89477e-194e-40c2-8528-9ace2cd06181",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Your test name\", function () {\r",
+									"    var jsonData = pm.response.json().Status.DisplayMessage;\r",
+									"    pm.expect(jsonData).to.eql(\"Success\");\r",
+									"});\r",
+									"pm.test(\"Content-Type is present\", function () {\r",
+									"    pm.response.to.have.header(\"Content-Type\");\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"id": "bd93c5c1-886f-4a7b-b611-3a2f14f214de",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{BasicAuthorization}}"
+							},
+							{
+								"key": "husk-token",
+								"value": "{{huskTocken}}"
+							},
+							{
+								"key": "Auth-Token",
+								"value": "{{Auth-Token}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Cookie",
+								"value": "ARRAffinity=b7a71ce5c01bf0c3b4402ccbef1cbd40869a82cedd14f271fcd005220fcd0cc9; ARRAffinitySameSite=b7a71ce5c01bf0c3b4402ccbef1cbd40869a82cedd14f271fcd005220fcd0cc9; ARRAffinity=67ec4a4bd90d886dd69e5c69a05773998c16a5ac6ce1de9ed8d9d98b889d233d; ARRAffinitySameSite=67ec4a4bd90d886dd69e5c69a05773998c16a5ac6ce1de9ed8d9d98b889d233d"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "1"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"OrderNumber\": \"PS-2908-PC-HIN-09-001-1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{h1BaseURL}}//EED/Api/v1/GetCAFDetails"
+					},
+					"response": []
+				},
+				{
 					"name": "GetMyOrders",
 					"id": "f11a4c4d-2db7-43a8-81a9-398ecb3203c5",
 					"protocolProfileBehavior": {
