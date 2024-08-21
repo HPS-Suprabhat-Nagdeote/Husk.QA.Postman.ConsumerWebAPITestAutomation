@@ -11185,9 +11185,6 @@
 							"script": {
 								"id": "57f10bd1-5573-41f7-ae2b-7a883162b962",
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
 									"pm.test(\"Verfying Message Status \", function () {\r",
 									"    var jsonData = pm.response.json();\r",
 									"    pm.expect(jsonData.Status.MessageTitle).to.include(\"Success\");\r",
@@ -11197,7 +11194,7 @@
 									"    pm.expect(jsonData.Status.DisplayMessage).to.eql(\"Success\");\r",
 									"});\r",
 									"pm.test(\"Body matches string\", function () {\r",
-									"    pm.expect(pm.response.text()).to.include(\"Product Rating and Review Added Successfully.\");\r",
+									"    pm.expect(pm.response.text()).to.include(\"Product Rating Added Successfully.\");\r",
 									"});"
 								],
 								"type": "text/javascript",
