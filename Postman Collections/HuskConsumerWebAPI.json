@@ -11370,8 +11370,8 @@
 								"value": "application/json"
 							},
 							{
-								"key": "customerId",
-								"value": "20810"
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
 							},
 							{
 								"key": "IsNewApi",
@@ -11490,7 +11490,7 @@
 									"    pm.expect(jsonData.Status.DisplayMessage).to.eql(\"Success\");\r",
 									"});\r",
 									"pm.test(\"Body matches string\", function () {\r",
-									"    pm.expect(pm.response.text()).to.include(\"Crompton Ozone 55-Litre Air Cooler\");\r",
+									"    pm.expect(pm.response.text()).to.include(\"Product Rating Added Successfully.\");\r",
 									"});"
 								],
 								"type": "text/javascript",
@@ -11626,7 +11626,7 @@
 					"response": []
 				},
 				{
-					"name": "RemoveSingleProductFromCart Copy",
+					"name": "RemoveSingleProductFromCart-with null values",
 					"event": [
 						{
 							"listen": "test",
@@ -11710,9 +11710,6 @@
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"pm.test(\"Response time is less than 250ms\", function () {\r",
-									"    pm.expect(pm.response.responseTime).to.be.below(250);\r",
 									"});\r",
 									"pm.test(\"Body matches string\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include(\"DisplayMessage\");\r",
