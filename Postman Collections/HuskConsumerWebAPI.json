@@ -11766,7 +11766,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "[\r\n  {\r\n    \"CustomerId\": \"HINUP-Huskify-43117\",\r\n  \"ProductId\": 10,\r\n  \"ProductQuantity\": 1\r\n  }\r\n]"
+							"raw": "[\r\n  {\r\n    \"CustomerId\": \"string\",\r\n    \"ProductId\": 0,\r\n    \"ProductQuantity\": 0,\r\n    \"ComboId\": 0\r\n  }\r\n]"
 						},
 						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/AddMultipleProductToCart"
 					},
@@ -11780,12 +11780,6 @@
 							"script": {
 								"id": "5bcd3c2b-5d60-44c8-80f8-6fde5e39bc48",
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"pm.test(\"Response time is less than 250ms\", function () {\r",
-									"    pm.expect(pm.response.responseTime).to.be.below(250);\r",
-									"});\r",
 									"pm.test(\"Body matches string\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include(\"DisplayMessage\");\r",
 									"});\r",
@@ -11855,12 +11849,6 @@
 							"script": {
 								"id": "370cdddf-a2bf-47cb-80b0-0ee0d642f3b3",
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"pm.test(\"Response time is less than 250ms\", function () {\r",
-									"    pm.expect(pm.response.responseTime).to.be.below(250);\r",
-									"});\r",
 									"pm.test(\"Body matches string\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include(\"DisplayMessage\");\r",
 									"});\r",
@@ -11930,12 +11918,6 @@
 							"script": {
 								"id": "2aa7f38c-17f1-4120-8569-a2dce30bc262",
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"pm.test(\"Response time is less than 250ms\", function () {\r",
-									"    pm.expect(pm.response.responseTime).to.be.below(250);\r",
-									"});\r",
 									"pm.test(\"Body matches string\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include(\"DisplayMessage\");\r",
 									"});\r",
@@ -12005,12 +11987,6 @@
 							"script": {
 								"id": "8c0f73cc-f6ad-456b-8f77-dc68069b52d1",
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"pm.test(\"Response time is less than 250ms\", function () {\r",
-									"    pm.expect(pm.response.responseTime).to.be.below(250);\r",
-									"});\r",
 									"pm.test(\"Body matches string\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include(\"DisplayMessage\");\r",
 									"});\r",
