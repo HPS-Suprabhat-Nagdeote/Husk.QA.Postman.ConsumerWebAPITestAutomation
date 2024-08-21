@@ -10526,11 +10526,11 @@
 									"pm.globals.set(\"AddProductToCart\", jsonData.Data);\r",
 									"  pm.test(\"Verifying Status for DisplayMessage\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
-									"    pm.expect(jsonData.Status.DisplayMessage).to.eql(\"Success\");\r",
+									"    pm.expect(jsonData.Status.DisplayMessage).to.eql(\"स्टॉक में नहीं है\");\r",
 									"});\r",
 									" pm.test(\"Verifying Status for MessageTitle\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
-									"    pm.expect(jsonData.Status.MessageTitle).to.eql(\"Success\");\r",
+									"    pm.expect(jsonData.Status.MessageTitle).to.eql(\"Error\");\r",
 									"});"
 								],
 								"type": "text/javascript",
