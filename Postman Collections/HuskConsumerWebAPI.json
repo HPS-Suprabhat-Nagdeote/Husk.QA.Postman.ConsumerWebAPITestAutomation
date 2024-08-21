@@ -20487,7 +20487,7 @@
 					"response": []
 				},
 				{
-					"name": "GetCAFDetails Copy",
+					"name": "GetCAFDetails unauthorized",
 					"event": [
 						{
 							"listen": "test",
