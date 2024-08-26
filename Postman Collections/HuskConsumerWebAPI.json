@@ -17080,7 +17080,7 @@
 							"mode": "raw",
 							"raw": "{}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetAllSubCategories"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetAllSubCategories"
 					},
 					"response": []
 				},
@@ -17154,7 +17154,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"Name\": \"string\",\r\n  \"BrandId\": 0,\r\n  \"Base64ProfileDeviceImageUrl\": [\r\n    {\r\n      \"CustomerId\": 0,\r\n      \"DeviceImageUrl\": \"string\"\r\n    }\r\n  ],\r\n  \"PurchedOn\": \"2023-07-14T02:55:04.101Z\",\r\n  \"IsActive\": true,\r\n  \"Base64ProfileDeviceInvoiceImage\": \"string\",\r\n  \"CustomerId\": 0\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/EEDInsertDeviceDeatils"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/EEDInsertDeviceDeatils"
 					},
 					"response": []
 				},
@@ -17228,7 +17228,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"LikeId\": 0\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetFrequentlyBoughtTogetherProduct"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetFrequentlyBoughtTogetherProduct"
 					},
 					"response": []
 				},
@@ -17302,7 +17302,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"SubCategoryId\": 258,\r\n  \"ProductId\": 10\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetSimilarProduct"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetSimilarProduct"
 					},
 					"response": []
 				},
@@ -17377,7 +17377,7 @@
 								}
 							}
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/DecryptResponse"
 					},
 					"response": []
 				},
@@ -17447,7 +17447,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"SubCategoryId\": 0,\r\n  \"ProductId\": 0\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetSimilarProduct"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetSimilarProduct"
 					},
 					"response": []
 				},
@@ -17517,7 +17517,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"SubCategoryId\": 0,\r\n  \"ProductId\": 10\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetSimilarProduct"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetSimilarProduct"
 					},
 					"response": []
 				},
@@ -17592,7 +17592,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"SubCategoryId\": 258,\r\n  \"ProductId\": 0\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetSimilarProduct"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetSimilarProduct"
 					},
 					"response": []
 				},
@@ -17667,7 +17667,7 @@
 								}
 							}
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/DecryptResponse"
 					},
 					"response": []
 				},
@@ -17741,7 +17741,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"CustomerId\": 0\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetDeviceList"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetDeviceList"
 					},
 					"response": []
 				},
@@ -17815,7 +17815,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"MappingCode\": 0,\r\n  \"MappingId\": 0,\r\n  \"LanguageId\": 0\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetYoutubeList"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetYoutubeList"
 					},
 					"response": []
 				},
@@ -17889,7 +17889,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"ProductId\": 0\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetProductDetailsInfo"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetProductDetailsInfo"
 					},
 					"response": []
 				},
