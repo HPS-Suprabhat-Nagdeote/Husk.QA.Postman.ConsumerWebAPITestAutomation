@@ -179,7 +179,7 @@
 								}
 							}
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/DecryptResponse"
 					},
 					"response": []
 				},
@@ -405,7 +405,7 @@
 								}
 							}
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/DecryptResponse"
 					},
 					"response": []
 				},
@@ -698,7 +698,7 @@
 								}
 							}
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/DecryptResponse"
 					},
 					"response": []
 				},
@@ -1552,7 +1552,7 @@
 								}
 							}
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/DecryptResponse"
 					},
 					"response": []
 				},
@@ -2022,7 +2022,7 @@
 								}
 							}
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/DecryptResponse"
 					},
 					"response": []
 				},
@@ -2166,7 +2166,7 @@
 								}
 							}
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/DecryptResponse"
 					},
 					"response": []
 				},
@@ -2314,7 +2314,7 @@
 								}
 							}
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/DecryptResponse"
 					},
 					"response": []
 				},
@@ -2460,7 +2460,7 @@
 								}
 							}
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/DecryptResponse"
 					},
 					"response": []
 				},
@@ -2772,7 +2772,7 @@
 								}
 							}
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/DecryptResponse"
 					},
 					"response": []
 				},
@@ -3017,7 +3017,7 @@
 								}
 							}
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/DecryptResponse"
 					},
 					"response": []
 				},
@@ -3333,7 +3333,7 @@
 								}
 							}
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/DecryptResponse"
 					},
 					"response": []
 				},
@@ -3570,7 +3570,7 @@
 								}
 							}
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/DecryptResponse"
 					},
 					"response": []
 				},
