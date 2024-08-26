@@ -5780,7 +5780,7 @@
 								}
 							}
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/DecryptResponse"
 					},
 					"response": []
 				},
@@ -5947,7 +5947,7 @@
 								}
 							}
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/DecryptResponse"
 					},
 					"response": []
 				},
@@ -6186,7 +6186,7 @@
 								}
 							}
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/DecryptResponse"
 					},
 					"response": []
 				},
@@ -6351,7 +6351,7 @@
 								}
 							}
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/DecryptResponse"
 					},
 					"response": []
 				}
@@ -6562,7 +6562,7 @@
 								}
 							}
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/DecryptResponse"
 					},
 					"response": []
 				},
@@ -19156,7 +19156,7 @@
 								}
 							}
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/DecryptResponse"
 					},
 					"response": []
 				},
@@ -19235,7 +19235,7 @@
 							"mode": "raw",
 							"raw": "{ \r\n   \"SubCategoryId\": 258, \r\n   \"CustomerId\": \"HINUP-Huskify-43117\", \r\n   \"SortBy\": \"string\", \r\n   \"ViewAll\": true\r\n }"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetProductBySubSubCategoriesId"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetProductBySubSubCategoriesId"
 					},
 					"response": []
 				},
@@ -19320,7 +19320,7 @@
 								}
 							}
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/DecryptResponse"
 					},
 					"response": []
 				},
@@ -19396,7 +19396,7 @@
 							"mode": "raw",
 							"raw": "{ \r\n   \"SubCategoryId\": 258, \r\n   \"CustomerId\": \"HINUP-Huskify-0\", \r\n   \"SortBy\": \"string\", \r\n   \"ViewAll\": true\r\n }"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetProductBySubSubCategoriesId"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetProductBySubSubCategoriesId"
 					},
 					"response": []
 				},
@@ -19472,7 +19472,7 @@
 							"mode": "raw",
 							"raw": "{ \r\n   \"SubCategoryId\": 0, \r\n   \"CustomerId\": \"HINUP-Huskify-43117\", \r\n   \"SortBy\": \"string\", \r\n   \"ViewAll\": true\r\n }"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetProductBySubSubCategoriesId"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetProductBySubSubCategoriesId"
 					},
 					"response": []
 				},
@@ -19550,7 +19550,7 @@
 							"mode": "raw",
 							"raw": "{\r\n   \"ProductId\": 546 \r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetProductDetailsInfo"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetProductDetailsInfo"
 					},
 					"response": []
 				},
@@ -19642,7 +19642,7 @@
 								}
 							}
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/DecryptResponse"
 					},
 					"response": []
 				},
@@ -19717,7 +19717,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"ProductId\": 0\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetProductDetailsInfo"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetProductDetailsInfo"
 					},
 					"response": []
 				},
@@ -19792,7 +19792,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"ProductId\": 10\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetProductDetailsInfo"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetProductDetailsInfo"
 					},
 					"response": []
 				},
@@ -19831,10 +19831,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetProductSearchList?ProductName=mobile",
+							"raw": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetProductSearchList?ProductName=mobile",
 							"protocol": "https",
 							"host": [
-								"huskpowerdevconsumerwebapi",
+								"huskpowerdevconsumerwebapih",
 								"azurewebsites",
 								"net"
 							],
@@ -19948,7 +19948,7 @@
 							"mode": "raw",
 							"raw": "{ \r\n   \"MobileNumber\": \"+919823643386\",\r\n  \"CalledFrom\": \"string\" \r\n }"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/GetOffers"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/GetOffers"
 					},
 					"response": []
 				},
@@ -20012,7 +20012,7 @@
 							"mode": "raw",
 							"raw": "{ \r\n   \"MobileNumber\": \"+919284487810\", \r\n   \"CalledFrom\": \"String\"  \r\n }"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/GetCustomerDashboardInfo"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/GetCustomerDashboardInfo"
 					},
 					"response": []
 				}
