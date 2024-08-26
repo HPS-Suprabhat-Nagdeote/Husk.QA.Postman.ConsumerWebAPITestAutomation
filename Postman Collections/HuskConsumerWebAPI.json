@@ -17963,7 +17963,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"SubCategoryId\": 0,\r\n  \"CustomerId\": 0,\r\n  \"SortBy\": \"string\",\r\n  \"ViewAll\": true\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetProductBySubSubCategoriesId"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetProductBySubSubCategoriesId"
 					},
 					"response": []
 				},
@@ -18037,7 +18037,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"SubSubCategoryId\": 0\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetProductBrandBinding"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetProductBrandBinding"
 					},
 					"response": []
 				},
@@ -18111,7 +18111,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"BrandId\": 0,\r\n  \"SubCategoryId\": 0,\r\n  \"RequestproductId\": 0\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetProductByBrand"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetProductByBrand"
 					},
 					"response": []
 				},
@@ -18185,7 +18185,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"ProductId\": 0,\r\n  \"CompaireProductId\": 0\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetProductComparisonDetails"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetProductComparisonDetails"
 					},
 					"response": []
 				},
@@ -18259,7 +18259,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"TotalCartAmount\": 0,\r\n  \"DiscountId\": [\r\n    0\r\n  ]\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetDiscountList"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetDiscountList"
 					},
 					"response": []
 				},
@@ -18333,7 +18333,7 @@
 							"mode": "raw",
 							"raw": "{\r\n    \"ProductName\":\"tv\"\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetProductSearchList"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetProductSearchList"
 					},
 					"response": []
 				},
@@ -18409,7 +18409,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"ProductName\": \"Zebronics\"\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetProductSuggestionList"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetProductSuggestionList"
 					},
 					"response": []
 				},
@@ -18484,7 +18484,7 @@
 								}
 							}
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/DecryptResponse"
 					},
 					"response": []
 				},
@@ -18560,7 +18560,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"ProductName\": \"\"\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetProductSuggestionList"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetProductSuggestionList"
 					},
 					"response": []
 				},
@@ -18635,7 +18635,7 @@
 								}
 							}
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/DecryptResponse"
 					},
 					"response": []
 				},
@@ -18708,10 +18708,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://huskpowerdevconsumerwebapi.azurewebsites.net/api/EEDProduct?specificationId=1",
+							"raw": "https://huskpowerdevconsumerwebapih.azurewebsites.net/api/EEDProduct?specificationId=1",
 							"protocol": "https",
 							"host": [
-								"huskpowerdevconsumerwebapi",
+								"huskpowerdevconsumerwebapih",
 								"azurewebsites",
 								"net"
 							],
@@ -18798,10 +18798,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://huskpowerdevconsumerwebapi.azurewebsites.net/api/EEDProduct?ProductId=1",
+							"raw": "https://huskpowerdevconsumerwebapih.azurewebsites.net/api/EEDProduct?ProductId=1",
 							"protocol": "https",
 							"host": [
-								"huskpowerdevconsumerwebapi",
+								"huskpowerdevconsumerwebapih",
 								"azurewebsites",
 								"net"
 							],
@@ -18891,10 +18891,10 @@
 							"raw": "{ \r\n   \"SubSubCategoryId\": 324,\r\n   \"ProductId\": 314\r\n }"
 						},
 						"url": {
-							"raw": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetSubSubCatgorySimilarProduct?api_key=GetSubSubCatgorySimilarProduct",
+							"raw": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetSubSubCatgorySimilarProduct?api_key=GetSubSubCatgorySimilarProduct",
 							"protocol": "https",
 							"host": [
-								"huskpowerdevconsumerwebapi",
+								"huskpowerdevconsumerwebapih",
 								"azurewebsites",
 								"net"
 							],
@@ -18981,7 +18981,7 @@
 								}
 							}
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/DecryptResponse"
 					},
 					"response": []
 				},
@@ -19058,10 +19058,10 @@
 							"raw": "{ \r\n   \"SubSubCategoryId\": 324\r\n   //\"ProductId\": 0 \r\n }"
 						},
 						"url": {
-							"raw": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetSubSubCatgorySimilarProduct?api_key=GetSubSubCatgorySimilarProduct",
+							"raw": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetSubSubCatgorySimilarProduct?api_key=GetSubSubCatgorySimilarProduct",
 							"protocol": "https",
 							"host": [
-								"huskpowerdevconsumerwebapi",
+								"huskpowerdevconsumerwebapih",
 								"azurewebsites",
 								"net"
 							],
