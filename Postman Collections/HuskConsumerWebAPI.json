@@ -9031,7 +9031,7 @@
 							"mode": "raw",
 							"raw": "{\r\n    \r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetLoginTermsandCondition"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetLoginTermsandCondition"
 					},
 					"response": []
 				}
@@ -9144,7 +9144,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"CustomerId\": \"HINUP-Huskify-76213\",\r\n  \"LanguageId\": 2\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetHomePageDetails"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetHomePageDetails"
 					},
 					"response": []
 				},
@@ -9251,7 +9251,7 @@
 								}
 							}
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/DecryptResponse"
 					},
 					"response": []
 				},
@@ -9325,7 +9325,7 @@
 							"mode": "raw",
 							"raw": "{ \r\n   \"SubCategoryId\": 318\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetSubCategoryPageDetails"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetSubCategoryPageDetails"
 					},
 					"response": []
 				},
@@ -9403,7 +9403,7 @@
 								}
 							}
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/DecryptResponse"
 					},
 					"response": []
 				},
@@ -9476,7 +9476,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"AppName\": \"Bijli\",\r\n  \"LanguageId\": 1\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetFaq"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetFaq"
 					},
 					"response": []
 				},
@@ -9548,7 +9548,7 @@
 								}
 							}
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/DecryptResponse"
 					},
 					"response": []
 				},
@@ -9621,7 +9621,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"AppName\": \"Bijli\",\r\n  \"LanguageId\": 1\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetTermofUse"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetTermofUse"
 					},
 					"response": []
 				},
@@ -9693,7 +9693,7 @@
 								}
 							}
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/DecryptResponse"
 					},
 					"response": []
 				}
@@ -9817,7 +9817,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"CustomerId\": \"HINUP-Huskify-0281\",\r\n  \"ProductId\": 10,\r\n  \"ProductQuantity\": 1,\r\n  \"ISWishList\": true\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/AddProductToWishList"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/AddProductToWishList"
 					},
 					"response": []
 				},
@@ -9894,7 +9894,7 @@
 								}
 							}
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/DecryptResponse"
 					},
 					"response": []
 				},
@@ -9977,7 +9977,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"CustomerId\": \"HINUP-Huskify-\",\r\n  \"ProductId\": 10,\r\n  \"ProductQuantity\": 1,\r\n  \"ISWishList\": true\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/AddProductToWishList"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/AddProductToWishList"
 					},
 					"response": []
 				},
@@ -10060,7 +10060,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"CustomerId\": \"HINUP-Huskify-\",\r\n  \"ProductId\": 10,\r\n  \"ProductQuantity\": 1,\r\n  \"ISWishList\": true\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/AddProductToWishList"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/AddProductToWishList"
 					},
 					"response": []
 				},
@@ -10133,7 +10133,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"CustomerId\": \"HINUP-Huskify-43117\"\r\n // \"CustomerId\": 0\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetMyWishListDetails"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetMyWishListDetails"
 					},
 					"response": []
 				},
@@ -10210,7 +10210,7 @@
 								}
 							}
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/DecryptResponse"
 					},
 					"response": []
 				},
@@ -10286,7 +10286,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"CustomerId\": \"HINUP-Huskify\"\r\n // \"CustomerId\": 0\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetMyWishListDetails"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetMyWishListDetails"
 					},
 					"response": []
 				},
@@ -10362,7 +10362,7 @@
 							"mode": "raw",
 							"raw": ""
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetMyWishListDetails"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetMyWishListDetails"
 					},
 					"response": []
 				},
@@ -10438,7 +10438,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"CustomerId\": \"HINUP-Huskify-0281\",\r\n  \"ProductId\": 14,\r\n  \"ProductQuantity\": 1,\r\n  \"ISWishList\": true\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/AddToCartWishListProduct"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/AddToCartWishListProduct"
 					},
 					"response": []
 				},
@@ -10516,7 +10516,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"CustomerId\": \"HINUP-Huskify-43117\",\r\n  \"ProductId\": 12,\r\n  \"ProductQuantity\": 1\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/AddProductToCart"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/AddProductToCart"
 					},
 					"response": []
 				},
@@ -10588,7 +10588,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"CustomerId\": \"HINUP-Huskify-43117\",\r\n  \"ProductId\": 10,\r\n  \"ProductQuantity\": 1\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/AddProductToCart"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/AddProductToCart"
 					},
 					"response": []
 				},
@@ -10663,7 +10663,7 @@
 								}
 							}
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/DecryptResponse"
 					},
 					"response": []
 				},
@@ -10734,7 +10734,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"CustomerId\": \"HINUP-Huskify-43117\",\r\n  \"ProductId\": 0,\r\n  \"ProductQuantity\": 1\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/AddProductToCart"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/AddProductToCart"
 					},
 					"response": []
 				},
@@ -10805,7 +10805,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"CustomerId\": \"HINUP-Huskify-43117\",\r\n  \"ProductId\": 10,\r\n  \"ProductQuantity\": 0\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/AddProductToCart"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/AddProductToCart"
 					},
 					"response": []
 				},
@@ -10879,7 +10879,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"CustomerId\": \"HINUP-Huskify-43117\"\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetMyCartDetails"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetMyCartDetails"
 					},
 					"response": []
 				},
@@ -10959,7 +10959,7 @@
 								}
 							}
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/DecryptResponse"
 					},
 					"response": []
 				},
@@ -11029,7 +11029,7 @@
 							"mode": "raw",
 							"raw": "{\r\n//  \"CustomerId\": \"HINUP-Huskify-43117\"\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetMyCartDetails"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetMyCartDetails"
 					},
 					"response": []
 				},
@@ -11099,7 +11099,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"CustomerId\": \"HINUP-Huskify-\"\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetMyCartDetails"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetMyCartDetails"
 					},
 					"response": []
 				},
@@ -11173,7 +11173,7 @@
 							"mode": "raw",
 							"raw": "{\r\n    \"CustomerId\": \"HINUP-Huskify-43117\",\r\n    \"ProductId\": 10\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/DeleteMyCartDetails"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/DeleteMyCartDetails"
 					},
 					"response": []
 				},
@@ -11250,7 +11250,7 @@
 								}
 							}
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/DecryptResponse"
 					},
 					"response": []
 				},
@@ -11322,7 +11322,7 @@
 							"mode": "raw",
 							"raw": "{\r\n    \"CustomerId\": \"HINUP-Huskify-43117\",\r\n    \"ProductId\": 10\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/DeleteMyCartDetails"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/DeleteMyCartDetails"
 					},
 					"response": []
 				},
@@ -11394,7 +11394,7 @@
 							"mode": "raw",
 							"raw": "{\r\n    \"CustomerId\": \"HINUP-Huskify-43117\"\r\n    //\"ProductId\": 10\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/DeleteMyCartDetails"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/DeleteMyCartDetails"
 					},
 					"response": []
 				},
@@ -11466,7 +11466,7 @@
 							"mode": "raw",
 							"raw": "{\r\n    //\"CustomerId\": \"HINUP-Huskify-43117\"\r\n    //\"ProductId\": 10\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/DeleteMyCartDetails"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/DeleteMyCartDetails"
 					},
 					"response": []
 				},
@@ -11546,7 +11546,7 @@
 								}
 							}
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/DecryptResponse"
 					},
 					"response": []
 				},
@@ -11621,7 +11621,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"CustomerId\": \"HINUP-Huskify-43117\",\r\n  \"ProductId\": 10,\r\n  \"ProductQuantity\": 1\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/RemoveSingleProductFromCart"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/RemoveSingleProductFromCart"
 					},
 					"response": []
 				},
@@ -11696,7 +11696,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"CustomerId\": 0,\r\n  \"ProductId\": 0,\r\n  \"ProductQuantity\": 0\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/RemoveSingleProductFromCart"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/RemoveSingleProductFromCart"
 					},
 					"response": []
 				},
@@ -11768,7 +11768,7 @@
 							"mode": "raw",
 							"raw": "[\r\n  {\r\n    \"CustomerId\": \"string\",\r\n    \"ProductId\": 0,\r\n    \"ProductQuantity\": 0,\r\n    \"ComboId\": 0\r\n  }\r\n]"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/AddMultipleProductToCart"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/AddMultipleProductToCart"
 					},
 					"response": []
 				},
@@ -11837,7 +11837,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"PinCode\": \"string\"\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetDeliveryDetailByPinCode"
+						"url": "https://huskpowerdevconsumerwebaphi.azurewebsites.net/EED/Api/v1/GetDeliveryDetailByPinCode"
 					},
 					"response": []
 				},
@@ -11906,7 +11906,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"orderId\": \"string\",\r\n  \"ProductId\": \"string\",\r\n  \"OrderDetails\": \"string\",\r\n  \"BillingInfo\": \"string\",\r\n  \"PaymentInfo\": \"string\",\r\n  \"DeliveryInfo\": \"string\"\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetProductOrderDetails"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetProductOrderDetails"
 					},
 					"response": []
 				},
@@ -11975,7 +11975,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"TotalAmount\": 0\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetEMIDetails"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetEMIDetails"
 					},
 					"response": []
 				},
@@ -12044,7 +12044,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"CustomerId\": 0,\r\n  \"PaymentType\": \"string\"\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetKYCInfo"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetKYCInfo"
 					},
 					"response": []
 				},
@@ -12113,7 +12113,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"CoupanCode\": \"string\",\r\n  \"CustomerId\": 0,\r\n  \"PaymentType\": \"string\",\r\n  \"EMIId\": 0\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetDiscountDetails"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetDiscountDetails"
 					},
 					"response": []
 				},
@@ -12188,7 +12188,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"MobileNumber\": \"string\",\r\n  \"CustomerId\": 0,\r\n  \"DownpaymentAmt\": 0,\r\n  \"EMIValue\": 0,\r\n  \"EMISchemeID\": 0,\r\n  \"TotalAmount\": 0,\r\n  \"DiscountId\": 0,\r\n  \"DiscountAmount\": 0,\r\n  \"PaytmPaymentStatus\": \"string\",\r\n  \"PaytmPaymentDateTime\": \"2023-07-10T08:55:55.160Z\",\r\n  \"AddressId\": 0,\r\n  \"OrderId\": \"string\",\r\n  \"CallBackUrl\": \"string\",\r\n  \"CAFId\": 0\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/PaytmPaymentRequest"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/PaytmPaymentRequest"
 					},
 					"response": []
 				},
@@ -12268,7 +12268,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"CustomerId\": \"HINUP-Huskify-2768\"\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetMyOrders"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetMyOrders"
 					},
 					"response": []
 				},
@@ -12348,7 +12348,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"CustomerId\": \"\"\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetMyOrders"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetMyOrders"
 					},
 					"response": []
 				},
@@ -12395,7 +12395,7 @@
 								}
 							}
 						},
-						"url": "https://huskpowerprodconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
+						"url": "https://huskpowerprodconsumerwebapih.azurewebsites.net/Api/v1/DecryptResponse"
 					},
 					"response": []
 				},
@@ -12421,7 +12421,8 @@
 									"});\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {}
 							}
 						}
 					],
@@ -12469,7 +12470,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"CafId\": 0\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetMyCafDetailProduct"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetMyCafDetailProduct"
 					},
 					"response": []
 				},
@@ -12543,7 +12544,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"OrderNumber\": \"PS-2890-PD-HIN-01-137-2\"\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetCAFDetails"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetCAFDetails"
 					},
 					"response": []
 				},
@@ -12623,7 +12624,7 @@
 								}
 							}
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/DecryptResponse"
 					},
 					"response": []
 				},
@@ -12693,7 +12694,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"OrderNumber\": \"34324\"\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetCAFDetails"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetCAFDetails"
 					},
 					"response": []
 				},
@@ -12763,7 +12764,7 @@
 							"mode": "raw",
 							"raw": "{\r\n // \"OrderNumber\": \"34324\"\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetCAFDetails"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetCAFDetails"
 					},
 					"response": []
 				},
@@ -12840,10 +12841,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/VerifyPaymentStatus?orderId=1&Type=online",
+							"raw": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/VerifyPaymentStatus?orderId=1&Type=online",
 							"protocol": "https",
 							"host": [
-								"huskpowerdevconsumerwebapi",
+								"huskpowerdevconsumerwebapih",
 								"azurewebsites",
 								"net"
 							],
@@ -12938,7 +12939,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"CafId\": 0,\r\n  \"OrderId\": \"string\",\r\n  \"Amount\": 0,\r\n  \"CustomerId\": 0\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/PaytmPaymentPendingApprovalRequest"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/PaytmPaymentPendingApprovalRequest"
 					},
 					"response": []
 				},
@@ -13013,7 +13014,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"CustomerId\": 0\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetOrderSummary"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetOrderSummary"
 					},
 					"response": []
 				},
@@ -13088,7 +13089,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"CustomerId\": 0,\r\n  \"PaymentType\": \"string\"\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetEmiOptions"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetEmiOptions"
 					},
 					"response": []
 				},
@@ -13163,7 +13164,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"EMIId\": 0,\r\n  \"TotalAmount\": 0,\r\n  \"CustomerId\": 0,\r\n  \"MRP\": 0,\r\n  \"DealPrice\": 0\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/CheckEMIDetails"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/CheckEMIDetails"
 					},
 					"response": []
 				},
@@ -13238,7 +13239,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"CustomerId\": 0,\r\n  \"ProductId\": 0,\r\n  \"ProductQuantity\": 0,\r\n  \"ISWishList\": true\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/RemoveProductFromWishList"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/RemoveProductFromWishList"
 					},
 					"response": []
 				},
@@ -13313,7 +13314,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"CustomerId\": 0\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/BuyAgainProduct"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/BuyAgainProduct"
 					},
 					"response": []
 				},
@@ -13388,7 +13389,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"CustomerId\": 0\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetPendingApprovalCafDetail"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetPendingApprovalCafDetail"
 					},
 					"response": []
 				},
@@ -13463,7 +13464,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"CAFid\": 0\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetPendingApprovalCafProductDetail"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetPendingApprovalCafProductDetail"
 					},
 					"response": []
 				},
@@ -13538,7 +13539,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"OrderId\": \"string\",\r\n  \"CafId\": 0,\r\n  \"RefundAmount\": 0,\r\n  \"RefundReason\": \"string\",\r\n  \"PaymentType\": \"string\"\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/ProductCancelled"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/ProductCancelled"
 					},
 					"response": []
 				},
@@ -13613,7 +13614,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"TotalAmount\": 0,\r\n  \"EmiPlanId\": 0,\r\n  \"CustomerId\": 0,\r\n  \"DowmpaymentPercentage\": 0\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/CashFreeEMIDetails"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/CashFreeEMIDetails"
 					},
 					"response": []
 				},
@@ -13688,7 +13689,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"OrderNumber\": \"PS-3083-PD-HIN-01-152-1\",\r\n  \"ProductId\": 639,\r\n  \"Product_Rating\": 3,\r\n  \"Product_Review_Title\": \"Good and must buy product\",\r\n  \"Product_Review\": \"Nice product to buy\",\r\n  \"Base64ReviewImageUrl\": [\r\n    {\r\n      \"Base64ReviewImagestring\": \"iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFUlEQVR42mP8z8BQz0AEYBxVSF+FABJADveWkH6oAAAAAElFTkSuQmCC\"\r\n    },\r\n     {\r\n      \"Base64ReviewImagestring\": \"iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFUlEQVR42mNk+M9Qz0AEYBxVSF+FAAhKDveksOjmAAAAAElFTkSuQmCC\"\r\n    }\r\n  ]\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/AddProductRatingandReview"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/AddProductRatingandReview"
 					},
 					"response": []
 				},
@@ -13763,7 +13764,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"CustomerId\": 0,\r\n  \"CustomerName\": \"string\",\r\n  \"PrimaryMobile\": \"string\",\r\n  \"Address\": \"string\",\r\n  \"Lattitude\": \"string\",\r\n  \"Longitude\": \"string\",\r\n  \"PinCode\": 0\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/AddEMIRequestDetails"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/AddEMIRequestDetails"
 					},
 					"response": []
 				},
@@ -13838,7 +13839,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"CustomerId\": 0\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetEMIRequestDetails"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetEMIRequestDetails"
 					},
 					"response": []
 				},
@@ -13913,7 +13914,7 @@
 							"mode": "raw",
 							"raw": "{}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetEMIRequestBanner"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetEMIRequestBanner"
 					},
 					"response": []
 				},
@@ -13987,7 +13988,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"CustomerId\": \"HINUP-Huskify-43117\"\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/CheckCartDetailsBeforeCheckout"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/CheckCartDetailsBeforeCheckout"
 					},
 					"response": []
 				},
