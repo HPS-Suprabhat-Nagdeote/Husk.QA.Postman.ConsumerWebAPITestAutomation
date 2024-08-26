@@ -775,7 +775,7 @@
 							"mode": "raw",
 							"raw": "{}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/ChangePassword"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/ChangePassword"
 					},
 					"response": []
 				},
@@ -852,7 +852,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"MobileNumber\": \"7719919637\",\r\n  \"NewPassword\": \"1234\"\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/ChangePassword"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/ChangePassword"
 					},
 					"response": []
 				},
@@ -931,7 +931,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"MobileNumber\": \"9823643386\"\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/ForgotPassword"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/ForgotPassword"
 					},
 					"response": []
 				},
@@ -1006,7 +1006,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"MobileNumber\": \"123\"\r\n}\r\n"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/ForgotPassword"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/ForgotPassword"
 					},
 					"response": []
 				},
@@ -1085,7 +1085,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"MobileNumber\": \"9823643386\",\r\n  \"NewPassword\": \"123456\",\r\n  \"ConfirmPassword\": \"123456\"\r\n}\r\n"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/UpdatePassword"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/UpdatePassword"
 					},
 					"response": []
 				},
@@ -1164,7 +1164,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"MobileNumber\": \"123\",\r\n  \"NewPassword\": \"123456\",\r\n  \"ConfirmPassword\": \"123456\"\r\n}\r\n"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/UpdatePassword"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/UpdatePassword"
 					},
 					"response": []
 				},
@@ -1243,7 +1243,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"MobileNumber\": \"123\",\r\n  \"NewPassword\": \"\",\r\n  \"ConfirmPassword\": \"123456\"\r\n}\r\n"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/UpdatePassword"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/UpdatePassword"
 					},
 					"response": []
 				},
@@ -1320,7 +1320,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"PrevMobileNumber\": \"9955041298\",\r\n  \"MobileNumber\": \"7719919637\",\r\n  \"OTPCode\": \"\",\r\n  \"IsMobileUpate\": true\r\n}\r\n"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/VerifyOTP"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/VerifyOTP"
 					},
 					"response": []
 				},
@@ -1396,7 +1396,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"PrevMobileNumber\": \"9955041298\",\r\n  \"MobileNumber\": \"9955041298\",\r\n  \"OTPCode\": \"6486\",\r\n  \"IsMobileUpate\": true\r\n}\r\n"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/VerifyOTP"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/VerifyOTP"
 					},
 					"response": []
 				},
@@ -1475,7 +1475,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"CustomerId\": \"HINUP-Huskify-15100\"\r\n}\r\n"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetUserAddress"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetUserAddress"
 					},
 					"response": []
 				},
@@ -1632,7 +1632,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"CustomerId\": \"123\"\r\n}\r\n"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetUserAddress"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetUserAddress"
 					},
 					"response": []
 				},
@@ -1711,7 +1711,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"CustomerId\": \"\"\r\n}\r\n"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetUserAddress"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetUserAddress"
 					},
 					"response": []
 				},
@@ -1792,7 +1792,7 @@
 							"mode": "raw",
 							"raw": "{\r\n            \"Id\": 0,\r\n            \"CustomerId\": \"76216\",\r\n            \"CustomerName\": \"Suprabhat Test\",\r\n            \"AlternatePhoneNumber\": \"\",\r\n            \"PhoneNumber\": \"9823643386\",\r\n            \"FlatNoWithBuildingName\": \"\",\r\n            \"Street\": \"\",\r\n            \"Landmark\": \"home\",\r\n            \"State\": \"Pune\",\r\n            \"City\": \"Pune\",\r\n            \"PinCode\": 800001,\r\n            \"AddressType\": \"\",\r\n            \"Latitude\": 0.0,\r\n            \"Longitude\": 0.0,\r\n            \"IsDefault\": true,\r\n            \"IsBillingAddress\": false\r\n}\r\n"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/AddCustomerAddress"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/AddCustomerAddress"
 					},
 					"response": []
 				},
@@ -1873,7 +1873,7 @@
 							"mode": "raw",
 							"raw": "{\r\n            \"Id\": 0,\r\n            \"CustomerId\": \"123\",\r\n            \"CustomerName\": \"Akshay Shedge \",\r\n            \"AlternatePhoneNumber\": \"\",\r\n            \"PhoneNumber\": \"8796535081\",\r\n            \"FlatNoWithBuildingName\": \"\",\r\n            \"Street\": \"\",\r\n            \"Landmark\": \"home\",\r\n            \"State\": \"EEDHuskify\",\r\n            \"City\": \"EEDHuskify\",\r\n            \"PinCode\": 411014,\r\n            \"AddressType\": \"\",\r\n            \"Latitude\": 0.0,\r\n            \"Longitude\": 0.0,\r\n            \"IsDefault\": true,\r\n            \"IsBillingAddress\": false\r\n}\r\n"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/AddCustomerAddress"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/AddCustomerAddress"
 					},
 					"response": []
 				},
@@ -1946,7 +1946,7 @@
 							"mode": "raw",
 							"raw": "{\r\n            \"Id\": 76189,\r\n            \"CustomerId\": \"HINUP-Huskify-76188\",\r\n            \"CustomerName\": \"Test 123\",\r\n            \"AlternatePhoneNumber\": \"\",\r\n            \"PhoneNumber\": \"9823643386\",\r\n            \"FlatNoWithBuildingName\": \"\",\r\n            \"Street\": \"\",\r\n            \"Landmark\": \"home\",\r\n            \"State\": \"EEDHuskify\",\r\n            \"City\": \"EEDHuskify\",\r\n            \"PinCode\": 800001,\r\n            \"AddressType\": \"\",\r\n            \"Latitude\": 0.0,\r\n            \"Longitude\": 0.0,\r\n            \"IsDefault\": true,\r\n            \"IsBillingAddress\": false\r\n}\r\n"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/AddCustomerAddress"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/AddCustomerAddress"
 					},
 					"response": []
 				},
@@ -2101,7 +2101,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"CustomerId\": \"HINUP-Huskify-15100\"\r\n}\r\n"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetUserAddress"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetUserAddress"
 					},
 					"response": []
 				},
@@ -2245,7 +2245,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"AddressId\": {{AddressIdValue}}\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/UpdateDefaultAddress"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/UpdateDefaultAddress"
 					},
 					"response": []
 				},
@@ -2393,7 +2393,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"Id\": {{AddressIdValue}}\r\n  //\"Id\":17384\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/DeleteCustomerAddress"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/DeleteCustomerAddress"
 					},
 					"response": []
 				},
@@ -2542,7 +2542,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"Id\": 0\r\n  //\"Id\":17384\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/DeleteCustomerAddress"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/DeleteCustomerAddress"
 					},
 					"response": []
 				},
@@ -2623,7 +2623,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"Id\": 0\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/UpdateUserDetails"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/UpdateUserDetails"
 					},
 					"response": []
 				},
@@ -2706,7 +2706,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"CustomerId\": \"{{CustomerIDAkshay}}\",\r\n  \"FirstName\": \"Akshay\",\r\n  \"LastName\": \"Shendage\",\r\n  \"EmailId\": \"huskify@test.com\"\r\n  //\"Base64ProfileImage\": \"string\"\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/UpdateUserDetails"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/UpdateUserDetails"
 					},
 					"response": []
 				},
@@ -2853,7 +2853,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"CustomerId\": \"\",\r\n  \"FirstName\": \"\",\r\n  \"LastName\": \"\",\r\n  \"EmailId\": \"huskify@test.com\"\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/UpdateUserDetails"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/UpdateUserDetails"
 					},
 					"response": []
 				},
@@ -2937,7 +2937,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"MobileNumber\": \"+919823643386\",\r\n  \"Password\": \"123456\"\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/EEDLogin"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/EEDLogin"
 					},
 					"response": []
 				},
@@ -3097,7 +3097,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"MobileNumber\": \"123\",\r\n  \"Password\": \"\"\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/EEDLogin"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/EEDLogin"
 					},
 					"response": []
 				},
@@ -3178,7 +3178,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"MobileNumber\": \"7719919637\",\r\n  \"Password\": \"123\"\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/EEDLogin"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/EEDLogin"
 					},
 					"response": []
 				},
@@ -3262,7 +3262,7 @@
 							"mode": "raw",
 							"raw": "{\r\n \"CustomerId\": \"HINUP-Huskify-233623\"\r\n // \"CustomerId\": \"HINUP-Huskify-0010\"\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/GetCustomerEMIDetails"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/GetCustomerEMIDetails"
 					},
 					"response": []
 				},
@@ -3417,7 +3417,7 @@
 							"mode": "raw",
 							"raw": "{\r\n\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/GetCustomerEMIDetails"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/GetCustomerEMIDetails"
 					},
 					"response": []
 				},
@@ -3501,7 +3501,7 @@
 							"mode": "raw",
 							"raw": "{\r\n\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/GetCustomerEMIDetailsByCafid"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/GetCustomerEMIDetailsByCafid"
 					},
 					"response": []
 				},
@@ -3655,7 +3655,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"CafId\": \"123\"\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/GetCustomerEMIDetailsByCafid"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/GetCustomerEMIDetailsByCafid"
 					},
 					"response": []
 				},
@@ -3805,7 +3805,7 @@
 							"mode": "raw",
 							"raw": "{\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/StateBinding"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/StateBinding"
 					},
 					"response": []
 				},
@@ -3954,7 +3954,7 @@
 							"mode": "raw",
 							"raw": "{\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/PlantBinding"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/PlantBinding"
 					},
 					"response": []
 				},
@@ -4104,7 +4104,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"stateId\": 3\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/PlantBinding"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/PlantBinding"
 					},
 					"response": []
 				},
@@ -4259,7 +4259,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"CustomerId\": \"HINUP-Huskify-1510\"\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/EEDGetCustomerEMIDetailsPopUp"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/EEDGetCustomerEMIDetailsPopUp"
 					},
 					"response": []
 				},
@@ -4404,7 +4404,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"MobileNumber\": \"string\",\r\n  \"CalledFrom\": \"string\"\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/CheckCustomerExist"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/CheckCustomerExist"
 					},
 					"response": []
 				},
@@ -4550,7 +4550,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"MobileNumber\": \"7719919637\"\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/CheckCustomerExist"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/CheckCustomerExist"
 					},
 					"response": []
 				},
@@ -4628,7 +4628,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"MobileNumber\": \"1234567891\"\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/CheckCustomerExist"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/CheckCustomerExist"
 					},
 					"response": []
 				},
@@ -4775,7 +4775,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"MobileNumber\": \"7719919637\"\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/ResendOTP"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/ResendOTP"
 					},
 					"response": []
 				},
@@ -4850,7 +4850,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"MobileNumber\": \"123\"\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/ResendOTP"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/ResendOTP"
 					},
 					"response": []
 				},
@@ -4919,10 +4919,10 @@
 							}
 						},
 						"url": {
-							"raw": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/DeactivateD2RCustomer",
+							"raw": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/DeactivateD2RCustomer",
 							"protocol": "https",
 							"host": [
-								"huskpowerdevconsumerwebapi",
+								"huskpowerdevconsumerwebapih",
 								"azurewebsites",
 								"net"
 							],
@@ -5057,7 +5057,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"CRN\": \"HINUP-Huskify-43117\",\r\n  \"CustomerId\": 76171\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetCustomerInfo"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetCustomerInfo"
 					},
 					"response": []
 				},
@@ -5208,7 +5208,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"CRN\": \"\",\r\n  \"CustomerId\": 0\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetCustomerInfo"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetCustomerInfo"
 					},
 					"response": []
 				},
@@ -5284,7 +5284,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"CRN\": \"HINUP-Huskify-43117\",\r\n  \"CustomerId\": 0\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetCustomerInfo"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetCustomerInfo"
 					},
 					"response": []
 				},
@@ -5441,7 +5441,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"CRN\": \"\",\r\n    \"CustomerId\": 0\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/GetCustomerInfo"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetCustomerInfo"
 					},
 					"response": []
 				},
@@ -5519,7 +5519,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"CustomerId\": \"HINUP-Huskify-43117\",\r\n  //\"ProductId\": \"\",\r\n // \"OrderId\": \"0\",\r\n  \"ComplainTitleId\": 40,\r\n  \"ComplainDetails\": \"Product not good\"\r\n // \"CustomerRating\": 4,\r\n //\"Base64Imagestring\": \"string\"\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/AddCustomerComplaint"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/AddCustomerComplaint"
 					},
 					"response": []
 				},
@@ -5686,7 +5686,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  //\"CRN\": \"HINUP-Huskify-43117\"\r\n  \"CustomerId\": \"HINUP-Huskify-43117\"\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/Getcustomercomplaintlist"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/Getcustomercomplaintlist"
 					},
 					"response": []
 				},
@@ -5853,7 +5853,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  //\"CRN\": \"HINUP-Huskify-43117\"\r\n  \"CustomerId\": \"HINUP-Huskify-2768\"\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/Getcustomercomplaintlist"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/Getcustomercomplaintlist"
 					},
 					"response": []
 				},
@@ -6020,7 +6020,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  //\"CRN\": \"HINUP-Huskify-43117\"\r\n  \"CustomerId\": \"HINUP-Huskify-35\"\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/Getcustomercomplaintlist"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/Getcustomercomplaintlist"
 					},
 					"response": []
 				},
@@ -6097,7 +6097,7 @@
 							"mode": "raw",
 							"raw": "{\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/CustomerTitleBinding"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/CustomerTitleBinding"
 					},
 					"response": []
 				},
@@ -6269,7 +6269,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"CustomerId\": \"HINUP-Huskify-43117\"\r\n  //\"AppVersion\": \"string\"\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/AddAppVersion"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/AddAppVersion"
 					},
 					"response": []
 				},
@@ -6463,7 +6463,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"MobileNumber\": \"9823643386\",\r\n  \"CalledFrom\": \"APP\"\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/EEDSendOTP"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/EEDSendOTP"
 					},
 					"response": []
 				},
@@ -6638,7 +6638,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"MobileNumber\": \"12345467890\",\r\n  \"CalledFrom\": \"APP\"\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/EEDSendOTP"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/EEDSendOTP"
 					},
 					"response": []
 				},
@@ -6808,7 +6808,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"MobileNumber\": \"9823643386\",\r\n  \"OTPCode\": \"6666\",\r\n  \"AppVersion\": \"APP\",\r\n  \"IsAcceptTC\": true\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/VerifyOTPforLogin"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/VerifyOTPforLogin"
 					},
 					"response": []
 				},
@@ -6896,7 +6896,7 @@
 								}
 							}
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/DecryptResponse"
 					},
 					"response": []
 				},
@@ -6968,7 +6968,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"MobileNumber\": \"9823643386\",\r\n  \"OTPCode\": \"1223\",\r\n  \"AppVersion\": \"APP\",\r\n  \"IsAcceptTC\": true\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/VerifyOTPforLogin"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/VerifyOTPforLogin"
 					},
 					"response": []
 				},
@@ -7040,7 +7040,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"MobileNumber\": \"1234568790\",\r\n  \"OTPCode\": \"1223\",\r\n  \"AppVersion\": \"APP\",\r\n  \"IsAcceptTC\": true\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/VerifyOTPforLogin"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/VerifyOTPforLogin"
 					},
 					"response": []
 				},
@@ -7112,7 +7112,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"MobileNumber\": \"1234568790\",\r\n  \"OTPCode\": \"\",\r\n  \"AppVersion\": \"APP\",\r\n  \"IsAcceptTC\": true\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/VerifyOTPforLogin"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/VerifyOTPforLogin"
 					},
 					"response": []
 				},
@@ -7187,7 +7187,7 @@
 							"mode": "raw",
 							"raw": "{}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/LanguageBinding"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/LanguageBinding"
 					},
 					"response": []
 				},
@@ -7273,7 +7273,7 @@
 								}
 							}
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/DecryptResponse"
 					},
 					"response": []
 				},
@@ -7361,7 +7361,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"MobileNumber\": \"{{MobileNumber}}\",\r\n  \"AppVersion\": \"APP\",\r\n  \"Email\": \"test@gmail.com\",\r\n  \"CustomerOccupationId\": 1,\r\n  \"PinCode\": 800001\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/EEDRegister"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/EEDRegister"
 					},
 					"response": []
 				},
@@ -7452,7 +7452,7 @@
 								}
 							}
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/DecryptResponse"
 					},
 					"response": []
 				},
@@ -7540,7 +7540,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"MobileNumber\": \"7719919637\",\r\n  \"AppVersion\": \"APP\",\r\n  \"Email\": \"test@gmail.com\",\r\n  \"CustomerOccupationId\": 1,\r\n  \"PinCode\": 800001\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/EEDRegister"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/EEDRegister"
 					},
 					"response": []
 				},
@@ -7615,7 +7615,7 @@
 							"mode": "raw",
 							"raw": "\r\n{\r\n    \"MobileNumber\": \"9109059955\",\r\n    \"Password\": \"1234567\",\r\n    \"AppVersion\": \"string\"\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/EEDLoginwithPassword"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/EEDLoginwithPassword"
 					},
 					"response": []
 				},
@@ -7706,7 +7706,7 @@
 								}
 							}
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/DecryptResponse"
 					},
 					"response": []
 				},
@@ -7778,7 +7778,7 @@
 							"mode": "raw",
 							"raw": "\r\n{\r\n    \"MobileNumber\": \"9109059955\",\r\n  \"Password\": \"6666\",\r\n  \"AppVersion\": \"string\"\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/EEDLoginwithPassword"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/EEDLoginwithPassword"
 					},
 					"response": []
 				},
@@ -7850,7 +7850,7 @@
 							"mode": "raw",
 							"raw": "\r\n{\r\n    \"MobileNumber\": \"9823643386\",\r\n  \"Password\": \"\",\r\n  \"AppVersion\": \"string\"\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/EEDLoginwithPassword"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/EEDLoginwithPassword"
 					},
 					"response": []
 				},
@@ -7924,7 +7924,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"MobileNumber\": \"9823643386\"\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/ForgotBijliPassword"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/ForgotBijliPassword"
 					},
 					"response": []
 				},
@@ -8005,7 +8005,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"MobileNumber\": \"77119919637\"\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/ForgotBijliPassword"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/ForgotBijliPassword"
 					},
 					"response": []
 				},
@@ -8086,7 +8086,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"MobileNumber\": \"\"\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/ForgotBijliPassword"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/ForgotBijliPassword"
 					},
 					"response": []
 				},
@@ -8167,7 +8167,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"MobileNumber\": \"123\"\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/ForgotBijliPassword"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/ForgotBijliPassword"
 					},
 					"response": []
 				},
@@ -8247,7 +8247,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"MobileNumber\": \"9823643386\",\r\n  \"NewPassword\": \"123456\",\r\n  \"ConfirmPassword\": \"123456\"\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/UpdateBijliPassword"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/UpdateBijliPassword"
 					},
 					"response": []
 				},
@@ -8327,7 +8327,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"MobileNumber\": \"9109059955\",\r\n  \"NewPassword\": \"1234567\",\r\n  \"ConfirmPassword\": \"11111\"\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/UpdateBijliPassword"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/UpdateBijliPassword"
 					},
 					"response": []
 				},
@@ -8407,7 +8407,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"MobileNumber\": \"7719919637\",\r\n  \"NewPassword\": \"1234567\",\r\n  \"ConfirmPassword\": \"1234567\"\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/UpdateBijliPassword"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/UpdateBijliPassword"
 					},
 					"response": []
 				},
@@ -8470,7 +8470,7 @@
 							"mode": "raw",
 							"raw": "{\r\n}\r\n"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/VerifyBijliOTP"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/VerifyBijliOTP"
 					},
 					"response": []
 				},
@@ -8545,7 +8545,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"MobileNumber\": \"9823643386\",\r\n  \"Password\": \"123456\"\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/EEDLoginwithPasswordBijli"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/EEDLoginwithPasswordBijli"
 					},
 					"response": []
 				},
@@ -8636,7 +8636,7 @@
 								}
 							}
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/Api/v1/DecryptResponse"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/DecryptResponse"
 					},
 					"response": []
 				},
@@ -8717,7 +8717,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"MobileNumber\": \"9823643386\",\r\n  \"Password\": \"11111\"\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/EEDLoginwithPasswordBijli"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/EEDLoginwithPasswordBijli"
 					},
 					"response": []
 				},
@@ -8798,7 +8798,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"MobileNumber\": \"9109059955\",\r\n  \"Password\": \"\"\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/EEDLoginwithPasswordBijli"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/EEDLoginwithPasswordBijli"
 					},
 					"response": []
 				},
@@ -8879,7 +8879,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"MobileNumber\": \"\",\r\n  \"Password\": \"123445\"\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/EEDLoginwithPasswordBijli"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/EEDLoginwithPasswordBijli"
 					},
 					"response": []
 				},
@@ -8960,7 +8960,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"MobileNumber\": \"7719919637\",\r\n  \"Password\": \"123445\"\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapi.azurewebsites.net/EED/Api/v1/EEDLoginwithPasswordBijli"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/EEDLoginwithPasswordBijli"
 					},
 					"response": []
 				},
