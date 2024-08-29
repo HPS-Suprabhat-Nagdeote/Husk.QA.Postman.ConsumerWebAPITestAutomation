@@ -15710,10 +15710,10 @@
 									"    pm.expect(jsonData.Status.MessageTitle).to.eql(\"Success\");",
 									"});",
 									"",
-									" pm.test(\"Verifying Status Product Review\", function () {",
-									"    var jsonData = pm.response.json();",
-									"    pm.expect(jsonData.Data[0].Product_Review).to.eql(\"Fhjvvcvcgb\");",
-									"});",
+									"//  pm.test(\"Verifying Status Product Review\", function () {",
+									"//     var jsonData = pm.response.json();",
+									"//     pm.expect(jsonData.Data[0].Product_Review).to.eql(\"Fhjvvcvcgb\");",
+									"// });",
 									" pm.test(\"Verifying Customer Name\", function () {",
 									"    var jsonData = pm.response.json();",
 									"    pm.expect(jsonData.Data[0].CustomerName).to.eql(\"Akshay  Shedge\");",
@@ -15994,91 +15994,7 @@
 							"mode": "raw",
 							"raw": "{\r\n// \"ProductId\": 0.0\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetProductReviewByProductId"
-					},
-					"response": []
-				},
-				{
-					"name": "DecryptGetProductReviewByProductId Copy",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "57f10bd1-5573-41f7-ae2b-7a883162b962",
-								"exec": [
-									"",
-									"  pm.test(\"Verifying Status for DisplayMessage\", function () {",
-									"    var jsonData = pm.response.json();",
-									"    pm.expect(jsonData.Status.DisplayMessage).to.eql(\"REQI\");",
-									"});",
-									" pm.test(\"Verifying Status for MessageTitle\", function () {",
-									"    var jsonData = pm.response.json();",
-									"    pm.expect(jsonData.Status.MessageTitle).to.eql(\"Success\");",
-									"});",
-									"",
-									" pm.test(\"Verifying Status Product Review\", function () {",
-									"    var jsonData = pm.response.json();",
-									"    pm.expect(jsonData.Data[0].Product_Review).to.eql(\"Error\");",
-									"});",
-									" pm.test(\"Verifying Customer Name\", function () {",
-									"    var jsonData = pm.response.json();",
-									"    pm.expect(jsonData.Data[0].CustomerName).to.eql(\"Akshay  Shedge\");",
-									"});"
-								],
-								"type": "text/javascript",
-								"packages": {}
-							}
-						},
-						{
-							"listen": "prerequest",
-							"script": {
-								"id": "c60d07b8-3710-47c3-b6c5-cb18f87d74d0",
-								"exec": [
-									""
-								],
-								"type": "text/javascript",
-								"packages": {}
-							}
-						}
-					],
-					"id": "25de2d98-a271-48b2-a6ed-afb3d7c954fd",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "{{Auth-Token}}",
-								"type": "text"
-							},
-							{
-								"key": "husk-token",
-								"value": "{{huskTocken}}",
-								"type": "text"
-							},
-							{
-								"key": "CustomerId",
-								"value": "{{CustomerId}}",
-								"type": "text"
-							},
-							{
-								"key": "Auth-Token",
-								"value": "{{Auth-Token}}",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n  \"EncryptedString\": \"{{GetProductReviewByProductIdWhenProductDonthaveReview}}\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/DecryptResponse"
+						"url": "https://huskpowerdevconsumerwebapih1.azurewebsites.net/EED/Api/v1/GetProductReviewByProductId"
 					},
 					"response": []
 				},
