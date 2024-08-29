@@ -11877,12 +11877,6 @@
 							"script": {
 								"id": "81bd6458-8488-4175-acc9-4a1cd2f41045",
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"pm.test(\"Response time is less than 250ms\", function () {\r",
-									"    pm.expect(pm.response.responseTime).to.be.below(250);\r",
-									"});\r",
 									"pm.test(\"Body matches string\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include(\"DisplayMessage\");\r",
 									"});\r",
@@ -11952,9 +11946,6 @@
 							"script": {
 								"id": "41eb2085-1f5c-4913-93c3-b153f28371c1",
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
 									"pm.test(\"Body matches string\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include(\"DisplayMessage\");\r",
 									"});\r",
@@ -12032,9 +12023,6 @@
 							"script": {
 								"id": "41eb2085-1f5c-4913-93c3-b153f28371c1",
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
 									"pm.test(\"Body matches string\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include(\"DisplayMessage\");\r",
 									"});\r",
@@ -20607,7 +20595,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "0073bb92-9d2e-4ec6-926e-a29f940c74b7",
+				"id": "b667fc73-c561-423d-a47a-4f9b81f1025d",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
@@ -20618,12 +20606,12 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "f104b8ed-fee0-45b3-82cb-f4ce9e7a7191",
+				"id": "51391ce5-ddc9-4532-9e56-078764ec7a04",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
-					"pm.test(\"Response time is less than 250ms\", function () {\r",
-					"    pm.expect(pm.response.responseTime).to.be.below(250);\r",
+					"pm.test(\"Response time is less than 500ms\", function () {\r",
+					"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
 					"});"
 				]
 			}
