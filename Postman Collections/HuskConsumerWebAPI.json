@@ -12974,12 +12974,6 @@
 							"script": {
 								"id": "6c690053-c19e-4e66-bd62-7b6821142f8c",
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"pm.test(\"Response time is less than 250ms\", function () {\r",
-									"    pm.expect(pm.response.responseTime).to.be.below(250);\r",
-									"});\r",
 									"pm.test(\"Body matches string\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include(\"DisplayMessage\");\r",
 									"});\r",
@@ -13049,12 +13043,6 @@
 							"script": {
 								"id": "6eaebab1-e2bd-44fa-8c47-8b82e3a6bfc9",
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"pm.test(\"Response time is less than 250ms\", function () {\r",
-									"    pm.expect(pm.response.responseTime).to.be.below(250);\r",
-									"});\r",
 									"pm.test(\"Body matches string\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include(\"DisplayMessage\");\r",
 									"});\r",
@@ -13124,12 +13112,6 @@
 							"script": {
 								"id": "70600d6a-6ec2-425c-a609-e0bbc195a5b6",
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"pm.test(\"Response time is less than 250ms\", function () {\r",
-									"    pm.expect(pm.response.responseTime).to.be.below(250);\r",
-									"});\r",
 									"pm.test(\"Body matches string\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include(\"DisplayMessage\");\r",
 									"});\r",
@@ -13199,12 +13181,6 @@
 							"script": {
 								"id": "31defdbb-18c7-4d3c-a4fa-4cc2267c4a43",
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"pm.test(\"Response time is less than 250ms\", function () {\r",
-									"    pm.expect(pm.response.responseTime).to.be.below(250);\r",
-									"});\r",
 									"pm.test(\"Body matches string\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include(\"DisplayMessage\");\r",
 									"});\r",
@@ -13274,12 +13250,6 @@
 							"script": {
 								"id": "b3080f5e-8c06-4772-957e-e1f3758460d0",
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"pm.test(\"Response time is less than 250ms\", function () {\r",
-									"    pm.expect(pm.response.responseTime).to.be.below(250);\r",
-									"});\r",
 									"pm.test(\"Body matches string\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include(\"DisplayMessage\");\r",
 									"});\r",
@@ -13349,12 +13319,6 @@
 							"script": {
 								"id": "503e460f-66c1-42a4-bb5d-ef55a065b43e",
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"pm.test(\"Response time is less than 250ms\", function () {\r",
-									"    pm.expect(pm.response.responseTime).to.be.below(250);\r",
-									"});\r",
 									"pm.test(\"Body matches string\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include(\"DisplayMessage\");\r",
 									"});\r",
@@ -13424,12 +13388,6 @@
 							"script": {
 								"id": "641cfb68-34e2-4b56-ac8b-9a0e03ad8a8b",
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"pm.test(\"Response time is less than 250ms\", function () {\r",
-									"    pm.expect(pm.response.responseTime).to.be.below(250);\r",
-									"});\r",
 									"pm.test(\"Body matches string\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include(\"DisplayMessage\");\r",
 									"});\r",
@@ -13499,12 +13457,6 @@
 							"script": {
 								"id": "222f2d56-cd35-4317-bbbd-f8845927258c",
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"pm.test(\"Response time is less than 250ms\", function () {\r",
-									"    pm.expect(pm.response.responseTime).to.be.below(250);\r",
-									"});\r",
 									"pm.test(\"Body matches string\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include(\"DisplayMessage\");\r",
 									"});\r",
@@ -13576,8 +13528,6 @@
 								"exec": [
 									"var jsonData = pm.response.json();\r",
 									"pm.globals.set(\"CheckCartDetailsBeforeCheckout\", jsonData.Data);\r",
-									"\r",
-									"\r",
 									"  pm.test(\"Verifying Status for DisplayMessage\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
 									"    pm.expect(jsonData.Status.DisplayMessage).to.eql(\"Success\");\r",
@@ -13648,9 +13598,6 @@
 							"script": {
 								"id": "57f10bd1-5573-41f7-ae2b-7a883162b962",
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
 									"pm.test(\"Verfying Message Status \", function () {\r",
 									"    var jsonData = pm.response.json();\r",
 									"    pm.expect(jsonData.Status.MessageTitle).to.include(\"Success\");\r",
@@ -13726,8 +13673,6 @@
 							"script": {
 								"id": "d5213cb5-a73c-48d2-bafd-243ff66d68bb",
 								"exec": [
-									"\r",
-									"\r",
 									"  pm.test(\"Verifying Status for DisplayMessage\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
 									"    pm.expect(jsonData.Status.DisplayMessage).to.eql(\"Failed\");\r",
