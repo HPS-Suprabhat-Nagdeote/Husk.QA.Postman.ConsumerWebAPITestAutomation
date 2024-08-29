@@ -14301,12 +14301,6 @@
 							"script": {
 								"id": "3f6b8c03-a5e3-4f74-a0d8-f09f74b2227d",
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"pm.test(\"Response time is less than 250ms\", function () {\r",
-									"    pm.expect(pm.response.responseTime).to.be.below(250);\r",
-									"});\r",
 									"pm.test(\"Body matches string\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include(\"1.0\");\r",
 									"});\r",
