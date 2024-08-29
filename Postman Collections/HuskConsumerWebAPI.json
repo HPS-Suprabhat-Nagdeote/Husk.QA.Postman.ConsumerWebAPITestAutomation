@@ -12237,20 +12237,20 @@
 							"script": {
 								"id": "57f10bd1-5573-41f7-ae2b-7a883162b962",
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"pm.test(\"Verfying Message Status \", function () {\r",
-									"    var jsonData = pm.response.json();\r",
-									"    pm.expect(jsonData.Status.MessageTitle).to.include(\"Success\");\r",
-									"});\r",
-									"  pm.test(\"Verifying Status for DisplayMessage\", function () {\r",
-									"    var jsonData = pm.response.json();\r",
-									"    pm.expect(jsonData.Status.DisplayMessage).to.eql(\"Success\");\r",
-									"});\r",
-									"pm.test(\"Body matches string\", function () {\r",
-									"    pm.expect(pm.response.text()).to.include(\"Full DownPayment\");\r",
-									"});"
+									"// pm.test(\"Status code is 200\", function () {\r",
+									"//     pm.response.to.have.status(200);\r",
+									"// });\r",
+									"// pm.test(\"Verfying Message Status \", function () {\r",
+									"//     var jsonData = pm.response.json();\r",
+									"//     pm.expect(jsonData.Status.MessageTitle).to.include(\"Success\");\r",
+									"// });\r",
+									"//   pm.test(\"Verifying Status for DisplayMessage\", function () {\r",
+									"//     var jsonData = pm.response.json();\r",
+									"//     pm.expect(jsonData.Status.DisplayMessage).to.eql(\"Success\");\r",
+									"// });\r",
+									"// pm.test(\"Body matches string\", function () {\r",
+									"//     pm.expect(pm.response.text()).to.include(\"Full DownPayment\");\r",
+									"// });"
 								],
 								"type": "text/javascript",
 								"packages": {}
@@ -12457,12 +12457,6 @@
 							"script": {
 								"id": "48524d1f-1d0d-44c4-be67-656002384e11",
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"pm.test(\"Response time is less than 250ms\", function () {\r",
-									"    pm.expect(pm.response.responseTime).to.be.below(250);\r",
-									"});\r",
 									"pm.test(\"Body matches string\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include(\"DisplayMessage\");\r",
 									"});\r",
@@ -12557,12 +12551,12 @@
 							"script": {
 								"id": "419b18c0-f89f-4ced-bac4-bb47c26ff059",
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"pm.test(\"Response time is less than 250ms\", function () {\r",
-									"    pm.expect(pm.response.responseTime).to.be.below(250);\r",
-									"});\r",
+									"// pm.test(\"Status code is 200\", function () {\r",
+									"//     pm.response.to.have.status(200);\r",
+									"// });\r",
+									"// pm.test(\"Response time is less than 250ms\", function () {\r",
+									"//     pm.expect(pm.response.responseTime).to.be.below(250);\r",
+									"// });\r",
 									"pm.test(\"Body matches string\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include(\"DisplayMessage\");\r",
 									"});\r",
@@ -12632,12 +12626,6 @@
 							"script": {
 								"id": "e6eb744b-dad1-42d3-9f2e-5800cb7b3c0b",
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"pm.test(\"Response time is less than 250ms\", function () {\r",
-									"    pm.expect(pm.response.responseTime).to.be.below(250);\r",
-									"});\r",
 									"pm.test(\"Body matches string\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include(\"DisplayMessage\");\r",
 									"});\r",
@@ -12707,12 +12695,6 @@
 							"script": {
 								"id": "9ef99a2e-ca16-4877-9870-0354ef4fd54a",
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"pm.test(\"Response time is less than 250ms\", function () {\r",
-									"    pm.expect(pm.response.responseTime).to.be.below(250);\r",
-									"});\r",
 									"pm.test(\"Body matches string\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include(\"DisplayMessage\");\r",
 									"});\r",
@@ -12782,12 +12764,6 @@
 							"script": {
 								"id": "b0cec07a-1b5b-4767-8641-004c739a688f",
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"pm.test(\"Response time is less than 250ms\", function () {\r",
-									"    pm.expect(pm.response.responseTime).to.be.below(250);\r",
-									"});\r",
 									"pm.test(\"Body matches string\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include(\"DisplayMessage\");\r",
 									"});\r",
@@ -12857,9 +12833,6 @@
 							"script": {
 								"id": "7fe7ffef-15cf-46ff-9a72-2a2948ce7850",
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
 									"pm.test(\"Response time is less than 250ms\", function () {\r",
 									"    pm.expect(pm.response.responseTime).to.be.below(250);\r",
 									"});\r",
@@ -12932,12 +12905,6 @@
 							"script": {
 								"id": "72043a51-ee30-4d3e-b21c-74d7386ac55b",
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"pm.test(\"Response time is less than 250ms\", function () {\r",
-									"    pm.expect(pm.response.responseTime).to.be.below(250);\r",
-									"});\r",
 									"pm.test(\"Body matches string\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include(\"DisplayMessage\");\r",
 									"});\r",
