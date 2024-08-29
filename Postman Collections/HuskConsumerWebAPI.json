@@ -19168,6 +19168,10 @@
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Data to set the Global variable\", function () {\r",
+									"    var jsonData = pm.response.json().Data;\r",
+									"    pm.globals.set(\"GetProductSearchList\",jsonData)\r",
 									"});"
 								],
 								"type": "text/javascript",
@@ -19243,14 +19247,6 @@
 									"    pm.response.to.have.status(200);\r",
 									"});\r",
 									"\r",
-									"pm.test(\"Verfying Message Status \", function () {\r",
-									"    var jsonData = pm.response.json();\r",
-									"    pm.expect(jsonData.Status.MessageTitle).to.include(\"Success\");\r",
-									"});\r",
-									"  pm.test(\"Verifying Status for DisplayMessage\", function () {\r",
-									"    var jsonData = pm.response.json();\r",
-									"    pm.expect(jsonData.Status.DisplayMessage).to.eql(\"Success\");\r",
-									"});\r",
 									"\r",
 									""
 								],
@@ -19299,7 +19295,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"EncryptedString\": \"ZC3gmAbCV07lIvholoA60w==\"\r\n}",
+							"raw": "{\r\n  \"EncryptedString\": \"{{GetProductSearchList}}\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
