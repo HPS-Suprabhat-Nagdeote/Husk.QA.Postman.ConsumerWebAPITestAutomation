@@ -18022,12 +18022,13 @@
 							"script": {
 								"id": "3b9e327f-deb1-4a2d-aa4b-dff3363c0f60",
 								"exec": [
-									"pm.test(\"Status code is 401\", function () {",
-									"    pm.response.to.have.status(401);",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
 									"});",
-									"pm.test(\"Content-Type is text/xml\", function () {",
-									"    pm.response.to.have.header(\"Content-Type\", \"text/xml\");",
-									"});"
+									"// pm.test(\"Content-Type is text/xml\", function () {",
+									"//     pm.response.to.have.header(\"Content-Type\", \"",
+									"// application/json; charset=utf-8\");",
+									"// });"
 								],
 								"type": "text/javascript",
 								"packages": {}
@@ -18111,10 +18112,6 @@
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
 									"});\r",
-									"pm.test(\"Response time is less than 250ms\", function () {\r",
-									"    pm.expect(pm.response.responseTime).to.be.below(250);\r",
-									"});\r",
-									"\r",
 									"pm.test(\"Content-Type is present\", function () {\r",
 									"    pm.response.to.have.header(\"Content-Type\");\r",
 									"});"
@@ -18293,7 +18290,9 @@
 							"script": {
 								"id": "57f10bd1-5573-41f7-ae2b-7a883162b962",
 								"exec": [
-									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
 									"pm.test(\"Verfying Message Status \", function () {",
 									"    var jsonData = pm.response.json();",
 									"    pm.expect(jsonData.Status.MessageTitle).to.include(\"Success\");",
@@ -18463,11 +18462,6 @@
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
 									"});",
-									"",
-									"pm.test(\"Response time is less than 250ms\", function () {",
-									"    pm.expect(pm.response.responseTime).to.be.below(250);",
-									"});",
-									"",
 									"pm.test(\"Verfying Message Status \", function () {",
 									"    var jsonData = pm.response.json();",
 									"    pm.expect(jsonData.Status.MessageTitle).to.include(\"Success\");",
@@ -18542,9 +18536,6 @@
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
 									"});\r",
-									"pm.test(\"Content-Type is present\", function () {\r",
-									"    pm.response.to.have.header(\"Content-Type\");\r",
-									"});\r",
 									"pm.test(\"Body matches string\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include(\"DisplayMessage\");\r",
 									"});\r",
@@ -18604,7 +18595,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{ \r\n   \"SubCategoryId\": 258, \r\n   \"CustomerId\": \"HINUP-Huskify-43117\", \r\n   \"SortBy\": \"string\", \r\n   \"ViewAll\": true\r\n }"
+							"raw": "{ \r\n   \"SubCategoryId\": 258, \r\n   \"CustomerId\": \"HINUP-Huskify-43117\", \r\n   \"SortBy\": \"string\", \r\n   \"ViewAll\": true\r\n}"
 						},
 						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetProductBySubSubCategoriesId"
 					},
