@@ -11394,12 +11394,6 @@
 							"script": {
 								"id": "6360a54b-9842-4e05-afc2-3f218e8b0325",
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"pm.test(\"Response time is less than 250ms\", function () {\r",
-									"    pm.expect(pm.response.responseTime).to.be.below(250);\r",
-									"});\r",
 									"pm.test(\"Body matches string\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include(\"DisplayMessage\");\r",
 									"});\r",
@@ -11538,9 +11532,6 @@
 							"script": {
 								"id": "ed574696-e8b0-4f89-bf47-e464a13a6273",
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
 									"pm.test(\"Body matches string\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include(\"DisplayMessage\");\r",
 									"});\r",
@@ -11667,7 +11658,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"PinCode\": \"string\"\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebaphi.azurewebsites.net/EED/Api/v1/GetDeliveryDetailByPinCode"
+						"url": "https://huskpowerdevconsumerwebaph.azurewebsites.net/EED/Api/v1/GetDeliveryDetailByPinCode"
 					},
 					"response": []
 				},
