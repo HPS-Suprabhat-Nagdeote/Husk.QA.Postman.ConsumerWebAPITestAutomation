@@ -19269,7 +19269,7 @@
 					"response": []
 				},
 				{
-					"name": "GetProductSearchList",
+					"name": "GetProductSearchList-with null body",
 					"event": [
 						{
 							"listen": "test",
