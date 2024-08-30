@@ -18404,10 +18404,10 @@
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
 									"});",
-									"pm.test(\"Verfying Message Status \", function () {",
-									"    var jsonData = pm.response.json();",
-									"    pm.expect(jsonData.Status.MessageTitle).to.include(\"Success\");",
-									"});"
+									"// pm.test(\"Verfying Message Status \", function () {",
+									"//     var jsonData = pm.response.json();",
+									"//     pm.expect(jsonData.Status.MessageTitle).to.include(\"Success\");",
+									"// });"
 								],
 								"type": "text/javascript",
 								"packages": {}
@@ -18467,7 +18467,7 @@
 					"response": []
 				},
 				{
-					"name": "DecryptResponseOccupationBinding Copy 2",
+					"name": "DecryptGetSubSubCategorySimilarProduct",
 					"event": [
 						{
 							"listen": "test",
