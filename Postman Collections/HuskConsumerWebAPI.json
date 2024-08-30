@@ -18363,7 +18363,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{ \r\n   \"SubSubCategoryId\": 324,\r\n   \"ProductId\": 314\r\n }"
+							"raw": "{ \r\n   \"SubSubCategoryId\": 324\r\n//    \"ProductId\": 314\r\n }"
 						},
 						"url": {
 							"raw": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetSubSubCatgorySimilarProduct?api_key=GetSubSubCatgorySimilarProduct",
@@ -18386,6 +18386,79 @@
 								}
 							]
 						}
+					},
+					"response": []
+				},
+				{
+					"name": "DecryptSubSubCategorySimilarproductWithoutProductId",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "57f10bd1-5573-41f7-ae2b-7a883162b962",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Verfying Message Status \", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.Status.MessageTitle).to.include(\"Success\");",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "c60d07b8-3710-47c3-b6c5-cb18f87d74d0",
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"id": "c5c0fac2-da2f-4bd7-80ec-2a3fb3a83fc5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{BasicAuthorization}}",
+								"type": "text"
+							},
+							{
+								"key": "husk-token",
+								"value": "{{huskTocken}}",
+								"type": "text"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}",
+								"type": "text"
+							},
+							{
+								"key": "Auth-Token",
+								"value": "{{Auth-Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"EncryptedString\": \"{{GetSubscriptionWithoutProductIdData}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/DecryptResponse"
 					},
 					"response": []
 				},
@@ -18473,7 +18546,7 @@
 									"\r",
 									"//setting global Variable\r",
 									"var jsonData = pm.response.json();\r",
-									"pm.globals.set(\"GetSubscriptionWithoutData\",jsonData.Data);\r",
+									"pm.globals.set(\"GetSubscriptionWithoutProductIdData\",jsonData.Data);\r",
 									"\r",
 									"pm.test(\"Verifying Message As Sucesass\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
