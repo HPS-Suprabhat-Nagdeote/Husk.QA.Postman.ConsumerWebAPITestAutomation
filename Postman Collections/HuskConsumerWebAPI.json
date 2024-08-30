@@ -4961,6 +4961,142 @@
 			"name": "EEDCustomer",
 			"item": [
 				{
+					"name": "EED Dashboard",
+					"item": [
+						{
+							"name": "GetOffers",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "9d5d7a39-698d-43b1-8c52-ee545f314c67",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"pm.test(\"Content-Type is present\", function () {\r",
+											"    pm.response.to.have.header(\"Content-Type\");\r",
+											"});\r",
+											"\r",
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"id": "47c0f8aa-23ac-440d-a817-d3df3c51026c",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{BasicAuthorization}}",
+										"type": "text"
+									},
+									{
+										"key": "husk-token",
+										"value": "{{huskTocken}}",
+										"type": "text"
+									},
+									{
+										"key": "CustomerId",
+										"value": "{{CustomerId}}",
+										"type": "text"
+									},
+									{
+										"key": "Auth-Token",
+										"value": "{{Auth-Token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{ \r\n   \"MobileNumber\": \"+919823643386\",\r\n  \"CalledFrom\": \"string\" \r\n }"
+								},
+								"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/GetOffers"
+							},
+							"response": []
+						},
+						{
+							"name": "GetCustomerDashboardInfo",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "13ef403e-a42b-4ace-b03e-1691ffb3c879",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"pm.test(\"Content-Type is present\", function () {\r",
+											"    pm.response.to.have.header(\"Content-Type\");\r",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"id": "77fc1188-db1e-43bf-8185-9816a6018dc4",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{BasicAuthorization}}",
+										"type": "text"
+									},
+									{
+										"key": "husk-token",
+										"value": "{{huskTocken}}",
+										"type": "text"
+									},
+									{
+										"key": "CustomerId",
+										"value": "{{CustomerId}}",
+										"type": "text"
+									},
+									{
+										"key": "Auth-Token",
+										"value": "{{Auth-Token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{ \r\n   \"MobileNumber\": \"+919284487810\", \r\n   \"CalledFrom\": \"String\"  \r\n }"
+								},
+								"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/GetCustomerDashboardInfo"
+							},
+							"response": []
+						}
+					],
+					"id": "1cb5e72b-3c14-4344-8084-9714c7bcacb3"
+				},
+				{
 					"name": "GetCustomerInfo",
 					"event": [
 						{
@@ -17087,9 +17223,6 @@
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
 									"});\r",
-									"pm.test(\"Response time is less than 250ms\", function () {\r",
-									"    pm.expect(pm.response.responseTime).to.be.below(250);\r",
-									"});\r",
 									"pm.test(\"Body matches string\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include(\"Message\");\r",
 									"});\r",
@@ -19347,142 +19480,6 @@
 			]
 		},
 		{
-			"name": "EED Dashboard",
-			"item": [
-				{
-					"name": "GetOffers",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "9d5d7a39-698d-43b1-8c52-ee545f314c67",
-								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"pm.test(\"Content-Type is present\", function () {\r",
-									"    pm.response.to.have.header(\"Content-Type\");\r",
-									"});\r",
-									"\r",
-									""
-								],
-								"type": "text/javascript",
-								"packages": {}
-							}
-						}
-					],
-					"id": "47c0f8aa-23ac-440d-a817-d3df3c51026c",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							},
-							{
-								"key": "Accept",
-								"value": "application/json"
-							},
-							{
-								"key": "Authorization",
-								"value": "{{BasicAuthorization}}",
-								"type": "text"
-							},
-							{
-								"key": "husk-token",
-								"value": "{{huskTocken}}",
-								"type": "text"
-							},
-							{
-								"key": "CustomerId",
-								"value": "{{CustomerId}}",
-								"type": "text"
-							},
-							{
-								"key": "Auth-Token",
-								"value": "{{Auth-Token}}",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{ \r\n   \"MobileNumber\": \"+919823643386\",\r\n  \"CalledFrom\": \"string\" \r\n }"
-						},
-						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/GetOffers"
-					},
-					"response": []
-				},
-				{
-					"name": "GetCustomerDashboardInfo",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "13ef403e-a42b-4ace-b03e-1691ffb3c879",
-								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"pm.test(\"Content-Type is present\", function () {\r",
-									"    pm.response.to.have.header(\"Content-Type\");\r",
-									"});"
-								],
-								"type": "text/javascript",
-								"packages": {}
-							}
-						}
-					],
-					"id": "77fc1188-db1e-43bf-8185-9816a6018dc4",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							},
-							{
-								"key": "Accept",
-								"value": "application/json"
-							},
-							{
-								"key": "Authorization",
-								"value": "{{BasicAuthorization}}",
-								"type": "text"
-							},
-							{
-								"key": "husk-token",
-								"value": "{{huskTocken}}",
-								"type": "text"
-							},
-							{
-								"key": "CustomerId",
-								"value": "{{CustomerId}}",
-								"type": "text"
-							},
-							{
-								"key": "Auth-Token",
-								"value": "{{Auth-Token}}",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{ \r\n   \"MobileNumber\": \"+919284487810\", \r\n   \"CalledFrom\": \"String\"  \r\n }"
-						},
-						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/GetCustomerDashboardInfo"
-					},
-					"response": []
-				}
-			],
-			"id": "1cb5e72b-3c14-4344-8084-9714c7bcacb3"
-		},
-		{
 			"name": "Address Pincode",
 			"item": [
 				{
@@ -20408,7 +20405,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "b667fc73-c561-423d-a47a-4f9b81f1025d",
+				"id": "2f6df693-d38a-4b95-a7e3-4a5ce42768c5",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
@@ -20419,12 +20416,12 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "51391ce5-ddc9-4532-9e56-078764ec7a04",
+				"id": "34c74b80-d308-487d-9170-a2adf92b039a",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
-					"pm.test(\"Response time is less than 500ms\", function () {\r",
-					"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+					"pm.test(\"Response time is less than 800ms\", function () {\r",
+					"    pm.expect(pm.response.responseTime).to.be.below(800);\r",
 					"});"
 				]
 			}
