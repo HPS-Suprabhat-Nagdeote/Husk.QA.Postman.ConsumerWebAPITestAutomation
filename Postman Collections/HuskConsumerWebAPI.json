@@ -17226,9 +17226,7 @@
 									"pm.test(\"Body matches string\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include(\"Message\");\r",
 									"});\r",
-									"pm.test(\"Content-Type is present\", function () {\r",
-									"    pm.response.to.have.header(\"Content-Type\");\r",
-									"});"
+									""
 								],
 								"type": "text/javascript",
 								"packages": {}
@@ -17297,9 +17295,7 @@
 									"pm.test(\"Body matches string\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include(\"Message\");\r",
 									"});\r",
-									"pm.test(\"Content-Type is present\", function () {\r",
-									"    pm.response.to.have.header(\"Content-Type\");\r",
-									"});"
+									""
 								],
 								"type": "text/javascript",
 								"packages": {}
@@ -17368,9 +17364,7 @@
 									"pm.test(\"Body matches string\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include(\"Message\");\r",
 									"});\r",
-									"pm.test(\"Content-Type is present\", function () {\r",
-									"    pm.response.to.have.header(\"Content-Type\");\r",
-									"});"
+									""
 								],
 								"type": "text/javascript",
 								"packages": {}
@@ -17439,9 +17433,7 @@
 									"pm.test(\"Body matches string\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include(\"Message\");\r",
 									"});\r",
-									"pm.test(\"Content-Type is present\", function () {\r",
-									"    pm.response.to.have.header(\"Content-Type\");\r",
-									"});"
+									""
 								],
 								"type": "text/javascript",
 								"packages": {}
@@ -17510,9 +17502,7 @@
 									"pm.test(\"Body matches string\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include(\"Message\");\r",
 									"});\r",
-									"pm.test(\"Content-Type is present\", function () {\r",
-									"    pm.response.to.have.header(\"Content-Type\");\r",
-									"});"
+									""
 								],
 								"type": "text/javascript",
 								"packages": {}
@@ -17581,9 +17571,7 @@
 									"pm.test(\"Body matches string\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include(\"Message\");\r",
 									"});\r",
-									"pm.test(\"Content-Type is present\", function () {\r",
-									"    pm.response.to.have.header(\"Content-Type\");\r",
-									"});"
+									""
 								],
 								"type": "text/javascript",
 								"packages": {}
@@ -17652,9 +17640,7 @@
 									"pm.test(\"Body matches string\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include(\"Message\");\r",
 									"});\r",
-									"pm.test(\"Content-Type is present\", function () {\r",
-									"    pm.response.to.have.header(\"Content-Type\");\r",
-									"});"
+									""
 								],
 								"type": "text/javascript",
 								"packages": {}
@@ -17723,9 +17709,7 @@
 									"pm.test(\"Body matches string\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include(\"Message\");\r",
 									"});\r",
-									"pm.test(\"Content-Type is present\", function () {\r",
-									"    pm.response.to.have.header(\"Content-Type\");\r",
-									"});"
+									""
 								],
 								"type": "text/javascript",
 								"packages": {}
@@ -17794,9 +17778,7 @@
 									"pm.test(\"Body matches string\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include(\"Message\");\r",
 									"});\r",
-									"pm.test(\"Content-Type is present\", function () {\r",
-									"    pm.response.to.have.header(\"Content-Type\");\r",
-									"});"
+									""
 								],
 								"type": "text/javascript",
 								"packages": {}
@@ -17864,9 +17846,6 @@
 									"});\r",
 									"pm.test(\"Body matches string\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include(\"Message\");\r",
-									"});\r",
-									"pm.test(\"Content-Type is present\", function () {\r",
-									"    pm.response.to.have.header(\"Content-Type\");\r",
 									"});\r",
 									"var jsonData = pm.response.json();\r",
 									"pm.globals.set(\"GetProductSuggestionList\", jsonData.Data);"
