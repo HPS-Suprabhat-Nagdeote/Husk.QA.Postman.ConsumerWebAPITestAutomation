@@ -18363,7 +18363,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{ \r\n   \"SubSubCategoryId\": 324\r\n//    \"ProductId\": 314\r\n }"
+							"raw": "{ \r\n   \"SubSubCategoryId\": 324,\r\n   \"ProductId\": 314\r\n }"
 						},
 						"url": {
 							"raw": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetSubSubCatgorySimilarProduct?api_key=GetSubSubCatgorySimilarProduct",
@@ -18546,7 +18546,7 @@
 									"\r",
 									"//setting global Variable\r",
 									"var jsonData = pm.response.json();\r",
-									"pm.globals.set(\"GetSubscriptionWithoutProductIdData\",jsonData.Data);\r",
+									"pm.globals.set(\"GetSubSubCategorySimilarProductWithoutProductIdData\",jsonData.Data);\r",
 									"\r",
 									"pm.test(\"Verifying Message As Sucesass\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
@@ -18632,82 +18632,6 @@
 					"response": []
 				},
 				{
-					"name": "GetProductBySubSubCategoriesId Copy",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "2d91b435-e9e3-48f0-8c93-3c51e55b70e8",
-								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"pm.test(\"Body matches string\", function () {\r",
-									"    pm.expect(pm.response.text()).to.include(\"DisplayMessage\");\r",
-									"});\r",
-									"var jsonData = pm.response.json();\r",
-									"pm.globals.set(\"GetProductBySubSubCategoriesId\", jsonData.Data);"
-								],
-								"type": "text/javascript",
-								"packages": {}
-							}
-						}
-					],
-					"id": "5664e249-4791-4e9e-960c-642b49ca28e5",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							},
-							{
-								"key": "Accept",
-								"value": "application/json"
-							},
-							{
-								"key": "Accept-Language",
-								"value": "2",
-								"type": "text"
-							},
-							{
-								"key": "CustomerId",
-								"value": "HINUP-Huskify-43117",
-								"type": "text"
-							},
-							{
-								"key": "Authorization",
-								"value": "{{BasicAuthorization}}",
-								"type": "text"
-							},
-							{
-								"key": "husk-token",
-								"value": "{{huskTocken}}",
-								"type": "text"
-							},
-							{
-								"key": "CustomerId",
-								"value": "{{CustomerId}}",
-								"type": "text"
-							},
-							{
-								"key": "Auth-Token",
-								"value": "{{Auth-Token}}",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{ \r\n   \"SubCategoryId\": 258, \r\n   \"CustomerId\": \"HINUP-Huskify-43117\", \r\n   \"SortBy\": \"string\", \r\n   \"ViewAll\": true\r\n}"
-						},
-						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetProductBySubSubCategoriesId"
-					},
-					"response": []
-				},
-				{
 					"name": "DecryptGetProductBySubSubCategoriesId Copy",
 					"event": [
 						{
@@ -18781,7 +18705,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"EncryptedString\": \"{{GetProductBySubSubCategoriesId}}\"\r\n}",
+							"raw": "{\r\n  \"EncryptedString\": \"{{GetSubSubCategorySimilarProductWithoutProductIdData}}\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -18789,6 +18713,82 @@
 							}
 						},
 						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/DecryptResponse"
+					},
+					"response": []
+				},
+				{
+					"name": "GetProductBySubSubCategoriesId Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "2d91b435-e9e3-48f0-8c93-3c51e55b70e8",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Body matches string\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"DisplayMessage\");\r",
+									"});\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.globals.set(\"GetProductBySubSubCategoriesId\", jsonData.Data);"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"id": "5664e249-4791-4e9e-960c-642b49ca28e5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "2",
+								"type": "text"
+							},
+							{
+								"key": "CustomerId",
+								"value": "HINUP-Huskify-43117",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{BasicAuthorization}}",
+								"type": "text"
+							},
+							{
+								"key": "husk-token",
+								"value": "{{huskTocken}}",
+								"type": "text"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}",
+								"type": "text"
+							},
+							{
+								"key": "Auth-Token",
+								"value": "{{Auth-Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n   \"SubCategoryId\": 258, \r\n   \"CustomerId\": \"HINUP-Huskify-43117\", \r\n   \"SortBy\": \"string\", \r\n   \"ViewAll\": true\r\n}"
+						},
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetProductBySubSubCategoriesId"
 					},
 					"response": []
 				},
