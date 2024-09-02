@@ -16043,7 +16043,7 @@
 							"mode": "raw",
 							"raw": "{\r\n// \"ProductId\": 0.0\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapih1.azurewebsites.net/EED/Api/v1/GetProductReviewByProductId"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetProductReviewByProductId"
 					},
 					"response": []
 				},
