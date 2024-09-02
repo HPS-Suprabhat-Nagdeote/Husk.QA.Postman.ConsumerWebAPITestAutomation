@@ -18634,7 +18634,7 @@
 					"response": []
 				},
 				{
-					"name": "GetProductBySubSubCategoriesId Copy",
+					"name": "GetProductBySubSubCategoriesId",
 					"event": [
 						{
 							"listen": "test",
