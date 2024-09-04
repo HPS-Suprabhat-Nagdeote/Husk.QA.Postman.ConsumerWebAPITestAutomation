@@ -18678,7 +18678,8 @@
 							{
 								"key": "CustomerId",
 								"value": "HINUP-Huskify-43117",
-								"type": "text"
+								"type": "text",
+								"disabled": true
 							},
 							{
 								"key": "Authorization",
@@ -18753,10 +18754,6 @@
 								"value": "2"
 							},
 							{
-								"key": "CustomerId",
-								"value": "HINUP-Huskify-0"
-							},
-							{
 								"key": "Authorization",
 								"value": "{{BasicAuthorization}}",
 								"type": "text"
@@ -18827,10 +18824,6 @@
 							{
 								"key": "Accept-Language",
 								"value": "2"
-							},
-							{
-								"key": "CustomerId",
-								"value": "HINUP-Huskify-43117"
 							},
 							{
 								"key": "Authorization",
@@ -18909,11 +18902,6 @@
 							{
 								"key": "Accept",
 								"value": "application/json"
-							},
-							{
-								"key": "CustomerId",
-								"value": "HINUP-Huskify-1235",
-								"type": "text"
 							},
 							{
 								"key": "Authorization",
@@ -19530,7 +19518,7 @@
 								}
 							}
 						},
-						"url": "{{h3BaseURL}}/EED/Api/v1/GetDeliveryDetailByPinCode"
+						"url": "{{h1BaseURL}}/EED/Api/v1/GetDeliveryDetailByPinCode"
 					},
 					"response": []
 				},
@@ -19607,7 +19595,7 @@
 								}
 							}
 						},
-						"url": "{{h3BaseURL}}/EED/Api/v1/GetDeliveryDetailByPinCode"
+						"url": "{{h1BaseURL}}/EED/Api/v1/GetDeliveryDetailByPinCode"
 					},
 					"response": []
 				},
@@ -19684,7 +19672,7 @@
 								}
 							}
 						},
-						"url": "{{h3BaseURL}}/EED/Api/v1/GetDeliveryDetailByPinCode"
+						"url": "{{h1BaseURL}}/EED/Api/v1/GetDeliveryDetailByPinCode"
 					},
 					"response": []
 				},
@@ -19696,8 +19684,8 @@
 							"script": {
 								"id": "af56dc19-3b43-486b-a751-5a6d0e2edf22",
 								"exec": [
-									"pm.test(\"Status code is 500\", function () {\r",
-									"    pm.response.to.have.status(500);\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
 									"});\r",
 									"pm.test(\"Response body validation\", function () {\r",
 									"    var jsonData = pm.response.json().Status.DisplayMessage;\r",
@@ -19761,7 +19749,7 @@
 								}
 							}
 						},
-						"url": "{{h3BaseURL}}/EED/Api/v1/GetDeliveryDetailByPinCode"
+						"url": "{{h1BaseURL}}/EED/Api/v1/GetDeliveryDetailByPinCode"
 					},
 					"response": []
 				},
@@ -20221,7 +20209,7 @@
 								}
 							}
 						},
-						"url": "{{h3BaseURL}}/EED/Api/v1/GetMyOrders"
+						"url": "{{h1BaseURL}}/EED/Api/v1/GetMyOrders"
 					},
 					"response": []
 				},
