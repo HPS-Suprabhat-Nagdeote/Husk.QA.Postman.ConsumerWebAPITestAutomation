@@ -19523,6 +19523,80 @@
 					"response": []
 				},
 				{
+					"name": "Decrypt_GetDeliveryDetailsByPinCode",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "99c72217-bbbf-43ad-892f-04f998551b9c",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Verfying Message Status \", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.Status.MessageTitle).to.include(\"Success\");\r",
+									"});\r",
+									"  pm.test(\"Verifying Status for DisplayMessage\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.Status.DisplayMessage).to.eql(\"Success\");\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "5bc95909-7c58-4034-8321-af2a97bab9b4",
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"id": "d4043395-c857-43e8-b752-60039d5fcc50",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{BasicAuthorization}}"
+							},
+							{
+								"key": "husk-token",
+								"value": "{{huskTocken}}"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}"
+							},
+							{
+								"key": "Auth-Token",
+								"value": "{{Auth-Token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"EncryptedString\": \"3D4/5MYW31YbtlM8qVDNP/ihYAldJqR5/qoP3vgo+QkxBZLE726ZOqubvC8yR/dJWBif+PQ5kLP0Db1OVKupSc3DqOBeDEg7NEdPrg9xunE5Us+6KMTqZYaZGaIYZPuGaB5RJyKIwGnb8NBHs+/DdqrdselefJrdqZkuG7/GU+WV2ivPOIA6QBpHvoxGqHR6\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/DecryptResponse"
+					},
+					"response": []
+				},
+				{
 					"name": "GetDeliveryDetailByPinCode -Different Pincode datatypes",
 					"event": [
 						{
