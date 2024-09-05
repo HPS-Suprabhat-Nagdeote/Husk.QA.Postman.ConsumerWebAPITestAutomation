@@ -97,7 +97,7 @@
 							"mode": "raw",
 							"raw": "{}"
 						},
-						"url": "{{URL_EEDA}}/v1/OccupationBinding"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/OccupationBinding"
 					},
 					"response": []
 				},
@@ -254,7 +254,7 @@
 							"mode": "raw",
 							"raw": "{}"
 						},
-						"url": "{{URL_EEDA}}/v1/OccupationBinding"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/OccupationBinding"
 					},
 					"response": []
 				},
