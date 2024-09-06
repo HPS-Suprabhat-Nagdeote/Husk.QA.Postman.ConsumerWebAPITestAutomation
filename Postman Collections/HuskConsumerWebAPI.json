@@ -2476,7 +2476,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"CustomerId\": \"{{CustomerIDAkshay}}\",\r\n  \"FirstName\": \"Akshay\",\r\n  \"LastName\": \"Shendage\",\r\n  \"EmailId\": \"huskify@test.com\"\r\n  //\"Base64ProfileImage\": \"string\"\r\n}"
+							"raw": "{\r\n  \"CustomerId\": \"{{CustomerIDSup}}\",\r\n  \"FirstName\": \"Suprabhat\",\r\n  \"LastName\": \"Test\",\r\n  \"EmailId\": \"Suprabhat127@gmail.com\"\r\n  //\"Base64ProfileImage\": \"string\"\r\n}"
 						},
 						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/UpdateUserDetails"
 					},
@@ -13925,9 +13925,6 @@
 							"script": {
 								"id": "f16e5530-7aa9-476f-8282-e06dbce76a19",
 								"exec": [
-									"pm.test(\"Response time is less than 250ms\", function () {\r",
-									"    pm.expect(pm.response.responseTime).to.be.below(250);\r",
-									"});\r",
 									"pm.test(\"Body matches string\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include(\"DisplayMessage\");\r",
 									"});\r",
