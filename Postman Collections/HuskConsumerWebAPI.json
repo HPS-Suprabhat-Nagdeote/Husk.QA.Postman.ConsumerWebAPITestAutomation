@@ -19537,34 +19537,22 @@
 									"    var jsonData = pm.response.json();\r",
 									"    pm.expect(jsonData.Status.MessageTitle).to.include(\"Success\");\r",
 									"});\r",
-									"  pm.test(\"Verifying Status for DisplayMessage\", function () {\r",
+									"pm.test(\"Verifying Status for DisplayMessage\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
 									"    pm.expect(jsonData.Status.DisplayMessage).to.eql(\"Success\");\r",
 									"});\r",
-									"pm.test(\"Verify the Response message as per the pin code\", function () \r",
-									"{\r",
-									"if(pm.response.json().Data.SucessMessage === \"Estimated delivery in 2-4 days.\"){\r",
-									"    console.log(\"Address pin code is 800001...\")\r",
-									"}\r",
-									"else{\r",
-									"    console.log(\"There is issue in the response...\")\r",
-									"}\r",
-									"\r",
-									"\r",
-									"\r",
-									"     var responseData = pm.response.json();\r",
-									"     pm.expect(responseData).to.be.an('object');\r",
-									"     pm.expect(responseData.Data).to.have.property('SucessMessage');\r",
-									"     pm.expect(responseData.Data).to.have.property('NocName');\r",
-									"     pm.expect(responseData.Data).to.have.property('State');\r",
-									"     pm.expect(responseData.Status).to.have.property('DisplayMessage');\r",
-									"}); {\r",
-									"     var responseData = pm.response.json();\r",
-									"     pm.expect(responseData).to.be.an('object');\r",
-									"     pm.expect(responseData.Data).to.have.property('SucessMessage');\r",
-									"     pm.expect(responseData.Data).to.have.property('NocName');\r",
-									"     pm.expect(responseData.Data).to.have.property('State');\r",
-									"     pm.expect(responseData.Status).to.have.property('DisplayMessage');\r",
+									"pm.test(\"Verify the Response message as per the pin code\", function () {\r",
+									"    if (pm.response.json().Data.SucessMessage === \"Estimated delivery in 2-4 days.\") {\r",
+									"        console.log(\"Address pin code is 800001...\")\r",
+									"    } else {\r",
+									"        console.log(\"There is issue in the response...\")\r",
+									"    }\r",
+									"    var responseData = pm.response.json();\r",
+									"    pm.expect(responseData).to.be.an('object');\r",
+									"    pm.expect(responseData.Data).to.have.property('SucessMessage');\r",
+									"    pm.expect(responseData.Data).to.have.property('NocName');\r",
+									"    pm.expect(responseData.Data).to.have.property('State');\r",
+									"    pm.expect(responseData.Status).to.have.property('DisplayMessage');\r",
 									"});\r",
 									""
 								],
@@ -20390,79 +20378,6 @@
 					"response": []
 				},
 				{
-					"name": "GetMyCafDetailProduct",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "0d76adf1-99c1-47b8-9372-bd5fb1196206",
-								"exec": [
-									"pm.test(\"Status code is 500\", function () {\r",
-									"    pm.response.to.have.status(500);\r",
-									"});\r",
-									"\r",
-									"// pm.test(\"Body matches string\", function () {\r",
-									"//     pm.expect(pm.response.text()).to.include(\"DisplayMessage\");\r",
-									"// });\r",
-									"pm.test(\"Content-Type is present\", function () {\r",
-									"    pm.response.to.have.header(\"Content-Type\");\r",
-									"});\r",
-									""
-								],
-								"type": "text/javascript",
-								"packages": {}
-							}
-						}
-					],
-					"id": "7b6a5f1f-20b6-4c38-a739-71a0270ca2dc",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Auth-Token",
-								"value": "{{AuthTocken}}"
-							},
-							{
-								"key": "Authorization",
-								"value": "{{BasicAuthorization}}"
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							},
-							{
-								"key": "customerId",
-								"value": "20810"
-							},
-							{
-								"key": "IsNewApi",
-								"value": "false"
-							},
-							{
-								"key": "husk-token",
-								"value": "{{huskTocken}}"
-							},
-							{
-								"key": "Cookie",
-								"value": "ARRAffinity=55799aecd2ac63889df0aa628663200df6776142854fd7701f4cb0888ecab1ef; ARRAffinitySameSite=55799aecd2ac63889df0aa628663200df6776142854fd7701f4cb0888ecab1ef; ARRAffinity=5b742486848f9418d73d42abc41c8172cad64c4c497f000d692b67d867b297e7; ARRAffinitySameSite=5b742486848f9418d73d42abc41c8172cad64c4c497f000d692b67d867b297e7"
-							},
-							{
-								"key": "Accept-Language",
-								"value": "2"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n  \"CafId\": 0\r\n}"
-						},
-						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetMyCafDetailProduct"
-					},
-					"response": []
-				},
-				{
 					"name": "Decrypt_GetDeliveryDetailsByPinCode",
 					"event": [
 						{
@@ -20604,6 +20519,10 @@
 		},
 		{
 			"key": "GetMyordersEncripted",
+			"value": ""
+		},
+		{
+			"key": "GetMyorders",
 			"value": ""
 		}
 	]
