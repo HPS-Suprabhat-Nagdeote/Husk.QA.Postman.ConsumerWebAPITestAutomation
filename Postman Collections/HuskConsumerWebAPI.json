@@ -1934,7 +1934,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n            \"Id\": 76189,\r\n            \"CustomerId\": \"HINUP-Huskify-76188\",\r\n            \"CustomerName\": \"Test 123\",\r\n            \"AlternatePhoneNumber\": \"\",\r\n            \"PhoneNumber\": \"9823643386\",\r\n            \"FlatNoWithBuildingName\": \"\",\r\n            \"Street\": \"\",\r\n            \"Landmark\": \"home\",\r\n            \"State\": \"EEDHuskify\",\r\n            \"City\": \"EEDHuskify\",\r\n            \"PinCode\": 800001,\r\n            \"AddressType\": \"\",\r\n            \"Latitude\": 0.0,\r\n            \"Longitude\": 0.0,\r\n            \"IsDefault\": true,\r\n            \"IsBillingAddress\": false\r\n}\r\n"
+							"raw": "{\r\n            \"Id\": 76189,\r\n            \"CustomerId\": \"HINUP-Huskify-76188\",\r\n            \"CustomerName\": \"Test 123\",\r\n            \"AlternatePhoneNumber\": \"\",\r\n            \"PhoneNumber\": \"9823643386\",\r\n            \"FlatNoWithBuildingName\": \"Almonte\",\r\n            \"Street\": \"Pune\",\r\n            \"Landmark\": \"home\",\r\n            \"State\": \"Bihar\",\r\n            \"City\": \"Patna\",\r\n            \"PinCode\": 800001,\r\n            \"AddressType\": \"\",\r\n            \"Latitude\": 0.0,\r\n            \"Longitude\": 0.0,\r\n            \"IsDefault\": true,\r\n            \"IsBillingAddress\": false\r\n}\r\n"
 						},
 						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/AddCustomerAddress"
 					},
