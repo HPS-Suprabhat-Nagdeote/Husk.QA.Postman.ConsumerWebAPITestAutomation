@@ -19546,7 +19546,7 @@
 									"    if (pm.response.json().Data.SucessMessage === \"Estimated delivery in 2-4 days.\") {\r",
 									"        console.log(\"Address pin code is 800001...\")\r",
 									"    } else {\r",
-									"        console.log(\"There is an issue in the response...\")\r",
+									"        console.log(\"The delivery pin code is other than 800001...\")\r",
 									"    }\r",
 									"});\r",
 									""
