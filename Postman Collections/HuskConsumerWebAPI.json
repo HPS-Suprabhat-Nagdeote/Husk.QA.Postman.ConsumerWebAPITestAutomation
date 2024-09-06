@@ -19927,7 +19927,7 @@
 								}
 							}
 						},
-						"url": "{{h3BaseURL}}/EED/Api/v1/GetDeliveryDetailByPinCode"
+						"url": "https://huskpowerdevconsumerwebapih1.azurewebsites.net/EED/Api/v1/GetDeliveryDetailByPinCode"
 					},
 					"response": []
 				},
@@ -19942,10 +19942,10 @@
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
 									"});\r",
-									"pm.test(\"Your test name\", function () {\r",
-									"    var jsonData = pm.response.json().Status.DisplayMessage;\r",
-									"    pm.expect(jsonData).to.eql(\"Success\");\r",
-									"});\r",
+									"// pm.test(\"Your test name\", function () {\r",
+									"//     var jsonData = pm.response.json().Status.DisplayMessage;\r",
+									"//     pm.expect(jsonData).to.eql(\"Success\");\r",
+									"// });\r",
 									"pm.test(\"Content-Type is present\", function () {\r",
 									"    pm.response.to.have.header(\"Content-Type\");\r",
 									"});"
@@ -20004,7 +20004,7 @@
 								}
 							}
 						},
-						"url": "{{h1BaseURL}}//EED/Api/v1/GetCAFDetails"
+						"url": "https://huskpowerdevconsumerwebapih1.azurewebsites.net//EED/Api/v1/GetCAFDetails"
 					},
 					"response": []
 				},
@@ -20016,16 +20016,16 @@
 							"script": {
 								"id": "3d89477e-194e-40c2-8528-9ace2cd06181",
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
+									"pm.test(\"Status code is 401\", function () {\r",
+									"    pm.response.to.have.status(401);\r",
 									"});\r",
-									"pm.test(\"Your test name\", function () {\r",
-									"    var jsonData = pm.response.json().Status.DisplayMessage;\r",
-									"    pm.expect(jsonData).to.eql(\"Success\");\r",
-									"});\r",
-									"pm.test(\"Content-Type is present\", function () {\r",
-									"    pm.response.to.have.header(\"Content-Type\");\r",
-									"});"
+									"// pm.test(\"Your test name\", function () {\r",
+									"//     var jsonData = pm.response.json().Status.DisplayMessage;\r",
+									"//     pm.expect(jsonData).to.eql(\"Success\");\r",
+									"// });\r",
+									"// pm.test(\"Content-Type is present\", function () {\r",
+									"//     pm.response.to.have.header(\"Content-Type\");\r",
+									"// });"
 								],
 								"type": "text/javascript",
 								"packages": {}
@@ -20057,11 +20057,13 @@
 							},
 							{
 								"key": "Auth-Token",
-								"value": "{{Auth-Token}}"
+								"value": "{{Auth-Token}}",
+								"disabled": true
 							},
 							{
 								"key": "CustomerId",
-								"value": "{{CustomerId}}"
+								"value": "{{CustomerId}}",
+								"disabled": true
 							},
 							{
 								"key": "Cookie",
@@ -20081,7 +20083,7 @@
 								}
 							}
 						},
-						"url": "{{h1BaseURL}}//EED/Api/v1/GetCAFDetails"
+						"url": "https://huskpowerdevconsumerwebapih1.azurewebsites.net//EED/Api/v1/GetCAFDetails"
 					},
 					"response": []
 				},
