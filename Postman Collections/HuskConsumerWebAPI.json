@@ -632,7 +632,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"MobileNumber\": \"+919109059955\",\r\n  \"NewPassword\": \"1234567\"\r\n}\r\n"
+							"raw": "{\r\n  \"MobileNumber\": \"+919823643386\",\r\n  \"NewPassword\": \"1234567\"\r\n}\r\n\r\n// +919109059955"
 						},
 						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/ChangePassword"
 					},
