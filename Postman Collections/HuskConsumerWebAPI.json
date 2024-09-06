@@ -20254,7 +20254,8 @@
 									"});\r",
 									"pm.test(\"Content-Type is present\", function () {\r",
 									"    pm.response.to.have.header(\"Content-Type\");\r",
-									"});"
+									"});\r",
+									"pm.collectionVariables.set(\"GetMyorders\",pm.response.json().Data);"
 								],
 								"type": "text/javascript",
 								"packages": {}
@@ -20315,7 +20316,7 @@
 					"response": []
 				},
 				{
-					"name": "Decrypt API",
+					"name": "Decrypt_GetMyOrders",
 					"event": [
 						{
 							"listen": "test",
@@ -20377,7 +20378,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"EncryptedString\": \"rCUJGD3M4bKmID03ejLU5YwHXFnQ1Ahn3KKCZ+OyYexbcKS/d0dmF6nZLoMmJ/hJP9nM9u2FKbk6M33n9fzzg5hPFG+D5GEdjhGgVZd+VgLrsyiGVpVWaQl6PCkICRLoZA0vt4QyryJHQ/2XvN1yzObJ00cbmNqFdxh8yM8tiD5gecVLRfmfJAqvIiLGcjDiw9QBeduCe6VUYMNIhD24foeamAViGkalXuhZd4YFw48OFJucmfbQ7dMwnSExHacEZr1u0FrJRgRKc1oOBVKWQ7XD1dk8i/4fl9jgq8V3edlZHfeZ0henXx+/BteVfpFTODOeo7JKDGOf5HiWPEjYHzA1187ohC4fcNBcaGSC0D1VYLgq/vOT9jPpi6pLnlizeRTJzdJxZz1UFI6oi7fclvErV8TtnmlBX5JtpMqLXsR4yeqiHlZMn4TEX1TqosYoGq/wU3q+EIRX1OZugiVv3s+hUapq35iyevAB93yBZcZTYlaJed/KYgMFGmEHBQFKWdfP0UY0VhpEq5wGy3b92sDCtvldIPFqdPQQB0etUA9iDrzwHs7bOlviN7YiMezPatnPmQKbym09gLXMvpa46Hzz3SHP8YdacHvVbQqhKO7LNR8KTyYWi0gxE1psP0tx1ZRpX6MnJdDvzy9NEkZnbRYFU0oxHkVy43N8gQsZyXYzTfTOQsAWf7DNMJiq+Rdw/kSIK6rHHQwZHwY/oNVxRBVuuwtvJ6lJaFrC+Ekha/asEDkLkZ8K+FUhd1WNTzGUj5/6WEBAgMjpPgWrk7OOVL0x07U9Aa/T8B0tmop6Gt8Y4FqDoCMrATCl6UQtEmndWZPjXOdCalwUAxGBGCyYZw==\"\r\n}",
+							"raw": "{\r\n  \"EncryptedString\": \"{{GetMyorders}}\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
