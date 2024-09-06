@@ -2180,8 +2180,8 @@
 									"//     var jsonData = pm.response.json();\r",
 									"//     pm.expect(jsonData.Status.MessageTitle).to.eql(\"Success\");\r",
 									"// });\r",
-									"var jsonData = pm.response.json();\r",
-									"pm.globals.set(\"UpdateDefaultAddressData\", jsonData.Data);"
+									"// var jsonData = pm.response.json();\r",
+									"// pm.globals.set(\"UpdateDefaultAddressData\", jsonData.Data);"
 								],
 								"type": "text/javascript",
 								"packages": {}
@@ -2233,75 +2233,6 @@
 							"raw": "{\r\n  \"AddressId\": {{AddressIdValue}}\r\n}"
 						},
 						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/UpdateDefaultAddress"
-					},
-					"response": []
-				},
-				{
-					"name": "DecryptUpdateDefaultAddress",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "57f10bd1-5573-41f7-ae2b-7a883162b962",
-								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"\r",
-									"pm.test(\"Verfying Message Status\", function () {\r",
-									"    var jsonData = pm.response.json();\r",
-									"    pm.expect(jsonData.Status.MessageTitle).to.include(\"Success\");\r",
-									"});\r",
-									"pm.test(\"Verfying DisplayMessage Status As Success\", function () {\r",
-									"    var jsonData = pm.response.json();\r",
-									"    pm.expect(jsonData.Status.MessageTitle).to.include(\"Success\");\r",
-									"});\r",
-									"\r",
-									"\r",
-									"\r",
-									"\r",
-									"\r",
-									""
-								],
-								"type": "text/javascript",
-								"packages": {}
-							}
-						}
-					],
-					"id": "04ae5b32-4ed1-45c4-af10-04b51002e9af",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "{{BasicAuthorization}}"
-							},
-							{
-								"key": "husk-token",
-								"value": "{{huskTocken}}"
-							},
-							{
-								"key": "CustomerId",
-								"value": "{{CustomerId}}"
-							},
-							{
-								"key": "Auth-Token",
-								"value": "{{Auth-Token}}"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n  \"EncryptedString\": \"{{UpdateDefaultAddressData}}\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/DecryptResponse"
 					},
 					"response": []
 				},
