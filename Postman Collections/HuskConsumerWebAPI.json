@@ -19462,7 +19462,8 @@
 									"});\r",
 									"pm.test(\"Content-Type is present\", function () {\r",
 									"    pm.response.to.have.header(\"Content-Type\");\r",
-									"});"
+									"});\r",
+									"pm.collectionVariables.set(\"GetDeliveryDetailsByPinCode\", pm.response.json().Data)"
 								],
 								"type": "text/javascript",
 								"packages": {}
@@ -19598,7 +19599,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"EncryptedString\": \"3D4/5MYW31YbtlM8qVDNP/ihYAldJqR5/qoP3vgo+QkxBZLE726ZOqubvC8yR/dJWBif+PQ5kLP0Db1OVKupSc3DqOBeDEg7NEdPrg9xunE5Us+6KMTqZYaZGaIYZPuGaB5RJyKIwGnb8NBHs+/DdqrdselefJrdqZkuG7/GU+WV2ivPOIA6QBpHvoxGqHR6\"\r\n}",
+							"raw": "{\r\n  \"EncryptedString\": \"{{GetDeliveryDetailsByPinCode}}\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -20523,6 +20524,10 @@
 		},
 		{
 			"key": "GetMyorders",
+			"value": ""
+		},
+		{
+			"key": "GetDeliveryDetailsByPinCode",
 			"value": ""
 		}
 	]
