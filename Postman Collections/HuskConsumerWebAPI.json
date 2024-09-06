@@ -333,7 +333,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"CustomerId\": \"HINUP-Huskify-15100\"\r\n}\r\n"
 						},
-						"url": "{{URL_EEDA}}/v1/GetUserDetails"
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/GetUserDetails"
 					},
 					"response": []
 				},
