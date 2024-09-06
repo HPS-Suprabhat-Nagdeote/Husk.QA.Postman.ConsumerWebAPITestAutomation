@@ -1318,7 +1318,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"PrevMobileNumber\": \"9955041298\",\r\n  \"MobileNumber\": \"7719919637\",\r\n  \"OTPCode\": \"\",\r\n  \"IsMobileUpate\": true\r\n}\r\n"
+							"raw": "{\r\n  \"PrevMobileNumber\": \"9823643386\",\r\n  \"MobileNumber\": \"9823643386\",\r\n  \"OTPCode\": \"\",\r\n  \"IsMobileUpate\": true\r\n}\r\n"
 						},
 						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/VerifyOTP"
 					},
@@ -1394,7 +1394,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"PrevMobileNumber\": \"9955041298\",\r\n  \"MobileNumber\": \"9955041298\",\r\n  \"OTPCode\": \"6486\",\r\n  \"IsMobileUpate\": true\r\n}\r\n"
+							"raw": "{\r\n  \"PrevMobileNumber\": \"9823643386\",\r\n  \"MobileNumber\": \"9823643386\",\r\n  \"OTPCode\": \"6486\",\r\n  \"IsMobileUpate\": true\r\n}\r\n\r\n// 9955041298\r\n"
 						},
 						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/VerifyOTP"
 					},
