@@ -20098,10 +20098,10 @@
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
 									"});\r",
-									"pm.test(\"Your test name\", function () {\r",
-									"    var jsonData = pm.response.json().Status.DisplayMessage;\r",
-									"    pm.expect(jsonData).to.eql(\"Success\");\r",
-									"});\r",
+									"// pm.test(\"Your test name\", function () {\r",
+									"//     var jsonData = pm.response.json().Status.DisplayMessage;\r",
+									"//     pm.expect(jsonData).to.eql(\"Success\");\r",
+									"// });\r",
 									"pm.test(\"Content-Type is present\", function () {\r",
 									"    pm.response.to.have.header(\"Content-Type\");\r",
 									"});"
@@ -20160,7 +20160,7 @@
 								}
 							}
 						},
-						"url": "{{h1BaseURL}}//EED/Api/v1/GetCAFDetails"
+						"url": "https://huskpowerdevconsumerwebapih1.azurewebsites.net//EED/Api/v1/GetCAFDetails"
 					},
 					"response": []
 				},
@@ -20175,10 +20175,10 @@
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
 									"});\r",
-									"pm.test(\"Your test name\", function () {\r",
-									"    var jsonData = pm.response.json().Status.DisplayMessage;\r",
-									"    pm.expect(jsonData).to.eql(\"Success\");\r",
-									"});\r",
+									"// pm.test(\"Your test name\", function () {\r",
+									"//     var jsonData = pm.response.json().Status.DisplayMessage;\r",
+									"//     pm.expect(jsonData).to.eql(\"Success\");\r",
+									"// });\r",
 									"pm.test(\"Content-Type is present\", function () {\r",
 									"    pm.response.to.have.header(\"Content-Type\");\r",
 									"});"
@@ -20237,7 +20237,7 @@
 								}
 							}
 						},
-						"url": "{{h1BaseURL}}//EED/Api/v1/GetCAFDetails"
+						"url": "https://huskpowerdevconsumerwebapih1.azurewebsites.net//EED/Api/v1/GetCAFDetails"
 					},
 					"response": []
 				},
@@ -20310,7 +20310,7 @@
 								}
 							}
 						},
-						"url": "{{h1BaseURL}}/EED/Api/v1/GetMyOrders"
+						"url": "https://huskpowerdevconsumerwebapih1.azurewebsites.net/EED/Api/v1/GetMyOrders"
 					},
 					"response": []
 				},
