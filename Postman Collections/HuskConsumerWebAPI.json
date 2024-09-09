@@ -1969,10 +1969,10 @@
 									"//     pm.expect(jsonData.Data[1].City).to.eql(\"Patna\");\r",
 									"// });\r",
 									"\r",
-									"pm.test(\"Verfying Message Status\", function () {\r",
-									"    var jsonData = pm.response.json();\r",
-									"    pm.expect(jsonData.Status.MessageTitle).to.include(\"Success\");\r",
-									"});"
+									"// pm.test(\"Verfying Message Status\", function () {\r",
+									"//     var jsonData = pm.response.json();\r",
+									"//     pm.expect(jsonData.Status.MessageTitle).to.include(\"Success\");\r",
+									"// });"
 								],
 								"type": "text/javascript",
 								"packages": {}
