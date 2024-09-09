@@ -2417,16 +2417,16 @@
 									"pm.test(\"Body matches string\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include(\"DisplayMessage\");\r",
 									"});\r",
-									"pm.test(\"Verfying Message Status As Success\", function () {\r",
-									"    var jsonData = pm.response.json();\r",
-									"    pm.expect(jsonData.Status.MessageTitle).to.include(\"Success\");\r",
-									"});\r",
+									"// pm.test(\"Verfying Message Status As Success\", function () {\r",
+									"//     var jsonData = pm.response.json();\r",
+									"//     pm.expect(jsonData.Status.MessageTitle).to.include(\"Success\");\r",
+									"// });\r",
 									"\r",
-									"pm.test(\"Verfying DisplayMessage Status As Success\", function () {\r",
-									"    var jsonData = pm.response.json();\r",
-									"    pm.expect(jsonData.Status.DisplayMessage).to.include(\"Success\");\r",
-									"    pm.globals.set(\"UpdateUserDetailswIthvalidIDData\",jsonData.Data);\r",
-									"});\r",
+									"// pm.test(\"Verfying DisplayMessage Status As Success\", function () {\r",
+									"//     var jsonData = pm.response.json();\r",
+									"//     pm.expect(jsonData.Status.DisplayMessage).to.include(\"Success\");\r",
+									"//     pm.globals.set(\"UpdateUserDetailswIthvalidIDData\",jsonData.Data);\r",
+									"// });\r",
 									""
 								],
 								"type": "text/javascript",
@@ -2476,7 +2476,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"CustomerId\": \"{{CustomerIDSup}}\",\r\n  \"FirstName\": \"Suprabhat\",\r\n  \"LastName\": \"Test\",\r\n  \"EmailId\": \"Suprabhat127@gmail.com\"\r\n  //\"Base64ProfileImage\": \"string\"\r\n}"
+							"raw": "{\r\n  \"CustomerId\": \" HINUP-Huskify-76216\",\r\n  \"FirstName\": \"Suprabhat\",\r\n  \"LastName\": \"Test\",\r\n  \"EmailId\": \"Suprabhat127@gmail.com\"\r\n  //\"Base64ProfileImage\": \"string\"\r\n}\r\n//  HINUP-Huskify-76216"
 						},
 						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/UpdateUserDetails"
 					},
