@@ -1941,6 +1941,76 @@
 					"response": []
 				},
 				{
+					"name": "AddCustomerAddress",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "5d68730b-afe2-41f4-b4ee-f35771a0a73a",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Content-Type is present\", function () {\r",
+									"    pm.response.to.have.header(\"Content-Type\");\r",
+									"});\r",
+									"pm.test(\"Body matches string\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"DisplayMessage\");\r",
+									"});\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.globals.set(\"AddCustomerAddressData\", jsonData.Data);"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"id": "b2c83bbc-b336-471e-b4ca-7b0ef45ee4a8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Auth-Token",
+								"value": "{{Auth-Token}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{BasicAuthorization}}"
+							},
+							{
+								"key": "husk-token",
+								"value": "26CB9ECF-6343-43B9-B700-004BA9484D3E"
+							},
+							{
+								"key": "CustomerID",
+								"value": "{{CustomerId}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n   \"Id\": 76196,  \r\n   \"CustomerId\": \"HINUP-Huskify-76196\",  \r\n   \"CustomerName\": \"Test1 Test2\", \r\n   \"AlternatePhoneNumber\": \"\", \r\n   \"PhoneNumber\": \"+919823643386\",  \r\n   \"FlatNoWithBuildingName\": \"Sprint \",  \r\n   \"Street\": \"Kharadi\", \r\n   \"Landmark\": \"Reliance\",  \r\n   \"State\": \"UP\", \r\n   \"City\": \"West Lohianagar\", \r\n   \"PinCode\": 800001, \r\n   \"AddressType\": \"Home\",  \r\n   \"Latitude\": 0, \r\n   \"Longitude\": 0,  \r\n   \"IsDefault\": true,  \r\n   \"IsBillingAddress\": true \r\n }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://huskpowerprodconsumerwebapi.azurewebsites.net/EED/Api/v1/AddCustomerAddress"
+					},
+					"response": []
+				},
+				{
 					"name": "DecryptGetUserAddress Copy",
 					"event": [
 						{
