@@ -1873,79 +1873,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "d6a57c8c-f156-4bd2-91fb-55254fb6056f",
-								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"pm.test(\"Content-Type is present\", function () {\r",
-									"    pm.response.to.have.header(\"Content-Type\");\r",
-									"});\r",
-									"pm.test(\"Body matches string\", function () {\r",
-									"    pm.expect(pm.response.text()).to.include(\"DisplayMessage\");\r",
-									"});\r",
-									"var jsonData = pm.response.json();\r",
-									"pm.globals.set(\"AddCustomerAddressData\", jsonData.Data);"
-								],
-								"type": "text/javascript",
-								"packages": {}
-							}
-						}
-					],
-					"id": "f7b161bc-effb-413e-a50c-e5b53327dd35",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Auth-Token",
-								"value": "{{AuthTocken}}"
-							},
-							{
-								"key": "Authorization",
-								"value": "{{BasicAuthorization}}"
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							},
-							{
-								"key": "CustomerId",
-								"value": "{{CustomerId}}"
-							},
-							{
-								"key": "IsNewApi",
-								"value": "false"
-							},
-							{
-								"key": "husk-token",
-								"value": "{{huskTocken}}"
-							},
-							{
-								"key": "Cookie",
-								"value": "ARRAffinity=55799aecd2ac63889df0aa628663200df6776142854fd7701f4cb0888ecab1ef; ARRAffinitySameSite=55799aecd2ac63889df0aa628663200df6776142854fd7701f4cb0888ecab1ef; ARRAffinity=5b742486848f9418d73d42abc41c8172cad64c4c497f000d692b67d867b297e7; ARRAffinitySameSite=5b742486848f9418d73d42abc41c8172cad64c4c497f000d692b67d867b297e7"
-							},
-							{
-								"key": "Accept-Language",
-								"value": "2"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n            \"Id\": 76216,\r\n            \"CustomerId\": \"HINUP-Huskify-76216\",\r\n            \"CustomerName\": \"Suprabhat\",\r\n            \"AlternatePhoneNumber\": \"\",\r\n            \"PhoneNumber\": \"+919823643386\",\r\n            \"FlatNoWithBuildingName\": \"Almonte\",\r\n            \"Street\": \"Pune\",\r\n            \"Landmark\": \"home\",\r\n            \"State\": \"Bihar\",\r\n            \"City\": \"Patna\",\r\n            \"PinCode\": 800001,\r\n            \"AddressType\": \"\",\r\n            \"Latitude\": 0.0,\r\n            \"Longitude\": 0.0,\r\n            \"IsDefault\": true,\r\n            \"IsBillingAddress\": false\r\n}\r\n"
-						},
-						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/AddCustomerAddress"
-					},
-					"response": []
-				},
-				{
-					"name": "AddCustomerAddress",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
 								"id": "5d68730b-afe2-41f4-b4ee-f35771a0a73a",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {\r",
@@ -2011,7 +1938,7 @@
 					"response": []
 				},
 				{
-					"name": "DecryptGetUserAddress Copy",
+					"name": "DecryptGetUserAddress",
 					"event": [
 						{
 							"listen": "test",
