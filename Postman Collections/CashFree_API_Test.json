@@ -971,14 +971,14 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"MobileNumber\": \"9766260736\",\r\n  \"DiscountAmount\": null,\r\n  \"CustomerId\": \"HINUP-Huskify-274022\",\r\n  \"TotalAmount\": 145,\r\n  \"EMIPeriod\": 5,\r\n  \"EMISchemeId\": 26,\r\n  \"AddressId\": 17703,\r\n  \"DiscountId\": null\r\n}",
+					"raw": "{\r\n  \"MobileNumber\": \"9284487810\",\r\n  \"DiscountAmount\": null,\r\n  \"CustomerId\": \"HINUP-Huskify-2768\",\r\n  \"TotalAmount\": 145,\r\n  \"EMIPeriod\": 5,\r\n  \"EMISchemeId\": 26,\r\n  \"AddressId\": 17703,\r\n  \"DiscountId\": null\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": "https://paymentservice-qa-ggd2acbufxcjgpa2.centralindia-01.azurewebsites.net/api/v1/CashFreePaymentEMIRequest",
+				"url": "https://huskifyorchestratorserviceqa-3-eqg3bxethmhkhcap.canadacentral-01.azurewebsites.net/api/v1/CashFreePaymentEMIRequest",
 				"description": "Generated from cURL: curl -X 'POST' \\\r\n  'https://paymentservice-qa-ggd2acbufxcjgpa2.centralindia-01.azurewebsites.net/api/v1/CashFreePaymentEMIRequest' \\\r\n  -H 'accept: application/json' \\\r\n  -H 'Content-Type: application/json' \\\r\n  -d '{\r\n  \"MobileNumber\": \"9823643386\",\r\n  \"DiscountAmount\": null,\r\n  \"CustomerId\": \"HINUP-Huskify-233623\",\r\n  \"TotalAmount\": 145,\r\n  \"EMIPeriod\": 5,\r\n  \"EMISchemeId\": 26,\r\n  \"AddressId\": 17703,\r\n  \"DiscountId\": null\r\n}'"
 			},
 			"response": []
