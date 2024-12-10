@@ -40,6 +40,58 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "https://huskifyorchestratorserviceqa-3-eqg3bxethmhkhcap.canadacentral-01.azurewebsites.net/api/v1/CashFreePaymentEMIRequest",
+					"id": "0db16d77-f9e3-4dca-82e4-62bf9d437786",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "accept-language",
+								"value": "1"
+							},
+							{
+								"key": "husk-token",
+								"value": "26CB9ECF-6343-43B9-B700-004BA9484D3E"
+							},
+							{
+								"key": "authorization",
+								"value": "Basic SHVza05ldXJvbjpyYVJxN3FKRk8/fGE3T2pU"
+							},
+							{
+								"key": "auth-token",
+								"value": "469806f3-2984-4132-b6c1-e305633991cc"
+							},
+							{
+								"key": "customerid",
+								"value": "HINUP-Huskify-127189"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"MobileNumber\": \"726388XXXX\",\r\n  \"DiscountAmount\": null,\r\n  \"CustomerId\": \"HNUP-HUSKIFY-1468\",\r\n  \"TotalAmount\": 145,\r\n  \"EMIPeriod\": 5,\r\n  \"EMISchemeId\": 26,\r\n  \"AddressId\": 17703,\r\n  \"DiscountId\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://huskifyorchestratorserviceqa-3-eqg3bxethmhkhcap.canadacentral-01.azurewebsites.net/api/v1/CashFreePaymentEMIRequest",
+						"description": "Generated from cURL: curl --location 'https://huskifyorchestratorserviceqa-3-eqg3bxethmhkhcap.canadacentral-01.azurewebsites.net/api/v1/CashFreePaymentEMIRequest' \\\r\n--header 'accept: application/json' \\\r\n--header 'Content-Type: application/json' \\\r\n--header 'accept-language: 1' \\\r\n--header 'husk-token: 26CB9ECF-6343-43B9-B700-004BA9484D3E' \\\r\n--header 'authorization: Basic SHVza05ldXJvbjpyYVJxN3FKRk8/fGE3T2pU' \\\r\n--header 'auth-token: 469806f3-2984-4132-b6c1-e305633991cc' \\\r\n--header 'customerid: HINUP-Huskify-127189' \\\r\n--data '{\r\n  \"MobileNumber\": \"726388XXXX\",\r\n  \"DiscountAmount\": null,\r\n  \"CustomerId\": \"HNUP-HUSKIFY-1468\",\r\n  \"TotalAmount\": 145,\r\n  \"EMIPeriod\": 5,\r\n  \"EMISchemeId\": 26,\r\n  \"AddressId\": 17703,\r\n  \"DiscountId\": null\r\n}'"
+					},
+					"response": []
 				}
 			],
 			"id": "d57404ca-1ed2-4be1-8e27-84863069c009"
