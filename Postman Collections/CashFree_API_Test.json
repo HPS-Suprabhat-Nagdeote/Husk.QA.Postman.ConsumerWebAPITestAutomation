@@ -6,6 +6,45 @@
 	},
 	"item": [
 		{
+			"name": "Pratiksha's-Migrated API's",
+			"item": [
+				{
+					"name": "GetSubscriptionDetailsWithValidData",
+					"id": "1d918fb9-da55-42e1-ba75-50534888e876",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://husk3pawrappers-dev.azurewebsites.net/api/CashfreePayment/GetSubscriptionDetails?subreferenceId",
+							"protocol": "https",
+							"host": [
+								"husk3pawrappers-dev",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"CashfreePayment",
+								"GetSubscriptionDetails"
+							],
+							"query": [
+								{
+									"key": "subreferenceId",
+									"value": null,
+									"type": "text"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "d57404ca-1ed2-4be1-8e27-84863069c009"
+		},
+		{
 			"name": "CreateOrder With Valid Input",
 			"event": [
 				{
@@ -913,35 +952,34 @@
 			"response": []
 		},
 		{
-			"name": "GetSubscriptionDetailsWithValidData",
-			"id": "1d918fb9-da55-42e1-ba75-50534888e876",
+			"name": "https://paymentservice-qa-ggd2acbufxcjgpa2.centralindia-01.azurewebsites.net/api/v1/CashFreePaymentEMIRequest",
+			"id": "77e049bd-64b1-4d6d-ad7e-2b77e61708cc",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
 			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "https://husk3pawrappers-dev.azurewebsites.net/api/CashfreePayment/GetSubscriptionDetails?subreferenceId",
-					"protocol": "https",
-					"host": [
-						"husk3pawrappers-dev",
-						"azurewebsites",
-						"net"
-					],
-					"path": [
-						"api",
-						"CashfreePayment",
-						"GetSubscriptionDetails"
-					],
-					"query": [
-						{
-							"key": "subreferenceId",
-							"value": null,
-							"type": "text"
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"MobileNumber\": \"9823643386\",\r\n  \"DiscountAmount\": null,\r\n  \"CustomerId\": \"HINUP-Huskify-233623\",\r\n  \"TotalAmount\": 145,\r\n  \"EMIPeriod\": 5,\r\n  \"EMISchemeId\": 26,\r\n  \"AddressId\": 17703,\r\n  \"DiscountId\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
 						}
-					]
-				}
+					}
+				},
+				"url": "https://paymentservice-qa-ggd2acbufxcjgpa2.centralindia-01.azurewebsites.net/api/v1/CashFreePaymentEMIRequest",
+				"description": "Generated from cURL: curl -X 'POST' \\\r\n  'https://paymentservice-qa-ggd2acbufxcjgpa2.centralindia-01.azurewebsites.net/api/v1/CashFreePaymentEMIRequest' \\\r\n  -H 'accept: application/json' \\\r\n  -H 'Content-Type: application/json' \\\r\n  -d '{\r\n  \"MobileNumber\": \"9823643386\",\r\n  \"DiscountAmount\": null,\r\n  \"CustomerId\": \"HINUP-Huskify-233623\",\r\n  \"TotalAmount\": 145,\r\n  \"EMIPeriod\": 5,\r\n  \"EMISchemeId\": 26,\r\n  \"AddressId\": 17703,\r\n  \"DiscountId\": null\r\n}'"
 			},
 			"response": []
 		}
