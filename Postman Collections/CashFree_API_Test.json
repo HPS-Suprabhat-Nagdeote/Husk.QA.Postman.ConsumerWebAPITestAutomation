@@ -952,7 +952,7 @@
 			"response": []
 		},
 		{
-			"name": "https://paymentservice-qa-ggd2acbufxcjgpa2.centralindia-01.azurewebsites.net/api/v1/CashFreePaymentEMIRequest",
+			"name": "CashFreePaymentEMIRequest",
 			"id": "77e049bd-64b1-4d6d-ad7e-2b77e61708cc",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
