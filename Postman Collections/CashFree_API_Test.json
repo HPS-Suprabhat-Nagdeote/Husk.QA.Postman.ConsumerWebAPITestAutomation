@@ -42,7 +42,7 @@
 					"response": []
 				},
 				{
-					"name": "https://huskifyorchestratorserviceqa-3-eqg3bxethmhkhcap.canadacentral-01.azurewebsites.net/api/v1/CashFreePaymentEMIRequest",
+					"name": "CashFreePaymentEMIRequest",
 					"id": "0db16d77-f9e3-4dca-82e4-62bf9d437786",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
