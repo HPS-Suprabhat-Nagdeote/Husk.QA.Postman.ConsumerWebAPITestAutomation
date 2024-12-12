@@ -81,7 +81,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"MobileNumber\": \"9284487810\",\r\n  \"DiscountAmount\": null,\r\n  \"CustomerId\": \"HINUP-Huskify-207337\",\r\n  \"TotalAmount\": 1399,\r\n  \"EMIPeriod\": 5,\r\n  \"EMISchemeId\": 26,\r\n  \"AddressId\": 167372,\r\n  \"DiscountId\": null\r\n}",
+							"raw": "{\r\n  \"MobileNumber\": \"9284487810\",\r\n  \"DiscountAmount\": null,\r\n  \"CustomerId\": \"HINUP-Huskify-207337\",\r\n  \"TotalAmount\": 1399, //From Mobile app\r\n  \"EMIPeriod\": 5,\r\n  \"EMISchemeId\": 26, //from EMISchemes table\r\n  \"AddressId\": 167372,//from CustomerAddress table\r\n  \"DiscountId\": null\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
