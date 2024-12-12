@@ -72,16 +72,16 @@
 							},
 							{
 								"key": "auth-token",
-								"value": "469806f3-2984-4132-b6c1-e305633991cc"
+								"value": "4fe621de-a022-4dbb-98d6-9deea0e72740"
 							},
 							{
 								"key": "customerid",
-								"value": "HINUP-Huskify-127189"
+								"value": "HINUP-Huskify-207337"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"MobileNumber\": \"9823643386\",\r\n  \"DiscountAmount\": null,\r\n  \"CustomerId\": \"HINUP-Huskify-233623\",\r\n  \"TotalAmount\": 145,\r\n  \"EMIPeriod\": 5,\r\n  \"EMISchemeId\": 26,\r\n  \"AddressId\": 17703,\r\n  \"DiscountId\": null\r\n}",
+							"raw": "{\r\n  \"MobileNumber\": \"9284487810\",\r\n  \"DiscountAmount\": null,\r\n  \"CustomerId\": \"HINUP-Huskify-207337\",\r\n  \"TotalAmount\": 1399,\r\n  \"EMIPeriod\": 5,\r\n  \"EMISchemeId\": 26,\r\n  \"AddressId\": 167372,\r\n  \"DiscountId\": null\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
