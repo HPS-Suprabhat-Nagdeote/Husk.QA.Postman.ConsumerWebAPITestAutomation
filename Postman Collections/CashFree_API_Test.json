@@ -42,6 +42,70 @@
 					"response": []
 				},
 				{
+					"name": "GetSubscriptionDetailsWithValidData-with wrong Id",
+					"id": "e1914deb-d9c5-4260-a6ba-1c23234105a7",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://husk3pawrappers-dev.azurewebsites.net/api/CashfreePayment/GetSubscriptionDetails?subreferenceId=12313",
+							"protocol": "https",
+							"host": [
+								"husk3pawrappers-dev",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"CashfreePayment",
+								"GetSubscriptionDetails"
+							],
+							"query": [
+								{
+									"key": "subreferenceId",
+									"value": "12313"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetSubscriptionDetailsWithValidData-with_null_Id",
+					"id": "ac21c2b6-1afd-4568-b767-50f5afd63e1e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://husk3pawrappers-dev.azurewebsites.net/api/CashfreePayment/GetSubscriptionDetails?subreferenceId=",
+							"protocol": "https",
+							"host": [
+								"husk3pawrappers-dev",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"CashfreePayment",
+								"GetSubscriptionDetails"
+							],
+							"query": [
+								{
+									"key": "subreferenceId",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "CashFreePaymentEMIRequest",
 					"id": "0db16d77-f9e3-4dca-82e4-62bf9d437786",
 					"protocolProfileBehavior": {
