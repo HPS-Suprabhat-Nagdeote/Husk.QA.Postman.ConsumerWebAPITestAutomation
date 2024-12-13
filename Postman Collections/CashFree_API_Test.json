@@ -92,6 +92,88 @@
 						"description": "Generated from cURL: curl --location 'https://huskifyorchestratorserviceqa-3-eqg3bxethmhkhcap.canadacentral-01.azurewebsites.net/api/v1/CashFreePaymentEMIRequest' \\\r\n--header 'accept: application/json' \\\r\n--header 'Content-Type: application/json' \\\r\n--header 'accept-language: 1' \\\r\n--header 'husk-token: 26CB9ECF-6343-43B9-B700-004BA9484D3E' \\\r\n--header 'authorization: Basic SHVza05ldXJvbjpyYVJxN3FKRk8/fGE3T2pU' \\\r\n--header 'auth-token: 469806f3-2984-4132-b6c1-e305633991cc' \\\r\n--header 'customerid: HINUP-Huskify-127189' \\\r\n--data '{\r\n  \"MobileNumber\": \"726388XXXX\",\r\n  \"DiscountAmount\": null,\r\n  \"CustomerId\": \"HNUP-HUSKIFY-1468\",\r\n  \"TotalAmount\": 145,\r\n  \"EMIPeriod\": 5,\r\n  \"EMISchemeId\": 26,\r\n  \"AddressId\": 17703,\r\n  \"DiscountId\": null\r\n}'"
 					},
 					"response": []
+				},
+				{
+					"name": "DecryptAPI",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "57f10bd1-5573-41f7-ae2b-7a883162b962",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// pm.test(\"Verfying Get user Address Data\", function () {\r",
+									"//     var jsonData = pm.response.json();\r",
+									"//     pm.expect(jsonData.Data[0].CustomerId).to.eql(47530);\r",
+									"// });\r",
+									"// pm.test(\"Verfying Get user Address Landmark\", function () {\r",
+									"//     var jsonData = pm.response.json();\r",
+									"//     pm.expect(jsonData.Data[1].Landmark).to.eql(\"Test address\");\r",
+									"// });\r",
+									"// pm.test(\"Verfying Get user Address State\", function () {\r",
+									"//     var jsonData = pm.response.json();\r",
+									"//     pm.expect(jsonData.Data[1].State).to.eql(\"Bihar\");\r",
+									"// });\r",
+									"// pm.test(\"Verfying Get user Address City\", function () {\r",
+									"//     var jsonData = pm.response.json();\r",
+									"//     pm.expect(jsonData.Data[1].City).to.eql(\"Patna\");\r",
+									"// });\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"id": "43ecb931-f333-4eee-9b5e-5a8f9bb1204f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept-Language",
+								"value": "2",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{BasicAuthorization}}",
+								"type": "text"
+							},
+							{
+								"key": "husk-token",
+								"value": "{{huskTocken}}",
+								"type": "text"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}",
+								"type": "text"
+							},
+							{
+								"key": "Auth-Token",
+								"value": "{{Auth-Token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"EncryptedString\":\"2sQPijSZW5GRtYXdzZd2uVPEaDr0vIOJ3Faug5bdbZjhSiynmwJoBJL09QP+Ji31pRcFl7Vi3hrjyD7rL2xgfiXMRLjFhSoZOxQYNhWo+mpOzfBRk8TKoFaTj1+AaQZKPJ9TVMqVt7quo4PvDhcsjP/gJMEwqOSxw7bDpj9dh7k=\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/DecryptResponse"
+					},
+					"response": []
 				}
 			],
 			"id": "d57404ca-1ed2-4be1-8e27-84863069c009"
