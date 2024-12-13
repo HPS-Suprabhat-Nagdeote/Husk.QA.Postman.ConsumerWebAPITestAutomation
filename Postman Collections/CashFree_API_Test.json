@@ -146,7 +146,7 @@
 					"response": []
 				},
 				{
-					"name": "CashFreePaymentEMIRequest-withoutMobileNumber-andWithoutEMIPeriod",
+					"name": "CashFreePaymentEMIRequest-WithoutEMIPeriod",
 					"id": "a25845a2-eafd-4de7-b50f-a197e6c5168a",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
