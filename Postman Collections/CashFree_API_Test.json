@@ -197,14 +197,14 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"MobileNumber\": \"8626019212\",\r\n  \"DiscountAmount\": null,\r\n  \"CustomerId\": \"HINUP-Huskify-379516\",\r\n  \"TotalAmount\": 899, //From Mobile app\r\n  \"EMIPeriod\": 5,\r\n  \"EMISchemeId\": 26, //from EMISchemes table\r\n  \"AddressId\": 167421,//from CustomerAddress table should matched with Customer Id from the same CustomerAddress table.\r\n  \"DiscountId\": null\r\n}",
+							"raw": "{\r\n  \"MobileNumber\": \"\",\r\n  \"DiscountAmount\": null,\r\n  \"CustomerId\": \"HINUP-Huskify-379516\",\r\n  \"TotalAmount\": 799, //From Mobile app\r\n  \"EMIPeriod\": 2,\r\n  \"EMISchemeId\": 26, //from EMISchemes table\r\n  \"AddressId\": 167421,//from CustomerAddress table should matched with Customer Id from the same CustomerAddress table.\r\n  \"DiscountId\": null\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": "https://huskifyorchestratorserviceqa-3-eqg3bxethmhkhcap.canadacentral-01.azurewebsites.net/api/v1/CashFreePaymentEMIRequest",
+						"url": "https://huskifyorchestratorserviceqa-2-hpaqg7gwf7gybkf3.centralindia-01.azurewebsites.net/api/v1/CashFreePaymentEMIRequest",
 						"description": "Generated from cURL: curl --location 'https://huskifyorchestratorserviceqa-3-eqg3bxethmhkhcap.canadacentral-01.azurewebsites.net/api/v1/CashFreePaymentEMIRequest' \\\r\n--header 'accept: application/json' \\\r\n--header 'Content-Type: application/json' \\\r\n--header 'accept-language: 1' \\\r\n--header 'husk-token: 26CB9ECF-6343-43B9-B700-004BA9484D3E' \\\r\n--header 'authorization: Basic SHVza05ldXJvbjpyYVJxN3FKRk8/fGE3T2pU' \\\r\n--header 'auth-token: 469806f3-2984-4132-b6c1-e305633991cc' \\\r\n--header 'customerid: HINUP-Huskify-127189' \\\r\n--data '{\r\n  \"MobileNumber\": \"726388XXXX\",\r\n  \"DiscountAmount\": null,\r\n  \"CustomerId\": \"HNUP-HUSKIFY-1468\",\r\n  \"TotalAmount\": 145,\r\n  \"EMIPeriod\": 5,\r\n  \"EMISchemeId\": 26,\r\n  \"AddressId\": 17703,\r\n  \"DiscountId\": null\r\n}'"
 					},
 					"response": []
@@ -249,14 +249,14 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"MobileNumber\": \"8626019212\",\r\n  \"DiscountAmount\": null,\r\n  \"CustomerId\": \"HINUP-Huskify-379516\",\r\n  \"TotalAmount\": 899, //From Mobile app\r\n  \"EMIPeriod\": 5,\r\n  \"EMISchemeId\": 26, //from EMISchemes table\r\n  \"AddressId\": 167421,//from CustomerAddress table should matched with Customer Id from the same CustomerAddress table.\r\n  \"DiscountId\": null\r\n}",
+							"raw": "{\r\n  \"MobileNumber\": \"8626019212\",\r\n  \"DiscountAmount\": null,\r\n  \"CustomerId\": \"HINUP-Huskify-379516\",\r\n  \"TotalAmount\": 1699, //From Mobile app\r\n  \"EMIPeriod\": 5,\r\n  \"EMISchemeId\": 26, //from EMISchemes table\r\n  \"AddressId\": 167421,//from CustomerAddress table should matched with Customer Id from the same CustomerAddress table.\r\n  \"DiscountId\": null\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": "https://huskifyorchestratorserviceqa-3-eqg3bxethmhkhcap.canadacentral-01.azurewebsites.net/api/v1/CashFreePaymentEMIRequest",
+						"url": "https://huskifyorchestratorserviceqa-2-hpaqg7gwf7gybkf3.centralindia-01.azurewebsites.net/api/v1/CashFreePaymentEMIRequest",
 						"description": "Generated from cURL: curl --location 'https://huskifyorchestratorserviceqa-3-eqg3bxethmhkhcap.canadacentral-01.azurewebsites.net/api/v1/CashFreePaymentEMIRequest' \\\r\n--header 'accept: application/json' \\\r\n--header 'Content-Type: application/json' \\\r\n--header 'accept-language: 1' \\\r\n--header 'husk-token: 26CB9ECF-6343-43B9-B700-004BA9484D3E' \\\r\n--header 'authorization: Basic SHVza05ldXJvbjpyYVJxN3FKRk8/fGE3T2pU' \\\r\n--header 'auth-token: 469806f3-2984-4132-b6c1-e305633991cc' \\\r\n--header 'customerid: HINUP-Huskify-127189' \\\r\n--data '{\r\n  \"MobileNumber\": \"726388XXXX\",\r\n  \"DiscountAmount\": null,\r\n  \"CustomerId\": \"HNUP-HUSKIFY-1468\",\r\n  \"TotalAmount\": 145,\r\n  \"EMIPeriod\": 5,\r\n  \"EMISchemeId\": 26,\r\n  \"AddressId\": 17703,\r\n  \"DiscountId\": null\r\n}'"
 					},
 					"response": []
@@ -384,7 +384,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"EncryptedString\":\"2sQPijSZW5GRtYXdzZd2uVPEaDr0vIOJ3Faug5bdbZjhSiynmwJoBJL09QP+Ji31pRcFl7Vi3hrjyD7rL2xgfq24YiRxY/fLlH8GU5hinuPttQ1LOQ75JVBe7HpxtkS0/svGIEuVOLSKzA2OiCGfLIt1JBO6IZhm0VH1raYH4WY=\"\r\n}\r\n",
+							"raw": "{\r\n  \"EncryptedString\":\"2sQPijSZW5GRtYXdzZd2uVPEaDr0vIOJ3Faug5bdbZjhSiynmwJoBJL09QP+Ji31pRcFl7Vi3hrjyD7rL2xgfq24YiRxY/fLlH8GU5hinuPttQ1LOQ75JVBe7HpxtkS0/svGIEuVOLSKzA2OiCGfLIt1JBO6IZhm0VH1raYH4WY\"\r\n}\r\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -437,7 +437,55 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n\r\n    \"AddressId\": 167163, \r\n\r\n    \"CustomerId\": \"HINUP-Huskify-378445\", \r\n\r\n    \"DiscountAmount\": 0, \r\n\r\n    \"DiscountId\": 0, \r\n\r\n    \"DownpaymentAmt\": 129, \r\n\r\n    \"EMISchemeID\": 39, \r\n\r\n    \"MobileNumber\": \"+918603510873\", \r\n\r\n    \"TotalAmount\": null\r\n\r\n    }",
+							"raw": "{\r\n    \"AddressId\": 167421, \r\n    \"CustomerId\": \"HINUP-Huskify-379516\", \r\n    \"DiscountAmount\": 0, \r\n    \"DiscountId\": 0, \r\n    \"DownpaymentAmt\": 129, \r\n    \"EMISchemeID\": 39, \r\n    \"MobileNumber\": \"+918626019212\", \r\n    \"TotalAmount\": null\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://huskifyorchestratorserviceqa.azurewebsites.net/api/v1/CODPaymentRequest",
+						"description": "Generated from cURL: curl --location 'https://huskifyorchestratorserviceqa.azurewebsites.net/api/v1/CODPaymentRequest' \\\r\n\r\n--header 'Content-Type: application/json' \\\r\n\r\n--header 'Accept: application/json' \\\r\n\r\n--header 'CustomerId: HINUP-Huskify-0277' \\\r\n\r\n--header 'Auth-token: c9e72674-d9ad-4d5e-a426-285ce17995fe' \\\r\n\r\n--header 'Husk-token: 26CB9ECF-6343-43B9-B700-004BA9484D3E' \\\r\n\r\n--header 'Authorization: Basic SHVza05ldXJvbjpyYVJxN3FKRk8/fGE3T2pU' \\\r\n\r\n--data '{\r\n\r\n    \"AddressId\": 167163, \r\n\r\n    \"CustomerId\": \"HINUP-Huskify-378445\", \r\n\r\n    \"DiscountAmount\": 0, \r\n\r\n    \"DiscountId\": 0, \r\n\r\n    \"DownpaymentAmt\": 129, \r\n\r\n    \"EMISchemeID\": 39, \r\n\r\n    \"MobileNumber\": \"+918603510873\", \r\n\r\n    \"TotalAmount\": null\r\n\r\n    }'"
+					},
+					"response": []
+				},
+				{
+					"name": "https://huskifyorchestratorserviceqa.azurewebsites.net/api/v1/CODPaymentRequest Copy",
+					"id": "c6754972-e5ba-4e2e-b784-e1389c07d652",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "CustomerId",
+								"value": "HINUP-Huskify-0277"
+							},
+							{
+								"key": "Auth-token",
+								"value": "c9e72674-d9ad-4d5e-a426-285ce17995fe"
+							},
+							{
+								"key": "Husk-token",
+								"value": "26CB9ECF-6343-43B9-B700-004BA9484D3E"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic SHVza05ldXJvbjpyYVJxN3FKRk8/fGE3T2pU"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"AddressId\": 167421, \r\n    \"CustomerId\": \"HINUP-Huskify-379516\", \r\n    \"DiscountAmount\": 0, \r\n    \"DiscountId\": 0, \r\n    \"DownpaymentAmt\": 129, \r\n    \"EMISchemeID\": 39, \r\n    \"MobileNumber\": \"+918626019212\", \r\n    \"TotalAmount\": null\r\n    }",
 							"options": {
 								"raw": {
 									"language": "json"
