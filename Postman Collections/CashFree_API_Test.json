@@ -485,7 +485,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"AddressId\": 167421, \r\n    \"CustomerId\": \"HINUP-Huskify-379516\", \r\n    \"DiscountAmount\": 0, \r\n    \"DiscountId\": 0, \r\n    \"DownpaymentAmt\": 129, \r\n    \"EMISchemeID\": 39, \r\n    \"MobileNumber\": \"+918626019212\", \r\n    \"TotalAmount\": null\r\n    }",
+							"raw": "{\r\n    \"AddressId\": 167421,\r\n    \"CustomerId\": \"HINUP-Huskify-379516\", \r\n    \"DiscountAmount\": 0, \r\n    \"DiscountId\": 0, \r\n    \"DownpaymentAmt\": 129, \r\n    \"EMISchemeID\": 39, \r\n    \"MobileNumber\": \"+918626019212\", \r\n    \"TotalAmount\": null\r\n    }",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -635,7 +635,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"OrderId\": \"PS-19966-PC-HIN-03-001-1\",\r\n  \"CafId\": \"\",\r\n  \"RefundAmount\": 1180,\r\n  \"RefundReason\": \"290\",\r\n  \"PaymentType\": \"FullPayment_COD\"\r\n}",
+							"raw": "{\r\n  \"OrderId\": \"PS-19987-PC-HIN-03-001-1\",\r\n  \"CafId\": \"\",\r\n  \"RefundAmount\": 75,\r\n  \"RefundReason\": \"290\",\r\n  \"PaymentType\": \"FullPayment_COD\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
