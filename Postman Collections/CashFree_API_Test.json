@@ -587,7 +587,39 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"OrderId\": \"PS-19966-PC-HIN-03-001-1\",\r\n  \"CafId\": \"C20250106AIJ\",\r\n  \"RefundAmount\": 1180,\r\n  \"RefundReason\": \"290\",\r\n  \"PaymentType\": \"FullPayment_EMI\"\r\n}",
+							"raw": "{\r\n  \"OrderId\": \"PS-19966-PC-HIN-03-001-1\",\r\n  \"CafId\": \"\",\r\n  \"RefundAmount\": 1180,\r\n  \"RefundReason\": \"290\",\r\n  \"PaymentType\": \"FullPayment_EMI\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://https://huskifyorchestratorserviceqa-2-hpaqg7gwf7gybkf3.centralindia-01.azurewebsites.net/api/v1/CashFreeProductCancelled",
+						"description": "Generated from cURL: curl -X 'POST' \\\r\n  'https://paymentservice-qa-ggd2acbufxcjgpa2.centralindia-01.azurewebsites.net/api/v1/CashFreeProductCancelled' \\\r\n  -H 'accept: application/json' \\\r\n  -H 'Content-Type: application/json' \\\r\n  -d '{\r\n  \"OrderId\": \"order-id\",\r\n  \"CafId\": \"1234\",\r\n  \"RefundAmount\": 0,\r\n  \"RefundReason\": \"290\",\r\n  \"PaymentType\": \"FullPayment_COD\"\r\n}'"
+					},
+					"response": []
+				},
+				{
+					"name": "https://paymentservice-qa-ggd2acbufxcjgpa2.centralindia-01.azurewebsites.net/api/v1/CashFreeProductCancelled Copy",
+					"id": "7227bcd1-5eed-434a-a093-888c850e063b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"OrderId\": \"PS-19966-PC-HIN-03-001-1\",\r\n  \"CafId\": \"\",\r\n  \"RefundAmount\": 1180,\r\n  \"RefundReason\": \"290\",\r\n  \"PaymentType\": \"FullPayment_EMI\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
