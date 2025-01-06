@@ -420,7 +420,7 @@
 							},
 							{
 								"key": "CustomerId",
-								"value": "HINUP-Huskify-0277"
+								"value": "HINUP-Huskify-379516"
 							},
 							{
 								"key": "Auth-token",
@@ -437,7 +437,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"AddressId\": 167421, \r\n    \"CustomerId\": \"HINUP-Huskify-379516\", \r\n    \"DiscountAmount\": 0, \r\n    \"DiscountId\": 0, \r\n    \"DownpaymentAmt\": 129, \r\n    \"EMISchemeID\": 39, \r\n    \"MobileNumber\": \"+918626019212\", \r\n    \"TotalAmount\": null\r\n    }",
+							"raw": "{\r\n    \"AddressId\": 167421, \r\n    \"CustomerId\": \"HINUP-Huskify-379516\", \r\n    \"DiscountAmount\": 0, \r\n    \"DiscountId\": 0, \r\n    \"DownpaymentAmt\": 75, \r\n    \"EMISchemeID\": 39, \r\n    \"MobileNumber\": \"+918626019212\", \r\n    \"TotalAmount\": null\r\n    }",
 							"options": {
 								"raw": {
 									"language": "json"
