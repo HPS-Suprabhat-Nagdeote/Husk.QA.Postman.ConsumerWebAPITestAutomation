@@ -587,7 +587,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"OrderId\": \"order-id\",\r\n  \"CafId\": \"1234\",\r\n  \"RefundAmount\": 0,\r\n  \"RefundReason\": \"290\",\r\n  \"PaymentType\": \"FullPayment_COD\"\r\n}",
+							"raw": "{\r\n  \"OrderId\": \"PS-19971-PC-HIN-03-001-1\",\r\n  \"CafId\": \"C250106104922581550\",\r\n  \"RefundAmount\": 75,\r\n  \"RefundReason\": \"290\",\r\n  \"PaymentType\": \"FullPayment_COD\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
