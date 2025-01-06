@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "Pratiksha's-Migrated API's",
+			"name": "Pratiksha's-EMI Migrated API's",
 			"item": [
 				{
 					"name": "GetSubscriptionDetailsWithValidData",
@@ -397,6 +397,16 @@
 				}
 			],
 			"id": "d57404ca-1ed2-4be1-8e27-84863069c009"
+		},
+		{
+			"name": "Sukshamta's COD API",
+			"item": [],
+			"id": "402b03fd-b6cd-4966-b223-7db27ec0aea2"
+		},
+		{
+			"name": "Sonuji's Full Payment API",
+			"item": [],
+			"id": "9f0379fd-6f21-42af-aaf2-f5e5d09ae23b"
 		},
 		{
 			"name": "CreateOrder With Valid Input",
