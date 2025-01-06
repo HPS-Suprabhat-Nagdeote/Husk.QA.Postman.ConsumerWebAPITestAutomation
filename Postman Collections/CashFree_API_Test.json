@@ -444,7 +444,7 @@
 								}
 							}
 						},
-						"url": "https://huskifyorchestratorserviceqa.azurewebsites.net/api/v1/CODPaymentRequest",
+						"url": "https://huskifyorchestratorserviceqa-2-hpaqg7gwf7gybkf3.centralindia-01.azurewebsites.net/api/v1/CODPaymentRequest",
 						"description": "Generated from cURL: curl --location 'https://huskifyorchestratorserviceqa.azurewebsites.net/api/v1/CODPaymentRequest' \\\r\n\r\n--header 'Content-Type: application/json' \\\r\n\r\n--header 'Accept: application/json' \\\r\n\r\n--header 'CustomerId: HINUP-Huskify-0277' \\\r\n\r\n--header 'Auth-token: c9e72674-d9ad-4d5e-a426-285ce17995fe' \\\r\n\r\n--header 'Husk-token: 26CB9ECF-6343-43B9-B700-004BA9484D3E' \\\r\n\r\n--header 'Authorization: Basic SHVza05ldXJvbjpyYVJxN3FKRk8/fGE3T2pU' \\\r\n\r\n--data '{\r\n\r\n    \"AddressId\": 167163, \r\n\r\n    \"CustomerId\": \"HINUP-Huskify-378445\", \r\n\r\n    \"DiscountAmount\": 0, \r\n\r\n    \"DiscountId\": 0, \r\n\r\n    \"DownpaymentAmt\": 129, \r\n\r\n    \"EMISchemeID\": 39, \r\n\r\n    \"MobileNumber\": \"+918603510873\", \r\n\r\n    \"TotalAmount\": null\r\n\r\n    }'"
 					},
 					"response": []
