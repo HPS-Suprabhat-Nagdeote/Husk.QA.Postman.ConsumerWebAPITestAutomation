@@ -384,14 +384,14 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"EncryptedString\":\"2sQPijSZW5GRtYXdzZd2uVPEaDr0vIOJ3Faug5bdbZjhSiynmwJoBJL09QP+Ji31pRcFl7Vi3hrjyD7rL2xgfiXMRLjFhSoZOxQYNhWo+mpOzfBRk8TKoFaTj1+AaQZKPJ9TVMqVt7quo4PvDhcsjP/gJMEwqOSxw7bDpj9dh7k=\"\r\n\r\n}",
+							"raw": "{\r\n  \"EncryptedString\":\"2sQPijSZW5GRtYXdzZd2uVPEaDr0vIOJ3Faug5bdbZjhSiynmwJoBJL09QP+Ji31pRcFl7Vi3hrjyD7rL2xgfq24YiRxY/fLlH8GU5hinuPttQ1LOQ75JVBe7HpxtkS0/svGIEuVOLSKzA2OiCGfLIt1JBO6IZhm0VH1raYH4WY=\"\r\n}\r\n",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/DecryptResponse"
+						"url": "https://huskpowerdevconsumerwebapih-fdete9cbe7g9bgg4.centralindia-01.azurewebsites.net//Api/v1/DecryptResponse"
 					},
 					"response": []
 				}
