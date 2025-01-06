@@ -523,6 +523,38 @@
 						],
 						"body": {
 							"mode": "raw",
+							"raw": "{\r\n  \"MobileNumber\": \"+918626019212\",\r\n  \"CustomerId\": \"379516\",\r\n  \"TotalAmount\": 150,\r\n  \"DiscountAmount\": 0,\r\n  \"AddressId\": 1,\r\n  \"DiscountId\": 10,\r\n  \"OrderId\": \"ORD-20240928001\",\r\n  \"EMISchemeID\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://paymentservice-qa-ggd2acbufxcjgpa2.centralindia-01.azurewebsites.net/api/v1/CashFreePaymentRequest",
+						"description": "Generated from cURL: curl -X 'POST' \\\r\n  'https://paymentservice-qa-ggd2acbufxcjgpa2.centralindia-01.azurewebsites.net/api/v1/CashFreePaymentRequest' \\\r\n  -H 'accept: application/json' \\\r\n  -H 'Content-Type: application/json' \\\r\n  -d '{\r\n  \"MobileNumber\": \"+919960401728\",\r\n  \"CustomerId\": \"76190\",\r\n  \"TotalAmount\": 1000,\r\n  \"DiscountAmount\": 100,\r\n  \"AddressId\": 1,\r\n  \"DiscountId\": 10,\r\n  \"OrderId\": \"ORD-20240928001\",\r\n  \"EMISchemeID\": 5\r\n}'"
+					},
+					"response": []
+				},
+				{
+					"name": "https://paymentservice-qa-ggd2acbufxcjgpa2.centralindia-01.azurewebsites.net/api/v1/CashFreePaymentRequest Copy",
+					"id": "044534bd-dff0-4400-aa21-8c93a4aef679",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
 							"raw": "{\r\n  \"MobileNumber\": \"+919960401728\",\r\n  \"CustomerId\": \"76190\",\r\n  \"TotalAmount\": 1000,\r\n  \"DiscountAmount\": 100,\r\n  \"AddressId\": 1,\r\n  \"DiscountId\": 10,\r\n  \"OrderId\": \"ORD-20240928001\",\r\n  \"EMISchemeID\": 5\r\n}",
 							"options": {
 								"raw": {
