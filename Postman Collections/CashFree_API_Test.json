@@ -903,7 +903,7 @@
 					"response": []
 				},
 				{
-					"name": "https://paymentservice-qa-ggd2acbufxcjgpa2.centralindia-01.azurewebsites.net/api/v1/CashFreeProductCancelled Copy",
+					"name": "CashFreeProductCancelled Copy",
 					"id": "7227bcd1-5eed-434a-a093-888c850e063b",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
