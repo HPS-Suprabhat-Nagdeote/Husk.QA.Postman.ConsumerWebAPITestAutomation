@@ -1618,7 +1618,7 @@
 							"response": []
 						},
 						{
-							"name": "CashFreePaymentEMIRequest_null customerId Copy",
+							"name": "CashFreePaymentEMIRequest_null AddressId",
 							"id": "97fab869-9abc-4887-ace7-d2913c176453",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -1657,7 +1657,59 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{ \r\n   \"MobileNumber\": \"+918626019212\",\r\n   \"CustomerId\": \"\",  \r\n   \"EMIAmount\": 0, \r\n   \"DiscountAmount\": 50, \r\n   \"TotalAmount\": 1150,  \r\n   \"DiscountId\": 39,  \r\n   \"EMIPeriod\": 5,\r\n   \"AddressId\": 167421, \r\n   \"EMISchemeId\": 26\r\n }",
+									"raw": "{ \r\n   \"MobileNumber\": \"+918626019212\",\r\n   \"CustomerId\": \"HINUP-Huskify-379516\",  \r\n   \"EMIAmount\": 0, \r\n   \"DiscountAmount\": 50, \r\n   \"TotalAmount\": 1150,  \r\n   \"DiscountId\": 39,  \r\n   \"EMIPeriod\": 5,\r\n   \"AddressId\": 0, \r\n   \"EMISchemeId\": 26\r\n }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://huskpowerdevconsumerwebapih-fdete9cbe7g9bgg4.centralindia-01.azurewebsites.net/EED/Api/v1/CashFreePaymentEMIRequest",
+								"description": "Generated from cURL: curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{ \\ \r\n   \"MobileNumber\": \"+918626019212\", \\ \r\n   \"CustomerId\": \"HINUP-Huskify-379516\", \\ \r\n   \"EMIAmount\": 0, \\ \r\n   \"DiscountAmount\": 50, \\ \r\n   \"TotalAmount\": 1150, \\ \r\n   \"DiscountId\": 39, \\ \r\n   \"EMIPeriod\": 5, \\ \r\n   \"AddressId\": 167421, \\ \r\n   \"EMISchemeId\": 39 \\ \r\n }' 'https://huskpowerdevconsumerwebapih-fdete9cbe7g9bgg4.centralindia-01.azurewebsites.net/EED/Api/v1/CashFreePaymentEMIRequest'"
+							},
+							"response": []
+						},
+						{
+							"name": "CashFreePaymentEMIRequest_null AddressId Copy",
+							"id": "02c7b094-7fa9-4eb6-8f7b-6e8d9e840eb0",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{BasicAuthorization}}",
+										"type": "text"
+									},
+									{
+										"key": "husk-token",
+										"value": "{{huskTocken}}",
+										"type": "text"
+									},
+									{
+										"key": "CustomerId",
+										"value": "HINUP-Huskify-379516",
+										"type": "text"
+									},
+									{
+										"key": "Auth-Token",
+										"value": "77289c0c-0ced-4e52-b75f-0d77e165d906",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{ \r\n   \"MobileNumber\": \"+918626019212\",\r\n   \"CustomerId\": \"HINUP-Huskify-379516\",  \r\n   \"EMIAmount\": 0, \r\n   \"DiscountAmount\": 50, \r\n   \"TotalAmount\": 1150,  \r\n   \"DiscountId\": 39,  \r\n   \"EMIPeriod\": 2,\r\n   \"AddressId\": 167421, \r\n   \"EMISchemeId\": 26\r\n }",
 									"options": {
 										"raw": {
 											"language": "json"
