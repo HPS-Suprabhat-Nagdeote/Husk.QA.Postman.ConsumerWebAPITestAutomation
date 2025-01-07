@@ -635,7 +635,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"OrderId\": \"PS-19987-PC-HIN-03-001-1\",\r\n  \"CafId\": \"\",\r\n  \"RefundAmount\": 75,\r\n  \"RefundReason\": \"290\",\r\n  \"PaymentType\": \"FullPayment_COD\"\r\n}",
+							"raw": "{\r\n  \"OrderId\": \"PS-19987-PC-HIN-03-001-1\",\r\n  \"CafId\": \"C250106153403229673\",\r\n  \"RefundAmount\": 75,\r\n  \"RefundReason\": \"290\",\r\n  \"PaymentType\": \"FullPayment_COD\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
