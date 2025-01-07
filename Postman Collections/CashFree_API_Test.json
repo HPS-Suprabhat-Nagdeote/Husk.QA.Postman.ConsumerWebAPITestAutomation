@@ -1216,56 +1216,72 @@
 			"name": "Chandraji's Payment API",
 			"item": [
 				{
-					"name": "CODPaymentRequest",
-					"id": "a637dfc4-dfbc-48b9-835f-3bb4ace0f983",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
+					"name": "COD",
+					"item": [
+						{
+							"name": "CODPaymentRequest",
+							"id": "a637dfc4-dfbc-48b9-835f-3bb4ace0f983",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
 							},
-							{
-								"key": "Accept",
-								"value": "application/json"
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "CustomerId",
+										"value": "HINUP-Huskify-76243"
+									},
+									{
+										"key": "Auth-token",
+										"value": "808d6196-5637-4332-99c2-499296f18b9e"
+									},
+									{
+										"key": "Husk-token",
+										"value": "26CB9ECF-6343-43B9-B700-004BA9484D3E"
+									},
+									{
+										"key": "Authorization",
+										"value": "Basic SHVza05ldXJvbjpyYVJxN3FKRk8/fGE3T2pU"
+									},
+									{
+										"key": "Cookie",
+										"value": "ARRAffinity=bbb40b79a95f27b616b73e8511bda8a2c3bd56676282481b9da09b78b987c6dc; ARRAffinitySameSite=bbb40b79a95f27b616b73e8511bda8a2c3bd56676282481b9da09b78b987c6dc"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"AddressId\": 167421, //from customerAddress table\r\n    \"CustomerId\": \"HINUP-Huskify-379516\",\r\n    \"DiscountAmount\": 50, \r\n    \"DiscountId\": 39, //from Discount table\r\n    \"DownpaymentAmt\": 0, \r\n    \"EMISchemeID\": 39, \r\n    \"MobileNumber\": \"+918626019212\", \r\n    \"TotalAmount\": null\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://huskpowerdevconsumerwebapih-fdete9cbe7g9bgg4.centralindia-01.azurewebsites.net/EED/Api/v1/CODPaymentRequest",
+								"description": "Generated from cURL: curl --location 'https://huskpowerdevconsumerwebapih.azurewebsites.net/api/v1/CODPaymentRequest' \\\r\n\r\n--header 'Content-Type: application/json' \\\r\n\r\n--header 'Accept: application/json' \\\r\n\r\n--header 'CustomerId: HINUP-Huskify-76243' \\\r\n\r\n--header 'Auth-token: 808d6196-5637-4332-99c2-499296f18b9e' \\\r\n\r\n--header 'Husk-token: 26CB9ECF-6343-43B9-B700-004BA9484D3E' \\\r\n\r\n--header 'Authorization: Basic SHVza05ldXJvbjpyYVJxN3FKRk8/fGE3T2pU' \\\r\n\r\n--header 'Cookie: ARRAffinity=bbb40b79a95f27b616b73e8511bda8a2c3bd56676282481b9da09b78b987c6dc; ARRAffinitySameSite=bbb40b79a95f27b616b73e8511bda8a2c3bd56676282481b9da09b78b987c6dc' \\\r\n\r\n--data '{\r\n\r\n    \"AddressId\": 729084, \r\n\r\n    \"CustomerId\": \"HINUP-Huskify-378444, \r\n\r\n    \"DiscountAmount\": 0, \r\n\r\n    \"DiscountId\": 0, \r\n\r\n    \"DownpaymentAmt\": 129, \r\n\r\n    \"EMISchemeID\": 39, \r\n\r\n    \"MobileNumber\": \"+917631305626\", \r\n\r\n    \"TotalAmount\": null\r\n\r\n    }'"
 							},
-							{
-								"key": "CustomerId",
-								"value": "HINUP-Huskify-76243"
-							},
-							{
-								"key": "Auth-token",
-								"value": "808d6196-5637-4332-99c2-499296f18b9e"
-							},
-							{
-								"key": "Husk-token",
-								"value": "26CB9ECF-6343-43B9-B700-004BA9484D3E"
-							},
-							{
-								"key": "Authorization",
-								"value": "Basic SHVza05ldXJvbjpyYVJxN3FKRk8/fGE3T2pU"
-							},
-							{
-								"key": "Cookie",
-								"value": "ARRAffinity=bbb40b79a95f27b616b73e8511bda8a2c3bd56676282481b9da09b78b987c6dc; ARRAffinitySameSite=bbb40b79a95f27b616b73e8511bda8a2c3bd56676282481b9da09b78b987c6dc"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"AddressId\": 167421, //from customerAddress table\r\n    \"CustomerId\": \"HINUP-Huskify-379516\",\r\n    \"DiscountAmount\": 50, \r\n    \"DiscountId\": 39, //from Discount table\r\n    \"DownpaymentAmt\": 0, \r\n    \"EMISchemeID\": 39, \r\n    \"MobileNumber\": \"+918626019212\", \r\n    \"TotalAmount\": null\r\n    }",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "https://huskpowerdevconsumerwebapih-fdete9cbe7g9bgg4.centralindia-01.azurewebsites.net/EED/Api/v1/CODPaymentRequest",
-						"description": "Generated from cURL: curl --location 'https://huskpowerdevconsumerwebapih.azurewebsites.net/api/v1/CODPaymentRequest' \\\r\n\r\n--header 'Content-Type: application/json' \\\r\n\r\n--header 'Accept: application/json' \\\r\n\r\n--header 'CustomerId: HINUP-Huskify-76243' \\\r\n\r\n--header 'Auth-token: 808d6196-5637-4332-99c2-499296f18b9e' \\\r\n\r\n--header 'Husk-token: 26CB9ECF-6343-43B9-B700-004BA9484D3E' \\\r\n\r\n--header 'Authorization: Basic SHVza05ldXJvbjpyYVJxN3FKRk8/fGE3T2pU' \\\r\n\r\n--header 'Cookie: ARRAffinity=bbb40b79a95f27b616b73e8511bda8a2c3bd56676282481b9da09b78b987c6dc; ARRAffinitySameSite=bbb40b79a95f27b616b73e8511bda8a2c3bd56676282481b9da09b78b987c6dc' \\\r\n\r\n--data '{\r\n\r\n    \"AddressId\": 729084, \r\n\r\n    \"CustomerId\": \"HINUP-Huskify-378444, \r\n\r\n    \"DiscountAmount\": 0, \r\n\r\n    \"DiscountId\": 0, \r\n\r\n    \"DownpaymentAmt\": 129, \r\n\r\n    \"EMISchemeID\": 39, \r\n\r\n    \"MobileNumber\": \"+917631305626\", \r\n\r\n    \"TotalAmount\": null\r\n\r\n    }'"
-					},
-					"response": []
+							"response": []
+						}
+					],
+					"id": "485578c6-38ac-4e6f-9d39-c4da13656e39"
+				},
+				{
+					"name": "EMI",
+					"item": [],
+					"id": "60651a9c-01a2-419a-a354-6b1801a13b24"
+				},
+				{
+					"name": "FULL PAYMENT",
+					"item": [],
+					"id": "c5dd26b9-0781-45d3-bdae-647651414718"
 				}
 			],
 			"id": "7b2fae39-754e-427d-85fc-eb03111b24f1"
@@ -2206,6 +2222,38 @@
 				},
 				"url": "https://huskifyorchestratorserviceqa-3-eqg3bxethmhkhcap.canadacentral-01.azurewebsites.net/api/v1/CashFreePaymentEMIRequest",
 				"description": "Generated from cURL: curl -X 'POST' \\\r\n  'https://paymentservice-qa-ggd2acbufxcjgpa2.centralindia-01.azurewebsites.net/api/v1/CashFreePaymentEMIRequest' \\\r\n  -H 'accept: application/json' \\\r\n  -H 'Content-Type: application/json' \\\r\n  -d '{\r\n  \"MobileNumber\": \"9823643386\",\r\n  \"DiscountAmount\": null,\r\n  \"CustomerId\": \"HINUP-Huskify-233623\",\r\n  \"TotalAmount\": 145,\r\n  \"EMIPeriod\": 5,\r\n  \"EMISchemeId\": 26,\r\n  \"AddressId\": 17703,\r\n  \"DiscountId\": null\r\n}'"
+			},
+			"response": []
+		},
+		{
+			"name": "https://huskpowerdevconsumerwebapih-fdete9cbe7g9bgg4.centralindia-01.azurewebsites.net/EED/Api/v1/CODPaymentRequest",
+			"id": "ab9df7f9-b6f8-4ced-876e-0a43eba4b3ad",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \\ \r\n   \"MobileNumber\": \"+918626019212\", \\ \r\n   \"CustomerId\": \"379516\", \\ \r\n   \"CustomerIdPaytm\": 0, \\ \r\n   \"DownpaymentAmt\": 150, \\ \r\n   \"EMISchemeID\": 39, \\ \r\n   \"TotalAmount\": 150, \\ \r\n   \"DiscountId\": 39, \\ \r\n   \"DiscountAmount\": 50, \\ \r\n   \"AddressId\": 167421 \\ \r\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://huskpowerdevconsumerwebapih-fdete9cbe7g9bgg4.centralindia-01.azurewebsites.net/EED/Api/v1/CODPaymentRequest",
+				"description": "Generated from cURL: curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{ \\ \r\n   \"MobileNumber\": \"+918626019212\", \\ \r\n   \"CustomerId\": \"379516\", \\ \r\n   \"CustomerIdPaytm\": 0, \\ \r\n   \"DownpaymentAmt\": 150, \\ \r\n   \"EMISchemeID\": 39, \\ \r\n   \"TotalAmount\": 150, \\ \r\n   \"DiscountId\": 39, \\ \r\n   \"DiscountAmount\": 50, \\ \r\n   \"AddressId\": 167421 \\ \r\n }' 'https://huskpowerdevconsumerwebapih-fdete9cbe7g9bgg4.centralindia-01.azurewebsites.net/EED/Api/v1/CODPaymentRequest'"
 			},
 			"response": []
 		}
