@@ -346,6 +346,38 @@
 					"response": []
 				},
 				{
+					"name": "CashFreeProductCancelled_emi_invalidOrderId",
+					"id": "9b6bf7df-81d1-4475-98aa-ab48071b7f41",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"OrderId\": \"PS-20005-PC-HIN-03-\",\r\n  \"CafId\": \"200\",\r\n  \"RefundAmount\": 745,\r\n  \"RefundReason\": \"Other\",\r\n  \"PaymentType\": \"FullPayment_EMI\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://paymentservice-qa-ggd2acbufxcjgpa2.centralindia-01.azurewebsites.net/api/v1/CashFreeProductCancelled",
+						"description": "Generated from cURL: curl -X 'POST' \\\r\n  'https://paymentservice-qa-ggd2acbufxcjgpa2.centralindia-01.azurewebsites.net/api/v1/CashFreeProductCancelled' \\\r\n  -H 'accept: application/json' \\\r\n  -H 'Content-Type: application/json' \\\r\n  -d '{\r\n  \"OrderId\": \"order-id\",\r\n  \"CafId\": \"1234\",\r\n  \"RefundAmount\": 0,\r\n  \"RefundReason\": \"290\",\r\n  \"PaymentType\": \"FullPayment_COD\"\r\n}'"
+					},
+					"response": []
+				},
+				{
 					"name": "DecryptAPIEMI",
 					"event": [
 						{
