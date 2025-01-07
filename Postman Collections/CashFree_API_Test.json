@@ -1944,7 +1944,7 @@
 							"response": []
 						},
 						{
-							"name": "https://huskpowerdevconsumerwebapih-fdete9cbe7g9bgg4.centralindia-01.azurewebsites.net/EED/Api/v1/VerifyCashFreeSubscriptionStatus?subReferenceId=634197",
+							"name": "VerifyCashFreeSubscriptionStatus?subReferenceId=634197",
 							"id": "443591eb-98df-49b4-8e4b-727e765e670a",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
