@@ -1409,7 +1409,40 @@
 				},
 				{
 					"name": "EMI",
-					"item": [],
+					"item": [
+						{
+							"name": "CashFreePaymentEMIRequest",
+							"id": "9f3b1e0e-bb49-40ba-a75b-7ef3695352f2",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{ \\ \r\n   \"MobileNumber\": \"+918626019212\", \\ \r\n   \"CustomerId\": \"HINUP-Huskify-379516\", \\ \r\n   \"EMIAmount\": 0, \\ \r\n   \"DiscountAmount\": 50, \\ \r\n   \"TotalAmount\": 1150, \\ \r\n   \"DiscountId\": 39, \\ \r\n   \"EMIPeriod\": 5, \\ \r\n   \"AddressId\": 167421, \\ \r\n   \"EMISchemeId\": 39 \\ \r\n }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://huskpowerdevconsumerwebapih-fdete9cbe7g9bgg4.centralindia-01.azurewebsites.net/EED/Api/v1/CashFreePaymentEMIRequest",
+								"description": "Generated from cURL: curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{ \\ \r\n   \"MobileNumber\": \"+918626019212\", \\ \r\n   \"CustomerId\": \"HINUP-Huskify-379516\", \\ \r\n   \"EMIAmount\": 0, \\ \r\n   \"DiscountAmount\": 50, \\ \r\n   \"TotalAmount\": 1150, \\ \r\n   \"DiscountId\": 39, \\ \r\n   \"EMIPeriod\": 5, \\ \r\n   \"AddressId\": 167421, \\ \r\n   \"EMISchemeId\": 39 \\ \r\n }' 'https://huskpowerdevconsumerwebapih-fdete9cbe7g9bgg4.centralindia-01.azurewebsites.net/EED/Api/v1/CashFreePaymentEMIRequest'"
+							},
+							"response": []
+						}
+					],
 					"id": "60651a9c-01a2-419a-a354-6b1801a13b24"
 				},
 				{
