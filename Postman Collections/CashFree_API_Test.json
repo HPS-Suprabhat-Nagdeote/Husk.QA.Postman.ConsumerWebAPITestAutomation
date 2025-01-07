@@ -1172,7 +1172,7 @@
 			"name": "Chandraji's Payment API",
 			"item": [
 				{
-					"name": "https://huskpowerdevconsumerwebapih.azurewebsites.net/api/v1/CODPaymentRequest",
+					"name": "CODPaymentRequest",
 					"id": "a637dfc4-dfbc-48b9-835f-3bb4ace0f983",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
