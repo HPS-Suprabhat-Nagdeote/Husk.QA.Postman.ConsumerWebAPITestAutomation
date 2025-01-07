@@ -616,6 +616,51 @@
 					"response": []
 				},
 				{
+					"name": "verifyCashFreePaymentStatus?orderId=6ff4717f-2c17-44fe-aca4-000d3ac9e64c",
+					"id": "10a2749d-26f3-4ca0-b4f7-62586c8d77c1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://paymentservice-qa-ggd2acbufxcjgpa2.centralindia-01.azurewebsites.net/api/v1/verifyCashFreePaymentStatus?orderId=6ff4717f-2c17-44fe-aca4-000d3ac9e64c",
+							"protocol": "https",
+							"host": [
+								"paymentservice-qa-ggd2acbufxcjgpa2",
+								"centralindia-01",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"v1",
+								"verifyCashFreePaymentStatus"
+							],
+							"query": [
+								{
+									"key": "orderId",
+									"value": "6ff4717f-2c17-44fe-aca4-000d3ac9e64c"
+								},
+								{
+									"key": "orderId",
+									"value": "takenFromTheFullPaymentAPIResponse",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Generated from cURL: curl -X 'GET' \\\r\n  'https://paymentservice-qa-ggd2acbufxcjgpa2.centralindia-01.azurewebsites.net/api/v1/verifyCashFreePaymentStatus?orderId=6ff4717f-2c17-44fe-aca4-000d3ac9e64c' \\\r\n  -H 'accept: application/json'"
+					},
+					"response": []
+				},
+				{
 					"name": "https://paymentservice-qa-ggd2acbufxcjgpa2.centralindia-01.azurewebsites.net/api/v1/CashFreePaymentRequest Copy",
 					"id": "044534bd-dff0-4400-aa21-8c93a4aef679",
 					"protocolProfileBehavior": {
