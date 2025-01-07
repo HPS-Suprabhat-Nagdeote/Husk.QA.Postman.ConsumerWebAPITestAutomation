@@ -83,10 +83,11 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://husk3pawrappers-dev.azurewebsites.net/api/CashfreePayment/GetSubscriptionDetails?subreferenceId=",
+							"raw": "https://huskifyorchestratorserviceqa-2-hpaqg7gwf7gybkf3.centralindia-01.azurewebsites.net/api/CashfreePayment/GetSubscriptionDetails?subreferenceId",
 							"protocol": "https",
 							"host": [
-								"husk3pawrappers-dev",
+								"huskifyorchestratorserviceqa-2-hpaqg7gwf7gybkf3",
+								"centralindia-01",
 								"azurewebsites",
 								"net"
 							],
@@ -98,7 +99,7 @@
 							"query": [
 								{
 									"key": "subreferenceId",
-									"value": ""
+									"value": null
 								}
 							]
 						}
