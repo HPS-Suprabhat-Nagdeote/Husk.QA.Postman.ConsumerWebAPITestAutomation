@@ -1461,6 +1461,88 @@
 								"description": "Generated from cURL: curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{ \\ \r\n   \"MobileNumber\": \"+918626019212\", \\ \r\n   \"CustomerId\": \"HINUP-Huskify-379516\", \\ \r\n   \"EMIAmount\": 0, \\ \r\n   \"DiscountAmount\": 50, \\ \r\n   \"TotalAmount\": 1150, \\ \r\n   \"DiscountId\": 39, \\ \r\n   \"EMIPeriod\": 5, \\ \r\n   \"AddressId\": 167421, \\ \r\n   \"EMISchemeId\": 39 \\ \r\n }' 'https://huskpowerdevconsumerwebapih-fdete9cbe7g9bgg4.centralindia-01.azurewebsites.net/EED/Api/v1/CashFreePaymentEMIRequest'"
 							},
 							"response": []
+						},
+						{
+							"name": "DecryptAPI_FullPayment",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "57f10bd1-5573-41f7-ae2b-7a883162b962",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"// pm.test(\"Verfying Get user Address Data\", function () {\r",
+											"//     var jsonData = pm.response.json();\r",
+											"//     pm.expect(jsonData.Data[0].CustomerId).to.eql(47530);\r",
+											"// });\r",
+											"// pm.test(\"Verfying Get user Address Landmark\", function () {\r",
+											"//     var jsonData = pm.response.json();\r",
+											"//     pm.expect(jsonData.Data[1].Landmark).to.eql(\"Test address\");\r",
+											"// });\r",
+											"// pm.test(\"Verfying Get user Address State\", function () {\r",
+											"//     var jsonData = pm.response.json();\r",
+											"//     pm.expect(jsonData.Data[1].State).to.eql(\"Bihar\");\r",
+											"// });\r",
+											"// pm.test(\"Verfying Get user Address City\", function () {\r",
+											"//     var jsonData = pm.response.json();\r",
+											"//     pm.expect(jsonData.Data[1].City).to.eql(\"Patna\");\r",
+											"// });\r",
+											"\r",
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"id": "1e375ded-fe50-4381-8cbb-8ba33ecbaa80",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept-Language",
+										"value": "2",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{BasicAuthorization}}",
+										"type": "text"
+									},
+									{
+										"key": "husk-token",
+										"value": "{{huskTocken}}",
+										"type": "text"
+									},
+									{
+										"key": "CustomerId",
+										"value": "{{CustomerId}}",
+										"type": "text"
+									},
+									{
+										"key": "Auth-Token",
+										"value": "{{Auth-Token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"EncryptedString\":\"2sQPijSZW5GRtYXdzZd2uVPEaDr0vIOJ3Faug5bdbZjhSiynmwJoBJL09QP+Ji31pRcFl7Vi3hrjyD7rL2xgfsXzSjpEDkITYtFhR6Xw+dv4fRU6ZyDiEsvEOery2Ssgpk5mPeypT2Tz5ueTXxvJGr0dyL9Gf0Fu3ONN4/sK+eM=\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://huskpowerdevconsumerwebapih-fdete9cbe7g9bgg4.centralindia-01.azurewebsites.net//Api/v1/DecryptResponse"
+							},
+							"response": []
 						}
 					],
 					"id": "60651a9c-01a2-419a-a354-6b1801a13b24"
