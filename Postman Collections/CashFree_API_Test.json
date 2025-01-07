@@ -571,7 +571,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"MobileNumber\": \"+918626019212\",\r\n  \"CustomerId\": \"379516\",\r\n  \"TotalAmount\": 395,\r\n  \"DiscountAmount\": 199,\r\n  \"AddressId\": 1,\r\n  \"DiscountId\": 10,\r\n  \"OrderId\": \"ORD-20240928001\",\r\n  \"EMISchemeID\": 39\r\n}",
+							"raw": "{\r\n  \"MobileNumber\": \"+918626019212\",\r\n  \"CustomerId\": \"379516\",\r\n  \"TotalAmount\": 475,\r\n  \"DiscountAmount\": 150,\r\n  \"AddressId\": 3,\r\n  \"DiscountId\": 10,\r\n  \"OrderId\": \"ORD-20240928001\",\r\n  \"EMISchemeID\": 39\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
