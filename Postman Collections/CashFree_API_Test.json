@@ -42,6 +42,19 @@
 					"response": []
 				},
 				{
+					"name": "GetSubscriptionDetailsWithValidData Copy",
+					"id": "89b90a04-6ba5-47df-9201-76a6d2dd0dab",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://huskifyorchestratorserviceqa-2-hpaqg7gwf7gybkf3.centralindia-01.azurewebsites.net/EED/api/CashFreeEmiSubscription/webhook"
+					},
+					"response": []
+				},
+				{
 					"name": "GetSubscriptionDetailsWithValidData-with wrong Id",
 					"id": "e1914deb-d9c5-4260-a6ba-1c23234105a7",
 					"protocolProfileBehavior": {
