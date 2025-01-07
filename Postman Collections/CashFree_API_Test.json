@@ -314,6 +314,38 @@
 					"response": []
 				},
 				{
+					"name": "CashFreeProductCancelled_emi",
+					"id": "7abb5dff-33dd-4f29-856f-ba9b18daea95",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"OrderId\": \"PS-20001-PD-HIN-01-117-1\",\r\n  \"CafId\": \"\",\r\n  \"RefundAmount\": 470,\r\n  \"RefundReason\": \"Other\",\r\n  \"PaymentType\": \"FullPayment_COD\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://paymentservice-qa-ggd2acbufxcjgpa2.centralindia-01.azurewebsites.net/api/v1/CashFreeProductCancelled",
+						"description": "Generated from cURL: curl -X 'POST' \\\r\n  'https://paymentservice-qa-ggd2acbufxcjgpa2.centralindia-01.azurewebsites.net/api/v1/CashFreeProductCancelled' \\\r\n  -H 'accept: application/json' \\\r\n  -H 'Content-Type: application/json' \\\r\n  -d '{\r\n  \"OrderId\": \"order-id\",\r\n  \"CafId\": \"1234\",\r\n  \"RefundAmount\": 0,\r\n  \"RefundReason\": \"290\",\r\n  \"PaymentType\": \"FullPayment_COD\"\r\n}'"
+					},
+					"response": []
+				},
+				{
 					"name": "DecryptAPIEMI",
 					"event": [
 						{
@@ -576,6 +608,38 @@
 							}
 						},
 						"url": "https://huskpowerdevconsumerwebapih-fdete9cbe7g9bgg4.centralindia-01.azurewebsites.net//Api/v1/DecryptResponse"
+					},
+					"response": []
+				},
+				{
+					"name": "CashFreeProductCancelled_COD",
+					"id": "7227bcd1-5eed-434a-a093-888c850e063b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"OrderId\": \"PS-20001-PD-HIN-01-117-1\",\r\n  \"CafId\": \"\",\r\n  \"RefundAmount\": 470,\r\n  \"RefundReason\": \"Other\",\r\n  \"PaymentType\": \"FullPayment_COD\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://paymentservice-qa-ggd2acbufxcjgpa2.centralindia-01.azurewebsites.net/api/v1/CashFreeProductCancelled",
+						"description": "Generated from cURL: curl -X 'POST' \\\r\n  'https://paymentservice-qa-ggd2acbufxcjgpa2.centralindia-01.azurewebsites.net/api/v1/CashFreeProductCancelled' \\\r\n  -H 'accept: application/json' \\\r\n  -H 'Content-Type: application/json' \\\r\n  -d '{\r\n  \"OrderId\": \"order-id\",\r\n  \"CafId\": \"1234\",\r\n  \"RefundAmount\": 0,\r\n  \"RefundReason\": \"290\",\r\n  \"PaymentType\": \"FullPayment_COD\"\r\n}'"
 					},
 					"response": []
 				},
@@ -903,8 +967,8 @@
 					"response": []
 				},
 				{
-					"name": "CashFreeProductCancelled Copy",
-					"id": "7227bcd1-5eed-434a-a093-888c850e063b",
+					"name": "CashFreeProductCancelled_FULL_PAYMENT",
+					"id": "bc3188d7-e0e5-494f-a0bd-23a18bad2fdd",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
