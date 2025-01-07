@@ -1271,6 +1271,58 @@
 							"response": []
 						},
 						{
+							"name": "https://huskpowerdevconsumerwebapih-fdete9cbe7g9bgg4.centralindia-01.azurewebsites.net/EED/Api/v1/CODPaymentRequest",
+							"id": "dd4cf5c8-70c1-4c80-a38a-f8411ee38ee8",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "husk-token",
+										"value": "{{huskTocken}}",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{BasicAuthorization}}",
+										"type": "text"
+									},
+									{
+										"key": "CustomerId",
+										"value": "{{CustomerId}}",
+										"type": "text"
+									},
+									{
+										"key": "Auth-token",
+										"value": "{{Auth-Token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{ \r\n   \"MobileNumber\": \"+918626019212\",  \r\n   \"CustomerId\": \"379516\",  \r\n   \"CustomerIdPaytm\": 0,  \r\n   \"DownpaymentAmt\": 150,  \r\n   \"EMISchemeID\": 39,  \r\n   \"TotalAmount\": 150,  \r\n   \"DiscountId\": 39, \r\n   \"DiscountAmount\": 50,  \r\n   \"AddressId\": 167421 \r\n }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://huskpowerdevconsumerwebapih-fdete9cbe7g9bgg4.centralindia-01.azurewebsites.net/EED/Api/v1/CODPaymentRequest",
+								"description": "Generated from cURL: curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{ \\ \r\n   \"MobileNumber\": \"+918626019212\", \\ \r\n   \"CustomerId\": \"379516\", \\ \r\n   \"CustomerIdPaytm\": 0, \\ \r\n   \"DownpaymentAmt\": 150, \\ \r\n   \"EMISchemeID\": 39, \\ \r\n   \"TotalAmount\": 150, \\ \r\n   \"DiscountId\": 39, \\ \r\n   \"DiscountAmount\": 50, \\ \r\n   \"AddressId\": 167421 \\ \r\n }' 'https://huskpowerdevconsumerwebapih-fdete9cbe7g9bgg4.centralindia-01.azurewebsites.net/EED/Api/v1/CODPaymentRequest'"
+							},
+							"response": []
+						},
+						{
 							"name": "CashFreeProductCancelled",
 							"id": "077314f4-3311-4243-85c1-47445ffe1f25",
 							"protocolProfileBehavior": {
