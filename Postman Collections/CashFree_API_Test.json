@@ -1455,6 +1455,57 @@
 								"url": "https://huskpowerdevconsumerwebapih-fdete9cbe7g9bgg4.centralindia-01.azurewebsites.net//Api/v1/DecryptResponse"
 							},
 							"response": []
+						},
+						{
+							"name": "CODPaymentRequest_null mobile number",
+							"id": "90c9ebcd-a52b-419a-8715-65cc9ce95c0c",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "husk-token",
+										"value": "{{huskTocken}}",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{BasicAuthorization}}",
+										"type": "text"
+									},
+									{
+										"key": "CustomerId",
+										"value": "{{CustomerId}}",
+										"type": "text"
+									},
+									{
+										"key": "Auth-token",
+										"value": "{{Auth-Token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{ \r\n   \"MobileNumber\": \"0\",  \r\n   \"CustomerId\": \"\",  \r\n   \"CustomerIdPaytm\": 0,  \r\n   \"DownpaymentAmt\": 150,  \r\n   \"EMISchemeID\": 39,  \r\n   \"TotalAmount\": 150,  \r\n   \"DiscountId\": 39, \r\n   \"DiscountAmount\": 50,  \r\n   \"AddressId\":  \r\n }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://huskpowerdevconsumerwebapih-fdete9cbe7g9bgg4.centralindia-01.azurewebsites.net/EED/Api/v1/CODPaymentRequest"
+							},
+							"response": []
 						}
 					],
 					"id": "485578c6-38ac-4e6f-9d39-c4da13656e39"
