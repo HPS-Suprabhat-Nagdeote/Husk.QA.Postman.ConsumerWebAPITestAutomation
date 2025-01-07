@@ -552,6 +552,38 @@
 			"name": "Sonuji's Full Payment API",
 			"item": [
 				{
+					"name": "FullPaymentNodeJsNew",
+					"id": "ecc9a4f1-b2ca-4943-9764-2e8f6ecdfd69",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"MobileNumber\": \"+918626019212\",\r\n  \"CustomerId\": \"379516\",\r\n  \"TotalAmount\": 150,\r\n  \"DiscountAmount\": 0,\r\n  \"AddressId\": 3,\r\n  \"DiscountId\": 10,\r\n  \"OrderId\": \"\",\r\n  \"EMISchemeID\": 39\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://paymentservice-qa-ggd2acbufxcjgpa2.centralindia-01.azurewebsites.net/api/v1/CashFreePaymentRequest",
+						"description": "Generated from cURL: curl -X 'POST' \\\r\n  'https://paymentservice-qa-ggd2acbufxcjgpa2.centralindia-01.azurewebsites.net/api/v1/CashFreePaymentRequest' \\\r\n  -H 'accept: application/json' \\\r\n  -H 'Content-Type: application/json' \\\r\n  -d '{\r\n  \"MobileNumber\": \"+918626019212\",\r\n  \"CustomerId\": \"379516\",\r\n  \"TotalAmount\": 150,\r\n  \"DiscountAmount\": 0,\r\n  \"AddressId\": 3,\r\n  \"DiscountId\": 10,\r\n  \"OrderId\": \"\",\r\n  \"EMISchemeID\": 39\r\n}'"
+					},
+					"response": []
+				},
+				{
 					"name": "https://paymentservice-qa-ggd2acbufxcjgpa2.centralindia-01.azurewebsites.net/api/v1/CashFreePaymentRequest",
 					"id": "41dff434-0c11-4489-8421-874f0df7438f",
 					"protocolProfileBehavior": {
