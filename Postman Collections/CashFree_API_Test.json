@@ -150,7 +150,7 @@
 							},
 							{
 								"key": "auth-token",
-								"value": "c078c192-8abc-4b1a-9f8e-0ca862d3a261"
+								"value": "610d81f1-c785-46c3-9c1e-c4eed6371ee9"
 							},
 							{
 								"key": "customerid",
@@ -159,7 +159,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"MobileNumber\": \"8626019212\",\r\n  \"DiscountAmount\": null,\r\n  \"CustomerId\": \"HINUP-Huskify-379516\",\r\n  \"TotalAmount\": 1200, //From Mobile app\r\n  \"EMIPeriod\": 5,\r\n  \"EMISchemeId\": 26, //from EMISchemes table\r\n  \"AddressId\": 167421,//from CustomerAddress table should matched with Customer Id from the same CustomerAddress table.\r\n  \"DiscountId\": null\r\n}",
+							"raw": "{\r\n  \"MobileNumber\": \"8626019212\",\r\n  \"DiscountAmount\": null,\r\n  \"CustomerId\": \"HINUP-Huskify-379516\",\r\n  \"TotalAmount\": 1280, //From Mobile app\r\n  \"EMIPeriod\": 4,\r\n  \"EMISchemeId\": 26, //from EMISchemes table\r\n  \"AddressId\": 167421,//from CustomerAddress table should matched with Customer Id from the same CustomerAddress table.\r\n  \"DiscountId\": null\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
