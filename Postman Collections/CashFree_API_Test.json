@@ -225,6 +225,21 @@
 				},
 				{
 					"name": "CashFreePaymentEMIRequest-WithoutEMIPeriod",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "33cdfde4-4cdd-48af-9d3f-b7227343f2b8",
+								"exec": [
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
 					"id": "a25845a2-eafd-4de7-b50f-a197e6c5168a",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -263,7 +278,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"MobileNumber\": \"8626019212\",\r\n  \"DiscountAmount\": null,\r\n  \"CustomerId\": \"HINUP-Huskify-379516\",\r\n  \"TotalAmount\": 1699, //From Mobile app\r\n  \"EMIPeriod\": 0,\r\n  \"EMISchemeId\": 26, //from EMISchemes table\r\n  \"AddressId\": 167421,//from CustomerAddress table should matched with Customer Id from the same CustomerAddress table.\r\n  \"DiscountId\": null\r\n}",
+							"raw": "{\r\n  \"MobileNumber\": \"8626019212\",\r\n  \"DiscountAmount\": null,\r\n  \"CustomerId\": \"\",\r\n  \"TotalAmount\": 1699, //From Mobile app\r\n  \"EMIPeriod\": 0,\r\n  \"EMISchemeId\": 26, //from EMISchemes table\r\n  \"AddressId\": 167421,//from CustomerAddress table should matched with Customer Id from the same CustomerAddress table.\r\n  \"DiscountId\": null\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
