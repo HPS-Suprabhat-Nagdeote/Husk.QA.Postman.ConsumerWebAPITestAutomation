@@ -1722,7 +1722,7 @@
 							"response": []
 						},
 						{
-							"name": "DecryptAPI_FullPayment",
+							"name": "DecryptAPI_EMIPayment",
 							"event": [
 								{
 									"listen": "test",
