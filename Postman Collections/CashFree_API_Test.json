@@ -414,6 +414,45 @@
 					"response": []
 				},
 				{
+					"name": "VerifyCashFreeSubscriptionStatus?SubReferenceId=634197 Copy",
+					"id": "8f3f7142-dcd3-43bd-96e1-9242a9f0f048",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://paymentservice-qa-ggd2acbufxcjgpa2.centralindia-01.azurewebsites.net/api/v1/VerifyCashFreeSubscriptionStatus?SubReferenceId=674120",
+							"protocol": "https",
+							"host": [
+								"paymentservice-qa-ggd2acbufxcjgpa2",
+								"centralindia-01",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"v1",
+								"VerifyCashFreeSubscriptionStatus"
+							],
+							"query": [
+								{
+									"key": "SubReferenceId",
+									"value": "674120"
+								}
+							]
+						},
+						"description": "Generated from cURL: curl -X 'GET' \\\r\n  'https://paymentservice-qa-ggd2acbufxcjgpa2.centralindia-01.azurewebsites.net/api/v1/VerifyCashFreeSubscriptionStatus?SubReferenceId=634197' \\\r\n  -H 'accept: application/json'"
+					},
+					"response": []
+				},
+				{
 					"name": "CashFreeProductCancelled_emi_invalidOrderId",
 					"id": "9b6bf7df-81d1-4475-98aa-ab48071b7f41",
 					"protocolProfileBehavior": {
