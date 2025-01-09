@@ -1831,6 +1831,57 @@
 							"response": []
 						},
 						{
+							"name": "CashFreeProductCancelled",
+							"id": "4da03ac0-0d05-46af-aad5-dfa4192b5fbe",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{BasicAuthorization}}",
+										"type": "text"
+									},
+									{
+										"key": "husk-token",
+										"value": "{{huskTocken}}",
+										"type": "text"
+									},
+									{
+										"key": "Auth-token",
+										"value": "{{Auth-Token}}",
+										"type": "text"
+									},
+									{
+										"key": "CustomerId",
+										"value": "{{CustomerId}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{ \r\n   \"OrderId\": \"PS-20144-PD-HIN-01-112-1\",  \r\n   \"CafId\": 20144, \r\n   \"RefundAmount\": 1150, \r\n   \"RefundReason\": \"TEST\", \r\n   \"PaymentType\": \"FullPayment_EMI\" \r\n }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://huskpowerdevconsumerwebapih-fdete9cbe7g9bgg4.centralindia-01.azurewebsites.net/EED/Api/v1/CashFreeProductCancelled"
+							},
+							"response": []
+						},
+						{
 							"name": "DecryptAPI_EMIPayment",
 							"event": [
 								{
@@ -1909,57 +1960,6 @@
 									}
 								},
 								"url": "https://huskpowerdevconsumerwebapih-fdete9cbe7g9bgg4.centralindia-01.azurewebsites.net//Api/v1/DecryptResponse"
-							},
-							"response": []
-						},
-						{
-							"name": "CashFreeProductCancelled",
-							"id": "4da03ac0-0d05-46af-aad5-dfa4192b5fbe",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "POST",
-								"header": [
-									{
-										"key": "Content-Type",
-										"value": "application/json"
-									},
-									{
-										"key": "Accept",
-										"value": "application/json"
-									},
-									{
-										"key": "Authorization",
-										"value": "{{BasicAuthorization}}",
-										"type": "text"
-									},
-									{
-										"key": "husk-token",
-										"value": "{{huskTocken}}",
-										"type": "text"
-									},
-									{
-										"key": "Auth-token",
-										"value": "{{Auth-Token}}",
-										"type": "text"
-									},
-									{
-										"key": "CustomerId",
-										"value": "{{CustomerId}}",
-										"type": "text"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{ \r\n   \"OrderId\": \"PS-20141-PC-HIN-03-001-1\",  \r\n   \"CafId\": 20141, \r\n   \"RefundAmount\": 1180, \r\n   \"RefundReason\": \"TEST\", \r\n   \"PaymentType\": \"FullPayment_COD\" \r\n }",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": "https://huskpowerdevconsumerwebapih-fdete9cbe7g9bgg4.centralindia-01.azurewebsites.net/EED/Api/v1/CashFreeProductCancelled"
 							},
 							"response": []
 						}
