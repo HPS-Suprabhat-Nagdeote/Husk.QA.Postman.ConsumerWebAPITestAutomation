@@ -856,7 +856,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"MobileNumber\": \"+918999327304\",\r\n  \"CustomerId\": \"\",\r\n  \"TotalAmount\": 150,\r\n  \"DiscountAmount\": 50,\r\n  \"AddressId\": 167387,//from CustomerAddress table\r\n  \"DiscountId\": 37,//from Discount table\r\n  \"OrderId\": \"\",\r\n  \"EMISchemeID\": 39 //From EMIScheme table\r\n}",
+							"raw": "{\r\n  \"MobileNumber\": \"+918999327304\",\r\n  \"CustomerId\": \"HINUP-Huskify-0017\",\r\n  \"TotalAmount\": 75,\r\n  \"DiscountAmount\": 50,\r\n  \"AddressId\": 167387,//from CustomerAddress table\r\n  \"DiscountId\": 37,//from Discount table\r\n  \"OrderId\": \"\",\r\n  \"EMISchemeID\": 39 //From EMIScheme table\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
