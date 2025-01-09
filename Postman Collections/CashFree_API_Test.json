@@ -1882,6 +1882,46 @@
 							"response": []
 						},
 						{
+							"name": "VerifyCashFreeSubscriptionStatus?subReferenceId=675865",
+							"id": "13b8170f-87b5-4888-afcd-ab0b5f61ff1b",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "https://huskpowerdevconsumerwebapih-fdete9cbe7g9bgg4.centralindia-01.azurewebsites.net/EED/Api/v1/VerifyCashFreeSubscriptionStatus?subReferenceId=675865",
+									"protocol": "https",
+									"host": [
+										"huskpowerdevconsumerwebapih-fdete9cbe7g9bgg4",
+										"centralindia-01",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"EED",
+										"Api",
+										"v1",
+										"VerifyCashFreeSubscriptionStatus"
+									],
+									"query": [
+										{
+											"key": "subReferenceId",
+											"value": "675865"
+										}
+									]
+								},
+								"description": "Generated from cURL: curl -X GET --header 'Accept: application/json' 'https://huskpowerdevconsumerwebapih-fdete9cbe7g9bgg4.centralindia-01.azurewebsites.net/EED/Api/v1/VerifyCashFreeSubscriptionStatus?subReferenceId=675865'"
+							},
+							"response": []
+						},
+						{
 							"name": "DecryptAPI_EMIPayment",
 							"event": [
 								{
