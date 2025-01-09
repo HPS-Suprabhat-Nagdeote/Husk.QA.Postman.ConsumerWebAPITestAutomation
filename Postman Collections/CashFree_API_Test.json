@@ -2082,6 +2082,172 @@
 							"response": []
 						},
 						{
+							"name": "VerifyCashFreePaymentStatus?orderId=121126",
+							"id": "fb33bbf1-da3f-486e-826d-17d9af500545",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{BasicAuthorization}}",
+										"type": "text"
+									},
+									{
+										"key": "husk-token",
+										"value": "{{huskTocken}}",
+										"type": "text"
+									},
+									{
+										"key": "CustomerId",
+										"value": "{{CustomerId}}",
+										"type": "text"
+									},
+									{
+										"key": "Auth-token",
+										"value": "{{Auth-Token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://huskpowerdevconsumerwebapih-fdete9cbe7g9bgg4.centralindia-01.azurewebsites.net/EED/Api/v1/VerifyCashFreePaymentStatus?orderId=ddd14d2c-6fd6-1745-7964-6045bd73755a",
+									"protocol": "https",
+									"host": [
+										"huskpowerdevconsumerwebapih-fdete9cbe7g9bgg4",
+										"centralindia-01",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"EED",
+										"Api",
+										"v1",
+										"VerifyCashFreePaymentStatus"
+									],
+									"query": [
+										{
+											"key": "orderId",
+											"value": "ddd14d2c-6fd6-1745-7964-6045bd73755a"
+										}
+									]
+								},
+								"description": "Generated from cURL: curl -X GET --header 'Accept: application/json' 'https://huskpowerdevconsumerwebapih-fdete9cbe7g9bgg4.centralindia-01.azurewebsites.net/EED/Api/v1/VerifyCashFreePaymentStatus?orderId=121126'"
+							},
+							"response": []
+						},
+						{
+							"name": "orders/sessions",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "ce0bddc6-6310-414c-a7a8-65fe2b1cfbb3",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"id": "b0fad137-70da-4e11-ab5e-b2bc87460edf",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "accept",
+										"value": "application/json"
+									},
+									{
+										"key": "content-type",
+										"value": "application/json"
+									},
+									{
+										"key": "x-api-version",
+										"value": "2023-08-01"
+									},
+									{
+										"key": "x-client-id",
+										"value": "TEST101238603b59dbd848b49b68684c06832101",
+										"type": "text"
+									},
+									{
+										"key": "x-client-secret",
+										"value": "cfsk_ma_test_8c58d58db1316608e1621a039abf8c53_09042825",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "\n{\n  \"payment_session_id\":\"session_Rt64nDvm0Z-69l4Txmt1F7L5lpYc7ZT8KeZsb0f2hjF8Ecn6sq4sWLYto5pd0yDkhnXSCx3v14CBHy6OOjOpbdeH51vh7frdfmt87P8PA5eRbEyNC7jpM5TY0gpaymentpayment\",\n  \"payment_method\": {\n    \"upi\": {\n      \"channel\": \"link\"\n    }\n  }\n}\n"
+								},
+								"url": "https://sandbox.cashfree.com/pg/orders/sessions"
+							},
+							"response": []
+						},
+						{
+							"name": "CashFreeProductCancelled",
+							"id": "a6878937-ecb2-42a5-8f86-bf853da04bd9",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{BasicAuthorization}}",
+										"type": "text"
+									},
+									{
+										"key": "husk-token",
+										"value": "{{huskTocken}}",
+										"type": "text"
+									},
+									{
+										"key": "Auth-token",
+										"value": "{{Auth-Token}}",
+										"type": "text"
+									},
+									{
+										"key": "CustomerId",
+										"value": "{{CustomerId}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{ \r\n   \"OrderId\": \"PS-20158-PD-HIN-01-126-1\",  \r\n   \"CafId\": 20158, \r\n   \"RefundAmount\": 150, \r\n   \"RefundReason\": \"TEST\", \r\n   \"PaymentType\": \"FullPayment__\" \r\n }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://huskpowerdevconsumerwebapih-fdete9cbe7g9bgg4.centralindia-01.azurewebsites.net/EED/Api/v1/CashFreeProductCancelled"
+							},
+							"response": []
+						},
+						{
 							"name": "DecryptAPI_FullPayment",
 							"event": [
 								{
@@ -2160,181 +2326,6 @@
 									}
 								},
 								"url": "https://huskpowerdevconsumerwebapih-fdete9cbe7g9bgg4.centralindia-01.azurewebsites.net//Api/v1/DecryptResponse"
-							},
-							"response": []
-						},
-						{
-							"name": "VerifyCashFreeSubscriptionStatus?subReferenceId=634197",
-							"id": "443591eb-98df-49b4-8e4b-727e765e670a",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "Accept",
-										"value": "application/json"
-									},
-									{
-										"key": "Authorization",
-										"value": "{{BasicAuthorization}}",
-										"type": "text"
-									},
-									{
-										"key": "husk-token",
-										"value": "{{huskTocken}}",
-										"type": "text"
-									},
-									{
-										"key": "CustomerId",
-										"value": "{{CustomerId}}",
-										"type": "text"
-									},
-									{
-										"key": "Auth-token",
-										"value": "{{Auth-Token}}",
-										"type": "text"
-									}
-								],
-								"url": {
-									"raw": "https://huskpowerdevconsumerwebapih-fdete9cbe7g9bgg4.centralindia-01.azurewebsites.net/EED/Api/v1/VerifyCashFreeSubscriptionStatus?subReferenceId=634197",
-									"protocol": "https",
-									"host": [
-										"huskpowerdevconsumerwebapih-fdete9cbe7g9bgg4",
-										"centralindia-01",
-										"azurewebsites",
-										"net"
-									],
-									"path": [
-										"EED",
-										"Api",
-										"v1",
-										"VerifyCashFreeSubscriptionStatus"
-									],
-									"query": [
-										{
-											"key": "subReferenceId",
-											"value": "634197"
-										}
-									]
-								},
-								"description": "Generated from cURL: curl -X GET --header 'Accept: application/json' 'https://huskpowerdevconsumerwebapih-fdete9cbe7g9bgg4.centralindia-01.azurewebsites.net/EED/Api/v1/VerifyCashFreeSubscriptionStatus?subReferenceId=634197'"
-							},
-							"response": []
-						},
-						{
-							"name": "https://huskpowerdevconsumerwebapih-fdete9cbe7g9bgg4.centralindia-01.azurewebsites.net/EED/Api/v1/VerifyCashFreePaymentStatus?orderId=121126",
-							"id": "fb33bbf1-da3f-486e-826d-17d9af500545",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "Accept",
-										"value": "application/json"
-									},
-									{
-										"key": "Authorization",
-										"value": "{{BasicAuthorization}}",
-										"type": "text"
-									},
-									{
-										"key": "husk-token",
-										"value": "{{huskTocken}}",
-										"type": "text"
-									},
-									{
-										"key": "CustomerId",
-										"value": "{{CustomerId}}",
-										"type": "text"
-									},
-									{
-										"key": "Auth-token",
-										"value": "{{Auth-Token}}",
-										"type": "text"
-									}
-								],
-								"url": {
-									"raw": "https://huskpowerdevconsumerwebapih-fdete9cbe7g9bgg4.centralindia-01.azurewebsites.net/EED/Api/v1/VerifyCashFreePaymentStatus?orderId=121126",
-									"protocol": "https",
-									"host": [
-										"huskpowerdevconsumerwebapih-fdete9cbe7g9bgg4",
-										"centralindia-01",
-										"azurewebsites",
-										"net"
-									],
-									"path": [
-										"EED",
-										"Api",
-										"v1",
-										"VerifyCashFreePaymentStatus"
-									],
-									"query": [
-										{
-											"key": "orderId",
-											"value": "121126"
-										}
-									]
-								},
-								"description": "Generated from cURL: curl -X GET --header 'Accept: application/json' 'https://huskpowerdevconsumerwebapih-fdete9cbe7g9bgg4.centralindia-01.azurewebsites.net/EED/Api/v1/VerifyCashFreePaymentStatus?orderId=121126'"
-							},
-							"response": []
-						},
-						{
-							"name": "orders/sessions",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "ce0bddc6-6310-414c-a7a8-65fe2b1cfbb3",
-										"exec": [
-											"pm.test(\"Status code is 200\", function () {\r",
-											"    pm.response.to.have.status(200);\r",
-											"});"
-										],
-										"type": "text/javascript",
-										"packages": {}
-									}
-								}
-							],
-							"id": "b0fad137-70da-4e11-ab5e-b2bc87460edf",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "POST",
-								"header": [
-									{
-										"key": "accept",
-										"value": "application/json"
-									},
-									{
-										"key": "content-type",
-										"value": "application/json"
-									},
-									{
-										"key": "x-api-version",
-										"value": "2023-08-01"
-									},
-									{
-										"key": "x-client-id",
-										"value": "TEST101238603b59dbd848b49b68684c06832101",
-										"type": "text"
-									},
-									{
-										"key": "x-client-secret",
-										"value": "cfsk_ma_test_8c58d58db1316608e1621a039abf8c53_09042825",
-										"type": "text"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "\n{\n  \"payment_session_id\":\"session_Rt64nDvm0Z-69l4Txmt1F7L5lpYc7ZT8KeZsb0f2hjF8Ecn6sq4sWLYto5pd0yDkhnXSCx3v14CBHy6OOjOpbdeH51vh7frdfmt87P8PA5eRbEyNC7jpM5TY0gpaymentpayment\",\n  \"payment_method\": {\n    \"upi\": {\n      \"channel\": \"link\"\n    }\n  }\n}\n"
-								},
-								"url": "https://sandbox.cashfree.com/pg/orders/sessions"
 							},
 							"response": []
 						}
