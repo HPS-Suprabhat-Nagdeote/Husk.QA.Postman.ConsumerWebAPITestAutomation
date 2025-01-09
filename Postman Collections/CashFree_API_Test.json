@@ -1893,10 +1893,30 @@
 									{
 										"key": "Accept",
 										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "{{BasicAuthorization}}",
+										"type": "text"
+									},
+									{
+										"key": "husk-token",
+										"value": "{{huskTocken}}",
+										"type": "text"
+									},
+									{
+										"key": "CustomerId",
+										"value": "{{CustomerId}}",
+										"type": "text"
+									},
+									{
+										"key": "Auth-token",
+										"value": "{{Auth-Token}}",
+										"type": "text"
 									}
 								],
 								"url": {
-									"raw": "https://huskpowerdevconsumerwebapih-fdete9cbe7g9bgg4.centralindia-01.azurewebsites.net/EED/Api/v1/VerifyCashFreeSubscriptionStatus?subReferenceId=675865",
+									"raw": "https://huskpowerdevconsumerwebapih-fdete9cbe7g9bgg4.centralindia-01.azurewebsites.net/EED/Api/v1/VerifyCashFreeSubscriptionStatus?subReferenceId=675975",
 									"protocol": "https",
 									"host": [
 										"huskpowerdevconsumerwebapih-fdete9cbe7g9bgg4",
@@ -1913,7 +1933,7 @@
 									"query": [
 										{
 											"key": "subReferenceId",
-											"value": "675865"
+											"value": "675975"
 										}
 									]
 								},
