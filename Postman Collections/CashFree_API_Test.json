@@ -2224,6 +2224,46 @@
 							"response": []
 						},
 						{
+							"name": "https://huskpowerdevconsumerwebapih-fdete9cbe7g9bgg4.centralindia-01.azurewebsites.net/EED/Api/v1/VerifyCashFreePaymentStatus?orderId=121126",
+							"id": "fb33bbf1-da3f-486e-826d-17d9af500545",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "https://huskpowerdevconsumerwebapih-fdete9cbe7g9bgg4.centralindia-01.azurewebsites.net/EED/Api/v1/VerifyCashFreePaymentStatus?orderId=121126",
+									"protocol": "https",
+									"host": [
+										"huskpowerdevconsumerwebapih-fdete9cbe7g9bgg4",
+										"centralindia-01",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"EED",
+										"Api",
+										"v1",
+										"VerifyCashFreePaymentStatus"
+									],
+									"query": [
+										{
+											"key": "orderId",
+											"value": "121126"
+										}
+									]
+								},
+								"description": "Generated from cURL: curl -X GET --header 'Accept: application/json' 'https://huskpowerdevconsumerwebapih-fdete9cbe7g9bgg4.centralindia-01.azurewebsites.net/EED/Api/v1/VerifyCashFreePaymentStatus?orderId=121126'"
+							},
+							"response": []
+						},
+						{
 							"name": "orders/sessions",
 							"event": [
 								{
