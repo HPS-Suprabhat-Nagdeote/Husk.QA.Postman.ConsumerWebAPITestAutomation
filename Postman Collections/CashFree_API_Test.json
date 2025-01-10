@@ -468,18 +468,38 @@
 							{
 								"key": "Content-Type",
 								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{BasicAuthorization}}",
+								"type": "text"
+							},
+							{
+								"key": "husk-token",
+								"value": "{{huskTocken}}",
+								"type": "text"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}",
+								"type": "text"
+							},
+							{
+								"key": "Auth-token",
+								"value": "{{Auth-Token}}",
+								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"OrderId\": \"PS-'                       1\",\r\n  \"CafId\": \"2\",\r\n  \"RefundAmount\": 0,\r\n  \"RefundReason\": \"Other\",\r\n  \"PaymentType\": \"FullPayment_COD\"\r\n}",
+							"raw": "{\n  \"OrderId\": \"PS-20220-PC-HIN-03-001-1\",\n  \"CafId\": \"20220\",\n  \"RefundAmount\": 799,\n  \"RefundReason\": \"Other\",\n  \"PaymentType\": \"EMI\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": "https://huskifyorchestratorserviceqa-2-hpaqg7gwf7gybkf3.centralindia-01.azurewebsites.net/Api/v1/CashFreeProductCancelled",
+						"url": "https://huskifyorchestratorserviceqa-2-hpaqg7gwf7gybkf3.centralindia-01.azurewebsites.net/api/v1/CashFreeProductCancelled",
 						"description": "Generated from cURL: curl -X 'POST' \\\r\n  'https://paymentservice-qa-ggd2acbufxcjgpa2.centralindia-01.azurewebsites.net/api/v1/CashFreeProductCancelled' \\\r\n  -H 'accept: application/json' \\\r\n  -H 'Content-Type: application/json' \\\r\n  -d '{\r\n  \"OrderId\": \"order-id\",\r\n  \"CafId\": \"1234\",\r\n  \"RefundAmount\": 0,\r\n  \"RefundReason\": \"290\",\r\n  \"PaymentType\": \"FullPayment_COD\"\r\n}'"
 					},
 					"response": []
