@@ -472,14 +472,14 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"OrderId\": \"PS-20091-PD-HIN-01-112-1\",\r\n  \"CafId\": \"20091\",\r\n  \"RefundAmount\": 1150,\r\n  \"RefundReason\": \"Other\",\r\n  \"PaymentType\": \"FullPayment_EMI\"\r\n}",
+							"raw": "{\r\n  \"OrderId\": \"PS-'                       1\",\r\n  \"CafId\": \"2\",\r\n  \"RefundAmount\": 0,\r\n  \"RefundReason\": \"Other\",\r\n  \"PaymentType\": \"FullPayment_COD\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": "https://paymentservice-qa-ggd2acbufxcjgpa2.centralindia-01.azurewebsites.net/api/v1/CashFreeProductCancelled",
+						"url": "https://huskifyorchestratorserviceqa-2-hpaqg7gwf7gybkf3.centralindia-01.azurewebsites.net/Api/v1/CashFreeProductCancelled",
 						"description": "Generated from cURL: curl -X 'POST' \\\r\n  'https://paymentservice-qa-ggd2acbufxcjgpa2.centralindia-01.azurewebsites.net/api/v1/CashFreeProductCancelled' \\\r\n  -H 'accept: application/json' \\\r\n  -H 'Content-Type: application/json' \\\r\n  -d '{\r\n  \"OrderId\": \"order-id\",\r\n  \"CafId\": \"1234\",\r\n  \"RefundAmount\": 0,\r\n  \"RefundReason\": \"290\",\r\n  \"PaymentType\": \"FullPayment_COD\"\r\n}'"
 					},
 					"response": []
