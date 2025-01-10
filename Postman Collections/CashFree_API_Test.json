@@ -386,13 +386,33 @@
 							{
 								"key": "accept",
 								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{BasicAuthorization}}",
+								"type": "text"
+							},
+							{
+								"key": "husk-token",
+								"value": "{{huskTocken}}",
+								"type": "text"
+							},
+							{
+								"key": "Auth-token",
+								"value": "{{AuthTocken}}",
+								"type": "text"
+							},
+							{
+								"key": "CustomerId",
+								"value": "{{CustomerId}}",
+								"type": "text"
 							}
 						],
 						"url": {
-							"raw": "https://paymentservice-qa-ggd2acbufxcjgpa2.centralindia-01.azurewebsites.net/api/v1/VerifyCashFreeSubscriptionStatus?SubReferenceId=634197",
+							"raw": "https://huskifyorchestratorserviceqa-2-hpaqg7gwf7gybkf3.centralindia-01.azurewebsites.net/api/v1/VerifyCashFreeSubscriptionStatus?SubReferenceId=679161",
 							"protocol": "https",
 							"host": [
-								"paymentservice-qa-ggd2acbufxcjgpa2",
+								"huskifyorchestratorserviceqa-2-hpaqg7gwf7gybkf3",
 								"centralindia-01",
 								"azurewebsites",
 								"net"
@@ -405,7 +425,7 @@
 							"query": [
 								{
 									"key": "SubReferenceId",
-									"value": "634197"
+									"value": "679161"
 								}
 							]
 						},
