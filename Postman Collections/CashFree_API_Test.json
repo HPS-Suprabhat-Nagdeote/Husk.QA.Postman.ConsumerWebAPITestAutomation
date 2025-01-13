@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "2e6713b0-f6fe-4843-a799-2371435de5ca",
-		"name": "CashFree API Test",
+		"name": "CashFree API QA Test",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
