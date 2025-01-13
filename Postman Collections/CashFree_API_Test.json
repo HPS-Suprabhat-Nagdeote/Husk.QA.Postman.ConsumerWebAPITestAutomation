@@ -1691,18 +1691,18 @@
 									},
 									{
 										"key": "CustomerId",
-										"value": "{{CustomerId}}",
+										"value": "HINUP-Huskify-0017",
 										"type": "text"
 									},
 									{
 										"key": "Auth-Token",
-										"value": "{{Auth-Token}}",
+										"value": "1ed934bc-fbd9-4d72-8907-4385c193cf40",
 										"type": "text"
 									}
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{ \r\n   \"MobileNumber\": \"+918999327304\",\r\n   \"CustomerId\": \"HINUP-Huskify-0017\",  \r\n   \"EMIAmount\": 0, \r\n   \"DiscountAmount\": 0, \r\n   \"TotalAmount\": 1150,  \r\n   \"DiscountId\": 0,  \r\n   \"EMIPeriod\": 4,\r\n   \"AddressId\": 167387, \r\n   \"EMISchemeId\": 26\r\n }",
+									"raw": "{ \r\n   \"MobileNumber\": \"+918999327304\",\r\n   \"CustomerId\": \"HINUP-Huskify-0017\",  \r\n   \"EMIAmount\": 0, \r\n   \"DiscountAmount\": 0, \r\n   \"TotalAmount\": 745,  \r\n   \"DiscountId\": 0,  \r\n   \"EMIPeriod\": 4,\r\n   \"AddressId\": 167387, \r\n   \"EMISchemeId\": 26\r\n }",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1910,7 +1910,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{ \r\n   \"OrderId\": \"PS-20266-PD-HIN-01-112-1\",  \r\n   \"CafId\": 20266, \r\n   \"RefundAmount\": 1150, \r\n   \"RefundReason\": \"TEST\", \r\n   \"PaymentType\": \"FullPayment_EMI\" \r\n }",
+									"raw": "{ \r\n   \"OrderId\": \"PS-20268-PC-HIN-03-001-1\",  \r\n   \"CafId\": 20268, \r\n   \"RefundAmount\": 745, \r\n   \"RefundReason\": \"TEST\", \r\n   \"PaymentType\": \"FullPayment_EMI\" \r\n }",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1956,7 +1956,7 @@
 									}
 								],
 								"url": {
-									"raw": "https://huskpowerdevconsumerwebapih-fdete9cbe7g9bgg4.centralindia-01.azurewebsites.net/EED/Api/v1/VerifyCashFreeSubscriptionStatus?subReferenceId=675975",
+									"raw": "https://huskpowerdevconsumerwebapih-fdete9cbe7g9bgg4.centralindia-01.azurewebsites.net/EED/Api/v1/VerifyCashFreeSubscriptionStatus?subReferenceId=683034",
 									"protocol": "https",
 									"host": [
 										"huskpowerdevconsumerwebapih-fdete9cbe7g9bgg4",
@@ -1973,7 +1973,7 @@
 									"query": [
 										{
 											"key": "subReferenceId",
-											"value": "675975"
+											"value": "683034"
 										}
 									]
 								},
