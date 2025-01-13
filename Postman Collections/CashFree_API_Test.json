@@ -1691,12 +1691,12 @@
 									},
 									{
 										"key": "CustomerId",
-										"value": "HINUP-Huskify-0017",
+										"value": "{{CustomerId}}",
 										"type": "text"
 									},
 									{
 										"key": "Auth-Token",
-										"value": "d1ac2919-d42d-43b1-9450-28a24e3354ab",
+										"value": "{{Auth-Token}}",
 										"type": "text"
 									}
 								],
