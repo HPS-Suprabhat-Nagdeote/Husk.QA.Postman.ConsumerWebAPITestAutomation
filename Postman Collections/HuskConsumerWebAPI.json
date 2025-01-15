@@ -19154,6 +19154,118 @@
 					}
 				}
 			]
+		},
+		{
+			"name": "https://huskpowerdevconsumerwebapih-fdete9cbe7g9bgg4.centralindia-01.azurewebsites.net/EED/Api/v1/GetUserDetails",
+			"id": "0d11e73e-ce40-4947-9e00-b06b6f44dd56",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept-language",
+						"value": "2"
+					},
+					{
+						"key": "customerid",
+						"value": "HINUP-Huskify-205659"
+					},
+					{
+						"key": "auth-token",
+						"value": "84825b90-955c-41b3-9b53-821c2c0b2f43"
+					},
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "authorization",
+						"value": "Basic SHVza05ldXJvbjpyYVJxN3FKRk8/fGE3T2pU"
+					},
+					{
+						"key": "husk-token",
+						"value": "26CB9ECF-6343-43B9-B700-004BA9484D3E"
+					},
+					{
+						"key": "Cookie",
+						"value": "ARRAffinity=4a6bcf805311a2b473ad4cc81aaf102012766d358e9d9ece2fd92ef8a4d85836; ARRAffinitySameSite=4a6bcf805311a2b473ad4cc81aaf102012766d358e9d9ece2fd92ef8a4d85836"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"CustomerId\":\"HINUP-Huskify-205659\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://huskpowerdevconsumerwebapih-fdete9cbe7g9bgg4.centralindia-01.azurewebsites.net/EED/Api/v1/GetUserDetails",
+				"description": "Generated from cURL: curl --location 'https://huskpowerdevconsumerwebapih-fdete9cbe7g9bgg4.centralindia-01.azurewebsites.net/EED/Api/v1/GetUserDetails' \\\r\n--header 'accept-language: 2' \\\r\n--header 'customerid: HINUP-Huskify-205659' \\\r\n--header 'auth-token: 84825b90-955c-41b3-9b53-821c2c0b2f43' \\\r\n--header 'accept: application/json' \\\r\n--header 'content-type: application/json' \\\r\n--header 'authorization: Basic SHVza05ldXJvbjpyYVJxN3FKRk8/fGE3T2pU' \\\r\n--header 'husk-token: 26CB9ECF-6343-43B9-B700-004BA9484D3E' \\\r\n--header 'Cookie: ARRAffinity=4a6bcf805311a2b473ad4cc81aaf102012766d358e9d9ece2fd92ef8a4d85836; ARRAffinitySameSite=4a6bcf805311a2b473ad4cc81aaf102012766d358e9d9ece2fd92ef8a4d85836' \\\r\n--data '{\"CustomerId\":\"HINUP-Huskify-205659\"}'"
+			},
+			"response": []
+		},
+		{
+			"name": "https://huskpowerdevconsumerwebapih-fdete9cbe7g9bgg4.centralindia-01.azurewebsites.net/EED/Api/v1/GetUserDetails Copy",
+			"id": "528f2622-c099-4eff-8c57-b877fc2f6961",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept-language",
+						"value": "2"
+					},
+					{
+						"key": "customerid",
+						"value": "HINUP-Huskify-205659"
+					},
+					{
+						"key": "auth-token",
+						"value": "84825b90-955c-41b3-9b53-821c2c0b2f43"
+					},
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "authorization",
+						"value": "Basic SHVza05ldXJvbjpyYVJxN3FKRk8/fGE3T2pU"
+					},
+					{
+						"key": "husk-token",
+						"value": "26CB9ECF-6343-43B9-B700-004BA9484D3E"
+					},
+					{
+						"key": "Cookie",
+						"value": "ARRAffinity=4a6bcf805311a2b473ad4cc81aaf102012766d358e9d9ece2fd92ef8a4d85836; ARRAffinitySameSite=4a6bcf805311a2b473ad4cc81aaf102012766d358e9d9ece2fd92ef8a4d85836"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"CustomerId\":\"HINUP-Huskify-205659\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://huskpowerdevconsumerwebapih-fdete9cbe7g9bgg4.centralindia-01.azurewebsites.net/EED/Api/v1/GetUserDetails",
+				"description": "Generated from cURL: curl --location 'https://huskpowerdevconsumerwebapih-fdete9cbe7g9bgg4.centralindia-01.azurewebsites.net/EED/Api/v1/GetUserDetails' \\\r\n--header 'accept-language: 2' \\\r\n--header 'customerid: HINUP-Huskify-205659' \\\r\n--header 'auth-token: 84825b90-955c-41b3-9b53-821c2c0b2f43' \\\r\n--header 'accept: application/json' \\\r\n--header 'content-type: application/json' \\\r\n--header 'authorization: Basic SHVza05ldXJvbjpyYVJxN3FKRk8/fGE3T2pU' \\\r\n--header 'husk-token: 26CB9ECF-6343-43B9-B700-004BA9484D3E' \\\r\n--header 'Cookie: ARRAffinity=4a6bcf805311a2b473ad4cc81aaf102012766d358e9d9ece2fd92ef8a4d85836; ARRAffinitySameSite=4a6bcf805311a2b473ad4cc81aaf102012766d358e9d9ece2fd92ef8a4d85836' \\\r\n--data '{\"CustomerId\":\"HINUP-Huskify-205659\"}'"
+			},
+			"response": []
 		}
 	],
 	"event": [
