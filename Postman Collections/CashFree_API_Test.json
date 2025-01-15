@@ -2123,6 +2123,21 @@
 						},
 						{
 							"name": "CashFreePaymentRequest_withoutCRN",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "5a04d7cc-253f-48c0-8255-43acee441cae",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
 							"id": "d6ecaa44-402f-4af7-a994-242383163341",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -2161,7 +2176,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{ \r\n   \"MobileNumber\": \"+918999327304\", \r\n   \"CustomerId\": \"\", \r\n   \"TotalAmount\": 150,  \r\n   \"DiscountAmount\": 0, \r\n   \"AddressId\": 167387, \r\n   \"DiscountId\": 0, \r\n   \"OrderId\": \"string\",  \r\n   \"EMISchemeID\": 39 \r\n }",
+									"raw": "{ \r\n   \"MobileNumber\": \"+919373753469\", \r\n   \"CustomerId\": \"\", \r\n   \"TotalAmount\": 150,  \r\n   \"DiscountAmount\": 0, \r\n   \"AddressId\": 167387, \r\n   \"DiscountId\": 0, \r\n   \"OrderId\": \"string\",  \r\n   \"EMISchemeID\": 39 \r\n }",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -2213,7 +2228,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{ \r\n   \"MobileNumber\": \"\", \r\n   \"CustomerId\": \"HINUP-Huskify-0017\", \r\n   \"TotalAmount\": 150,  \r\n   \"DiscountAmount\": 0, \r\n   \"AddressId\": 167387, \r\n   \"DiscountId\": 0, \r\n   \"OrderId\": \"string\",  \r\n   \"EMISchemeID\": 39 \r\n }",
+									"raw": "{ \r\n   \"MobileNumber\": \"\", \r\n   \"CustomerId\": \"HINUP-Huskify-379518\", \r\n   \"TotalAmount\": 150,  \r\n   \"DiscountAmount\": 0, \r\n   \"AddressId\": 167400, \r\n   \"DiscountId\": 0, \r\n   \"OrderId\": \"string\",  \r\n   \"EMISchemeID\": 39 \r\n }",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -2481,7 +2496,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{ \r\n   \"OrderId\": \"PS-20182-PD-HIN-01-120-1\",  \r\n   \"CafId\": 20182, \r\n   \"RefundAmount\": 150, \r\n   \"RefundReason\": \"TEST\", \r\n   \"PaymentType\": \"FullPayment__\" \r\n }",
+									"raw": "{ \r\n   \"OrderId\": \"PS-20278-PD-HIN-01-126-1\",  \r\n   \"CafId\": 20278, \r\n   \"RefundAmount\": 150, \r\n   \"RefundReason\": \"TEST\", \r\n   \"PaymentType\": \"FullPayment__\" \r\n }",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -2563,7 +2578,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"EncryptedString\":\"MLeDCC1qqzloMIhQczUcSEFJT6/eLCBrZpjUH3DvcB34+v1MK6SvhULhxSje7aXNEAfgVTjzT6te453ClgmiLRIblo1jn8f5Hq+C0xaMzsNDD2dFmAb9hxCHFyU+MZ0e6dBc4wDfDO2AgQq8adhCzItGwdiNecxkBfdziRsAb/7sEW7uVQX+p6Y40HP2PbKe4fuUORyCmWxvQmsFCFdq6QWBBsvHnEaVvdVVvoZcV1NOxvsiArzZopA3kw8u6wFPVqzT7Oln/njnslBGBDW/tADKTwYHN5rkepyvtTgl4BnBJBRX27OYPnIdnnQ5B+X09sDvWF0srPYJezSlEYLxgA8G6fpxJyHGWfSMXWjWwLo4dpw2mNmc1Y3zPh+PX9iz+U3s/UvuoZct64l5z8IBAssOSIWRXhtRiEN4pKSeinRM2uMzrqlKwzvNJiIqiF1xvqry5peHzbCQd9vWGFmTCdicEgcGoLiwQ5dooxLqbKl9EkX1EHQ4vng8b6bPUysnKuA4ezYNtEs+Kgtjn8HsUg==\"\r\n}\r\n",
+									"raw": "{\r\n  \"EncryptedString\":\"Tuc7nzW+mXq6YhsJfOT7e8RuEvhUlw047xMRdsknJR1oD+abzClOHo5gD24ccaqTeRVNSUKE+cMuqC3YJIx7VkhoEX1Y1WAQ0IwnGLJpk+RbgQ82wilONAjrBiOAkYW11jWEnNekBaHG+VQc+3aiV0G+HdUS3UZi/a/2pNB4V+TI6IcKv1y/7XcP8cxDgUJZAPRM6MW5+ofEKcygKWzEbz2ZReQOjVAhHndlAhcBzIEF0B2U6olU7o6ZcD9aO0TG0e4fAhnx3Yul5oirVVmDrN3e7bsSHBXllOPfwafcdzo=\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
