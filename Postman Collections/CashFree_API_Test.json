@@ -1414,7 +1414,7 @@
 										}
 									}
 								},
-								"url": "https://huskpowerdevconsumerwebapih-fdete9cbe7g9bgg4.centralindia-01.azurewebsites.net/EED/Api/v1/CODPaymentRequest",
+								"url": "https://huskifyorchestratorserviceqa-2-hpaqg7gwf7gybkf3.centralindia-01.azurewebsites.net/EED/Api/v1/CODPaymentRequest",
 								"description": "Generated from cURL: curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{ \\ \r\n   \"MobileNumber\": \"+918626019212\", \\ \r\n   \"CustomerId\": \"379516\", \\ \r\n   \"CustomerIdPaytm\": 0, \\ \r\n   \"DownpaymentAmt\": 150, \\ \r\n   \"EMISchemeID\": 39, \\ \r\n   \"TotalAmount\": 150, \\ \r\n   \"DiscountId\": 39, \\ \r\n   \"DiscountAmount\": 50, \\ \r\n   \"AddressId\": 167421 \\ \r\n }' 'https://huskpowerdevconsumerwebapih-fdete9cbe7g9bgg4.centralindia-01.azurewebsites.net/EED/Api/v1/CODPaymentRequest'"
 							},
 							"response": []
