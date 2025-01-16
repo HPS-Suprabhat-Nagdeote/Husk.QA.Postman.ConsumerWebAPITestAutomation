@@ -1352,7 +1352,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "\n{\n  \"payment_session_id\":\"session_EyoMMGsM028VyckVWa6ewt3RIP_ZLkbGAk59PoXp2g9x3gLLx8pvsybG7agHx_4l-hS-siks5m-7mPjb_GoAapJ35WSmSEl3MNXPU25_9-65P5V-_2QVyqn2ugpaymentpayment\",\n  \"payment_method\": {\n    \"upi\": {\n      \"channel\": \"link\"\n    }\n  }\n}\n"
+							"raw": "\n{\n  \"payment_session_id\":\"session_hLN1J0Rri2Dief7Wx1hACYfvApug3Sf3gbqUk_pS_3c_OLmmoKz-3gS-4ahrQfD3LPToVscERfaxbFnJRKhNO3X172vIHwjtkX-18dAVwQUE2AdrSF2Jk6WcAwpaymentpayment\",\n  \"payment_method\": {\n    \"upi\": {\n      \"channel\": \"link\"\n    }\n  }\n}\n"
 						},
 						"url": "https://sandbox.cashfree.com/pg/orders/sessions"
 					},
