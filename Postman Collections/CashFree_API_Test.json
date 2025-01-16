@@ -613,7 +613,7 @@
 			"name": "Sukshamta's COD API",
 			"item": [
 				{
-					"name": "https://huskifyorchestratorserviceqa.azurewebsites.net/api/v1/CODPaymentRequest",
+					"name": "CODPaymentRequest",
 					"id": "8112df54-37fc-4805-b764-9742c17b5971",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
