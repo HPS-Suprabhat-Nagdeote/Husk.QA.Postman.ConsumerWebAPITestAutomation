@@ -10935,7 +10935,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"CustomerId\": \"HINUP-Huskify-379518\",\r\n    \"ProductId\": 534\r\n}"
+							"raw": "{\r\n    \"CustomerId\": \"HINUP-Huskify-379518\",\r\n    \"ProductId\": 615\r\n}"
 						},
 						"url": "{{QAC#BaseURL}}/EED/Api/v1/DeleteMyCartDetails"
 					},
