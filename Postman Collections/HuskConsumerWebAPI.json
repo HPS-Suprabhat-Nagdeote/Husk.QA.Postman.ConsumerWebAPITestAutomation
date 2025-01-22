@@ -10717,7 +10717,7 @@
 								}
 							}
 						},
-						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/DecryptResponse"
+						"url": "{{QAC#BaseURL}}/Api/v1/DecryptResponse"
 					},
 					"response": []
 				},
