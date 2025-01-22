@@ -10935,9 +10935,9 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"CustomerId\": \"HINUP-Huskify-76216\",\r\n    \"ProductId\": 534\r\n}"
+							"raw": "{\r\n    \"CustomerId\": \"HINUP-Huskify-379518\",\r\n    \"ProductId\": 534\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/DeleteMyCartDetails"
+						"url": "{{QAC#BaseURL}}/EED/Api/v1/DeleteMyCartDetails"
 					},
 					"response": []
 				},
