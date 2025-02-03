@@ -8229,7 +8229,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n}\r\n"
+							"raw": "{\r\n    \r\n  \"PrevMobileNumber\": \"string\",\r\n  \"MobileNumber\": \"string\",\r\n  \"OTPCode\": \"string\",\r\n  \"IsMobileUpate\": true\r\n}\r\n\r\n"
 						},
 						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/VerifyBijliOTP"
 					},
