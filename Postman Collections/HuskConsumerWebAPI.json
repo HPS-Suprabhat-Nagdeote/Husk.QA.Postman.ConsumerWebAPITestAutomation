@@ -6224,7 +6224,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"MobileNumber\": \"9823643386\",\r\n  \"CalledFrom\": \"APP\"\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/EEDSendOTP"
+						"url": "{{QAC#BaseURL}}/EED/Api/v1/EEDSendOTP"
 					},
 					"response": []
 				},
