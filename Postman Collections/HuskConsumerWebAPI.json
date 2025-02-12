@@ -1083,9 +1083,9 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"MobileNumber\": \"9823643386\",\r\n  \"NewPassword\": \"123456\",\r\n  \"ConfirmPassword\": \"123456\"\r\n}\r\n"
+							"raw": "{\r\n  \"MobileNumber\": \"9284487810\",\r\n  \"NewPassword\": \"123456\",\r\n  \"ConfirmPassword\": \"123456\"\r\n}\r\n"
 						},
-						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/UpdatePassword"
+						"url": "https://huskpowerdevconsumerwebapih-fdete9cbe7g9bgg4.centralindia-01.azurewebsites.net//EED/Api/v1/UpdatePassword"
 					},
 					"response": []
 				},
