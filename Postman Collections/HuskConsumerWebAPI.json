@@ -1050,7 +1050,7 @@
 						"header": [
 							{
 								"key": "Auth-Token",
-								"value": "{{AuthTocken}}"
+								"value": "bb428760-00a4-4141-886a-d5344ceb5d4b"
 							},
 							{
 								"key": "Authorization",
@@ -1062,7 +1062,7 @@
 							},
 							{
 								"key": "CustomerId",
-								"value": "{{CustomerId}}"
+								"value": "HINUP-Huskify-2768"
 							},
 							{
 								"key": "IsNewApi",
