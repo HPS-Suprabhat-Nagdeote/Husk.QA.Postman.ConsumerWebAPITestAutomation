@@ -2,7 +2,7 @@
 	"info": {
 		"_postman_id": "616378df-2a22-4525-8970-0961fe705330",
 		"name": "HuskConsumerWebAPI_Automation",
-		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+		"schema": "https://schema.postman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
 		{
@@ -2638,9 +2638,9 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"MobileNumber\": \"+919823643386\",\r\n  \"Password\": \"123456\"\r\n}"
+							"raw": "{\r\n  \"MobileNumber\": \"8600429257\",\r\n  \"Password\": \"123456\"\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/Api/v1/EEDLogin"
+						"url": "https://huskpowerdevconsumerwebapih-fdete9cbe7g9bgg4.centralindia-01.azurewebsites.net//Api/v1/EEDLogin"
 					},
 					"response": []
 				},
