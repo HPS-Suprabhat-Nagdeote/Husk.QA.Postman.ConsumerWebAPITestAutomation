@@ -2392,7 +2392,7 @@
 							"mode": "raw",
 							"raw": "{\r\n  \"Id\": 0\r\n}"
 						},
-						"url": "https://huskpowerdevconsumerwebapih.azurewebsites.net/EED/Api/v1/UpdateUserDetails"
+						"url": "{{QAC#BaseURL}}/EED/Api/v1/UpdateUserDetails"
 					},
 					"response": []
 				},
